@@ -196,6 +196,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                     "product_code": metadata.get("product_code"), "source_url": metadata["source_url"],
                     "product_image": "https://staticecp.uprinting.com/7319/600x600/BIC_Sticky_Note_3x3_25_Sheets_Marketing_Materials_A.jpg",
                     "default_selection": offline_defaults, "attributes": OFFLINE_EXPORT["attributes"],
+                    "description": OFFLINE_EXPORT.get("description", ""),
+                    "images": OFFLINE_EXPORT.get("images", []), "video": OFFLINE_EXPORT.get("video", ""),
                     "linked_switch": None, "variants": {},
                 }); return
             attrs = []
@@ -222,6 +224,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 "source_url": SCRAPER.url,
                 "product_image": SCRAPER.product_image,
                 "default_selection": SCRAPER.defaults,
+                "description": SCRAPER.description,
+                "images": SCRAPER.images, "video": SCRAPER.video,
                 "attributes": attrs,
                 "linked_switch": ({"name": linked[0]["switch_label"], "options": [{"label": x["label"], "product_id": x["product_id"]} for x in linked]} if len(linked) > 1 else None),
                 "variants": variants,
@@ -252,6 +256,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                         "catalog": candidate.catalog, "product_image": candidate.product_image,
                         "linked_calculators": candidate.linked_calculators,
                         "price_options": candidate.price_options,
+                        "description": candidate.description,
+                        "images": candidate.images, "video": candidate.video,
                         "variants": {key: scraper_cache(value) for key, value in VARIANT_SCRAPERS.items()},
                     }), encoding="utf-8")
                 self._json(200, {
@@ -345,7 +351,7 @@ def main() -> None:
         try:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             if cached.get("url") == SCRAPER.url:
-                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options"):
+                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video"):
                     if key in cached:
                         setattr(SCRAPER, key, cached[key])
                 migrate_cached_pricing(SCRAPER)
@@ -370,6 +376,8 @@ def main() -> None:
             "catalog": SCRAPER.catalog, "product_image": SCRAPER.product_image,
             "linked_calculators": SCRAPER.linked_calculators,
             "price_options": SCRAPER.price_options,
+            "description": SCRAPER.description,
+            "images": SCRAPER.images, "video": SCRAPER.video,
         }), encoding="utf-8")
     except Exception as exc:
         export_path = EXPORT_DIR / "bic3x3stickynotes-2539.printoe.json"
@@ -386,7 +394,7 @@ def main() -> None:
         if OFFLINE_EXPORT is None:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             SCRAPER = UPrintingScraper(cached["url"])
-            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options"):
+            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video"):
                 if key in cached:
                     setattr(SCRAPER, key, cached[key])
             migrate_cached_pricing(SCRAPER)

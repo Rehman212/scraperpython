@@ -18,12 +18,13 @@
     .scrape-status strong{white-space:nowrap}.progress-track{height:7px;background:#d7e7dc;flex:1;border-radius:10px;overflow:hidden}.progress-bar{height:100%;width:0;background:#11813d;transition:width .4s}.scrape-meta{white-space:nowrap;color:#496151}
     main{max-width:1240px;margin:auto;padding:22px 0 60px}.crumbs{color:#555;font-size:13px;margin-bottom:22px}.crumbs a{color:#6b5b4c;margin-right:8px}
     .product{display:grid;grid-template-columns:510px 1fr;gap:48px}.gallery-main{height:505px;border:1px solid var(--line);background:#f2f0ec;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .gallery-main img{width:100%;height:100%;object-fit:cover}.thumbs{display:flex;gap:14px;margin-top:16px;align-items:center}.thumb{width:104px;height:102px;border:1px solid var(--line);object-fit:cover;padding:3px}.thumb.active{border:2px solid var(--green)}
+    .gallery-main img{width:100%;height:100%;object-fit:cover}.thumbs{display:flex;gap:14px;margin-top:16px;align-items:center;overflow-x:auto;padding-bottom:4px}.thumb{width:104px;height:102px;flex:none;border:1px solid var(--line);object-fit:cover;padding:3px;cursor:pointer}.thumb.active{border:2px solid var(--green)}
     h1{font-size:34px;margin:0 0 2px}.rating{margin-bottom:18px}.stars{color:#ff8500;font-size:20px;letter-spacing:-3px}.share{float:right;color:#76604b;text-decoration:underline;font:italic 15px Georgia;margin-top:-20px}
     .calculator{border:1px solid var(--line);padding:32px 36px 26px}.field{display:grid;grid-template-columns:190px 1fr;align-items:center;margin-bottom:16px}.field label{font-size:16px;font-weight:700}.field select{width:100%;height:43px;border:1px solid var(--line);background:#fff;padding:0 15px;font-size:16px;color:#181818}
     .price-box{background:var(--soft);padding:22px 32px;margin-top:12px}.price-box .field{grid-template-columns:180px 1fr}.total{text-align:right;margin-top:14px;font-size:17px;font-weight:700}.total strong{color:var(--green);font-size:28px;margin-left:25px}.each{text-align:right;font-size:14px;margin-top:-4px}.loading{color:#777}.error{color:#b22525;text-align:right;margin-top:8px;font-size:13px}
     .switch-field{display:grid;grid-template-columns:190px 1fr;align-items:center;margin-bottom:16px}.switch-field label{font-weight:700}.switch-options{display:flex;gap:8px}.switch-options button{height:54px;flex:1;background:#fff;border:1px solid var(--line);font-size:16px}.switch-options button.active{border:2px solid var(--green);color:#111}
     .ids{margin-top:14px;padding-top:13px;border-top:1px dashed #ddd;color:#777;font:12px Consolas,monospace;word-break:break-all}.actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.actions button,.actions a{height:45px;border:0;padding:0 24px;font-weight:bold;cursor:pointer;display:inline-flex;align-items:center;text-decoration:none;font-size:13px}.primary{background:#08722f;color:#fff}.secondary{background:#eee;color:#222}.download{background:#075b91;color:#fff}
+    .description{margin-top:40px;border-top:1px solid var(--line);padding-top:28px}.description h2{font-size:26px;margin:0 0 14px}.description img{max-width:100%}
     @media(max-width:900px){.head{padding:0 16px}.phone,.account,.search,nav{display:none}main{padding:18px}.product{grid-template-columns:1fr}.gallery-main{height:auto;aspect-ratio:1}.field{grid-template-columns:1fr;gap:7px}.calculator{padding:22px}.share{display:none}}
   </style>
 </head>
@@ -42,7 +43,7 @@
     <div class="product">
       <section>
         <div class="gallery-main"><img id="productImage" alt="Product image"></div>
-        <div class="thumbs"><span style="font-size:38px;color:#aaa">‹</span><img id="productThumb" class="thumb active"><div class="thumb" style="display:grid;place-items:center;font-size:32px;background:#eee">▶</div><div class="thumb" id="productCode" style="display:grid;place-items:center;background:#f3ddd4">Product</div><span style="font-size:38px">›</span></div>
+        <div class="thumbs" id="thumbsRow"></div>
       </section>
       <section>
         <h1 id="productName">Loading product…</h1>
@@ -62,6 +63,10 @@
         </div>
       </section>
     </div>
+    <section class="description" id="descriptionSection" style="display:none">
+      <h2>Overview</h2>
+      <div id="descriptionBody"></div>
+    </section>
   </main>
   <script>
     const state={data:null,selection:{},timer:null,request:0,changed:"",productId:"",capturedPrices:new Map()};
@@ -75,7 +80,6 @@
       $("productName").textContent=state.data.product_name;
       document.title=`${state.data.product_name} | Product Preview`;
       $("crumbName").textContent=state.data.product_name; $("sourceCrumb").href=state.data.source_url;
-      $("productCode").textContent=state.data.product_code||"Product";
       const exportCode=String(state.data.product_code||"product").replace(/[^a-zA-Z0-9_-]+/g,"-").replace(/^-|-$/g,"").toLowerCase();
       // A completed product-specific export is served directly; new products use
       // the export endpoint, which creates their separate files on first click.
@@ -83,7 +87,8 @@
       $("downloadExcel").dataset.filename=`${exportCode}-${state.data.product_id}.xlsx`;
       $("downloadJson").onclick=()=>downloadFile("json",$("downloadJson"));
       $("downloadExcel").onclick=()=>downloadFile("xlsx",$("downloadExcel"));
-      const image=state.data.product_image||""; $("productImage").src=image; $("productThumb").src=image;
+      renderGallery();
+      if(state.data.description){$("descriptionBody").innerHTML=state.data.description; $("descriptionSection").style.display="block"}
       renderLinkedSwitch(); renderAttributeFields();
       updatePrice();
       if(state.data.product_id==="4"){$("scrapeStatus").style.display="flex";updateScrapeStatus();setInterval(updateScrapeStatus,5000)}
@@ -100,6 +105,10 @@
         const payload={
           metadata:{source_url:state.data.source_url,exported_at_utc:new Date().toISOString(),product_id:state.productId,product_code:state.data.product_code,product_name:state.data.product_name,mode:"interactive_loaded_data",currency:"USD",valid_price_rows:prices.length,invalid_rows:0},
           default_selection:currentSelection,
+          description:state.data.description||"",
+          product_image:state.data.product_image||"",
+          images:state.data.images||[],
+          video:state.data.video||"",
           attributes,
           prices,
           errors:[]
@@ -133,6 +142,17 @@
       }
       refreshFields();
       document.querySelectorAll("select[data-attr]").forEach(s=>s.addEventListener("change",()=>{state.changed=s.dataset.attr;state.selection[`attr${s.dataset.attr}`]=s.value; refreshFields(s.dataset.attr); clearTimeout(state.timer); state.timer=setTimeout(updatePrice,250)}));
+    }
+    function renderGallery(){
+      const gallery=(state.data.images&&state.data.images.length?state.data.images:[state.data.product_image]).filter(Boolean);
+      if(!gallery.length)return;
+      $("productImage").src=gallery[0];
+      $("thumbsRow").innerHTML=gallery.map((url,i)=>`<img src="${esc(url)}" class="thumb${i===0?" active":""}" data-src="${esc(url)}">`).join("");
+      $("thumbsRow").querySelectorAll(".thumb").forEach(t=>t.onclick=()=>{
+        $("productImage").src=t.dataset.src;
+        $("thumbsRow").querySelectorAll(".thumb").forEach(x=>x.classList.remove("active"));
+        t.classList.add("active");
+      });
     }
     function renderLinkedSwitch(){
       const sw=state.data.linked_switch;if(!sw)return;

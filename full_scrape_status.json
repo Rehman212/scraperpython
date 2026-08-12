@@ -5,7 +5,7 @@
   "finished_this_run": 694,
   "valid_this_run": 693,
   "invalid_this_run": 1,
-  "transient_retries": 41,
-  "requests_per_second": 0.03,
-  "updated_at": 1786544867
+  "transient_retries": 53,
+  "requests_per_second": 0.02,
+  "updated_at": 1786551252
 }

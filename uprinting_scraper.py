@@ -72,6 +72,9 @@ class UPrintingScraper:
         self.page_html = ""
         self.linked_calculators: list[dict[str, Any]] = []
         self.price_options: dict[str, Any] = {}
+        self.description = ""
+        self.images: list[str] = []
+        self.video = ""
 
     def load(self) -> None:
         LOG.info("Product page download ho raha hai: %s", self.url)
@@ -146,6 +149,50 @@ class UPrintingScraper:
                 clean_defaults[key] = candidate
         self.defaults = clean_defaults
         self.linked_calculators = self._parse_linked_calculators(html)
+        self.description = self._extract_description(html)
+        self.images, self.video = self._extract_gallery(html)
+
+    @staticmethod
+    def _extract_balanced_div(html: str, open_tag_pattern: str) -> str:
+        """Return the inner HTML of the first div matching open_tag_pattern, tracking nested <div> depth."""
+        match = re.search(open_tag_pattern, html)
+        if not match:
+            return ""
+        pos = match.end()
+        depth = 1
+        content_end = -1
+        while depth > 0:
+            next_open = html.find("<div", pos)
+            next_close = html.find("</div>", pos)
+            if next_close == -1:
+                return ""
+            if next_open != -1 and next_open < next_close:
+                depth += 1
+                pos = next_open + len("<div")
+            else:
+                depth -= 1
+                content_end = next_close
+                pos = next_close + len("</div>")
+        return html[match.end():content_end].strip()
+
+    def _extract_description(self, html: str) -> str:
+        """Return the Overview tab's product description HTML block, if present."""
+        return self._extract_balanced_div(html, r'<div\s+class="overview-product-region">')
+
+    def _extract_gallery(self, html: str) -> tuple[list[str], str]:
+        """Return the product's gallery image URLs (highest-res) and a video URL, if present."""
+        block = self._extract_balanced_div(html, r"<div\s+product-gallery-widget\s+class=\"product-gallery-widget[^\"]*\">")
+        if not block:
+            return [], ""
+        images: list[str] = []
+        seen = set()
+        for url in re.findall(r'image-zoom="([^"]+)"', block):
+            if url not in seen:
+                seen.add(url)
+                images.append(url)
+        video_match = re.search(r'(https?:[^\s"\']+(?:youtube\.com/embed|player\.vimeo\.com/video|\.mp4)[^\s"\']*)', block, re.I)
+        video = video_match.group(1).replace("\\/", "/") if video_match else ""
+        return images, video
 
     def _parse_linked_calculators(self, html: str) -> list[dict[str, Any]]:
         """Return page-level calculator switches such as 25/50 Sheets."""
@@ -400,6 +447,10 @@ def build_export(scraper: UPrintingScraper, mode: str, prices: list[dict[str, An
         # Export callers may add synthetic fields (for example a linked
         # calculator selector). Never let that mutate the live scraper state.
         "default_selection": dict(scraper.defaults),
+        "description": scraper.description,
+        "product_image": scraper.product_image,
+        "images": list(scraper.images),
+        "video": scraper.video,
         "attributes": scraper.attributes(),
         "prices": prices,
         "errors": errors,
