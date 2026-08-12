@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+test-temp*/
+pytest-cache-files-*/
+*.sqlite-shm
+*.sqlite-wal
+.env
+.env.*

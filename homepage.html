@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create UPrinting Product Preview</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f5f3;color:#152019}
+    .top{height:44px;background:linear-gradient(90deg,#073a5b,#004b2e);color:#fff;display:grid;place-items:center;font-size:14px}
+    header{height:90px;background:#fff;border-bottom:1px solid #ddd;display:flex;align-items:center;padding:0 max(24px,calc((100vw - 1100px)/2))}
+    .logo{font-size:38px;color:#075b91;letter-spacing:-2px}.logo b{color:#176b37}
+    main{max-width:850px;margin:80px auto;padding:0 22px;text-align:center}h1{font:700 48px/1.1 Georgia,serif;margin:0 0 15px}p{color:#637068;font-size:17px}
+    .box{margin-top:35px;background:#fff;border:1px solid #dce3dd;padding:32px;box-shadow:0 16px 45px #14201714;text-align:left}
+    label{font-weight:700;display:block;margin-bottom:10px}form{display:flex;gap:10px}input{height:52px;flex:1;border:2px solid #d5dcd7;padding:0 15px;font-size:16px}input:focus{outline:none;border-color:#14733a}
+    button{height:52px;border:0;background:#107333;color:white;font-weight:700;padding:0 27px;cursor:pointer;min-width:170px}button:disabled{opacity:.6;cursor:wait}
+    .status{min-height:25px;margin-top:15px;color:#5c6860}.error{color:#b22424}.success{color:#107333}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px;text-align:left}.step{background:#fff;border:1px solid #e0e5e1;padding:20px}.step b{display:block;color:#107333;margin-bottom:7px}
+    @media(max-width:650px){h1{font-size:35px}form{display:block}button,input{width:100%;margin-bottom:10px}.steps{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top">High Quality &nbsp; | &nbsp; On Time Delivery &nbsp; | &nbsp; Live Product Pricing</div>
+  <header><div class="logo">U<b>Printing</b> Preview Builder</div></header>
+  <main>
+    <h1>Create a product from its URL</h1>
+    <p>Paste any UPrinting product-page URL. Its live options, IDs, dependency rules and prices will be loaded into a new interactive product preview.</p>
+    <div class="box">
+      <label for="url">UPrinting product URL</label>
+      <form id="form">
+        <input id="url" type="url" required value="https://www.uprinting.com/brochure-printing.html" placeholder="https://www.uprinting.com/product.html">
+        <button id="submit">CREATE PRODUCT</button>
+      </form>
+      <div class="status" id="status"></div>
+    </div>
+    <div class="steps"><div class="step"><b>1. Fetch</b>Product calculator and metadata are fetched live.</div><div class="step"><b>2. Build</b>Fields and conditional options are generated automatically.</div><div class="step"><b>3. Price</b>Every selection requests the current live price.</div></div>
+  </main>
+  <script>
+    const form=document.getElementById("form"),status=document.getElementById("status"),button=document.getElementById("submit");
+    form.onsubmit=async e=>{e.preventDefault();button.disabled=true;status.className="status";status.textContent="Fetching product configuration and building preview…";
+      try{const r=await fetch("/api/load-product",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url:document.getElementById("url").value})});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||`HTTP ${r.status}`);status.className="status success";status.textContent=`Created ${d.product_name} (${d.attributes} attributes). Opening…`;setTimeout(()=>location.href=d.redirect,500)}
+      catch(err){status.className="status error";status.textContent=err.message;button.disabled=false}}
+  </script>
+</body>
+</html>

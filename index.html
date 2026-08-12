@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brochures | Product Preview</title>
+  <style>
+    :root{--blue:#075b91;--navy:#073d59;--green:#08722f;--line:#dedede;--ink:#111;--muted:#666;--soft:#f8f8f8}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white}
+    .quality{height:44px;background:linear-gradient(90deg,#073a5b,#004b2e);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;word-spacing:4px}
+    .head{height:92px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:42px;padding:0 max(24px,calc((100vw - 1240px)/2))}
+    .logo{font-size:36px;color:var(--blue);letter-spacing:-2px;white-space:nowrap}.logo b{color:#166a36}.logo small{display:block;font:10px Georgia;color:#888;letter-spacing:0;margin-left:37px;margin-top:-8px}
+    .phone{font-size:14px;color:#333;white-space:nowrap}.phone b{display:block;color:var(--blue);font-size:15px}
+    .search{height:42px;border:1px solid var(--blue);display:flex;align-items:center;flex:1;max-width:510px;padding:0 13px;color:#555}.search span{margin-left:auto;background:var(--blue);color:#fff;padding:10px 15px;margin-right:-13px}
+    .account{margin-left:auto;white-space:nowrap}.account b{color:var(--blue)}
+    nav{height:56px;display:flex;justify-content:center;gap:66px;align-items:center;border-bottom:1px solid var(--line);box-shadow:0 2px 4px #00000012;color:var(--blue);font-weight:700}
+    .scrape-status{max-width:1240px;margin:14px auto 0;padding:11px 16px;background:#eef7f1;border:1px solid #b9ddc4;color:#145d2d;display:none;gap:16px;align-items:center;font-size:13px}
+    .scrape-status strong{white-space:nowrap}.progress-track{height:7px;background:#d7e7dc;flex:1;border-radius:10px;overflow:hidden}.progress-bar{height:100%;width:0;background:#11813d;transition:width .4s}.scrape-meta{white-space:nowrap;color:#496151}
+    main{max-width:1240px;margin:auto;padding:22px 0 60px}.crumbs{color:#555;font-size:13px;margin-bottom:22px}.crumbs a{color:#6b5b4c;margin-right:8px}
+    .product{display:grid;grid-template-columns:510px 1fr;gap:48px}.gallery-main{height:505px;border:1px solid var(--line);background:#f2f0ec;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .gallery-main img{width:100%;height:100%;object-fit:cover}.thumbs{display:flex;gap:14px;margin-top:16px;align-items:center}.thumb{width:104px;height:102px;border:1px solid var(--line);object-fit:cover;padding:3px}.thumb.active{border:2px solid var(--green)}
+    h1{font-size:34px;margin:0 0 2px}.rating{margin-bottom:18px}.stars{color:#ff8500;font-size:20px;letter-spacing:-3px}.share{float:right;color:#76604b;text-decoration:underline;font:italic 15px Georgia;margin-top:-20px}
+    .calculator{border:1px solid var(--line);padding:32px 36px 26px}.field{display:grid;grid-template-columns:190px 1fr;align-items:center;margin-bottom:16px}.field label{font-size:16px;font-weight:700}.field select{width:100%;height:43px;border:1px solid var(--line);background:#fff;padding:0 15px;font-size:16px;color:#181818}
+    .price-box{background:var(--soft);padding:22px 32px;margin-top:12px}.price-box .field{grid-template-columns:180px 1fr}.total{text-align:right;margin-top:14px;font-size:17px;font-weight:700}.total strong{color:var(--green);font-size:28px;margin-left:25px}.each{text-align:right;font-size:14px;margin-top:-4px}.loading{color:#777}.error{color:#b22525;text-align:right;margin-top:8px;font-size:13px}
+    .ids{margin-top:14px;padding-top:13px;border-top:1px dashed #ddd;color:#777;font:12px Consolas,monospace;word-break:break-all}.actions{display:flex;gap:12px;margin-top:20px}.actions button{height:45px;border:0;padding:0 24px;font-weight:bold;cursor:pointer}.primary{background:#08722f;color:#fff}.secondary{background:#eee;color:#222}
+    @media(max-width:900px){.head{padding:0 16px}.phone,.account,.search,nav{display:none}main{padding:18px}.product{grid-template-columns:1fr}.gallery-main{height:auto;aspect-ratio:1}.field{grid-template-columns:1fr;gap:7px}.calculator{padding:22px}.share{display:none}}
+  </style>
+</head>
+<body>
+  <div class="quality">High Quality &nbsp;|&nbsp; On Time Delivery &nbsp;|&nbsp; Everyday Fair Prices</div>
+  <div class="head">
+    <div class="logo">U<b>Printing</b><small>Business made brilliant</small></div>
+    <div class="phone"><b>888.888.4211</b>Quality Customer Service</div>
+    <div class="search">Search (e.g. labels, boxes, etc)<span>⌕</span></div>
+    <div class="account">Hi, Log In!<br><b>Your Account</b> &nbsp; 🛒 Cart</div>
+  </div>
+  <nav><span>Marketing Materials</span><span>Stickers & Labels</span><span>Boxes & Packaging</span><span>Signs & Banners</span><span>Apparel & Promo</span></nav>
+  <div class="scrape-status" id="scrapeStatus"><strong>Full matrix:</strong><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div><span class="scrape-meta" id="progressText">Checking…</span></div>
+  <main>
+    <div class="crumbs"><a href="/homepage.html">Create Product</a> / &nbsp;<a id="sourceCrumb" target="_blank">UPrinting</a> / &nbsp;<span id="crumbName">Product</span></div>
+    <div class="product">
+      <section>
+        <div class="gallery-main"><img id="productImage" alt="Product image"></div>
+        <div class="thumbs"><span style="font-size:38px;color:#aaa">‹</span><img id="productThumb" class="thumb active"><div class="thumb" style="display:grid;place-items:center;font-size:32px;background:#eee">▶</div><div class="thumb" id="productCode" style="display:grid;place-items:center;background:#f3ddd4">Product</div><span style="font-size:38px">›</span></div>
+      </section>
+      <section>
+        <h1 id="productName">Brochures</h1>
+        <div class="rating"><span class="stars">★★★★★</span> &nbsp;4.5 (1,122 Reviews)</div>
+        <a class="share">♧ &nbsp; Share Product</a>
+        <div class="calculator">
+          <div id="regularFields"></div>
+          <div class="price-box">
+            <div id="priceFields"></div>
+            <div class="total">Printing Cost: <strong id="price">—</strong></div>
+            <div class="each" id="unitPrice"></div>
+            <div class="error" id="error"></div>
+          </div>
+          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    const state={data:null,selection:{},timer:null,request:0,changed:""};
+    const $=id=>document.getElementById(id);
+    const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const money=v=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(Number(v));
+    async function init(){
+      const r=await fetch("/api/config",{cache:"no-store"}); state.data=await r.json(); state.selection={...state.data.default_selection};
+      // A shared configuration can be reproduced exactly with ?attr1=...&attr3=...
+      for(const [key,value] of new URLSearchParams(location.search))if(/^attr\d+$/.test(key))state.selection[key]=value;
+      $("productName").textContent=state.data.product_name;
+      document.title=`${state.data.product_name} | Product Preview`;
+      $("crumbName").textContent=state.data.product_name; $("sourceCrumb").href=state.data.source_url;
+      $("productCode").textContent=state.data.product_code||"Product";
+      const image=state.data.product_image||""; $("productImage").src=image; $("productThumb").src=image;
+      const lower=["Quantity","Printing Time"];
+      for(const attr of state.data.attributes){
+        const holder=lower.includes(attr.name)?$("priceFields"):$("regularFields");
+        const el=document.createElement("div"); el.className="field";
+        el.dataset.attribute=attr.attribute_id;
+        el.innerHTML=`<label>${esc(attr.name)}:</label><select data-attr="${esc(attr.attribute_id)}"></select>`;
+        holder.appendChild(el);
+      }
+      refreshFields();
+      document.querySelectorAll("select[data-attr]").forEach(s=>s.addEventListener("change",()=>{state.changed=s.dataset.attr;state.selection[`attr${s.dataset.attr}`]=s.value; refreshFields(s.dataset.attr); clearTimeout(state.timer); state.timer=setTimeout(updatePrice,250)}));
+      updatePrice();
+      if(state.data.product_id==="4"){$("scrapeStatus").style.display="flex";updateScrapeStatus();setInterval(updateScrapeStatus,5000)}
+    }
+    async function updateScrapeStatus(){
+      try{
+        const r=await fetch("full_scrape_status.json",{cache:"no-store"}); if(!r.ok)throw Error(); const s=await r.json();
+        const total=994644, finished=(s.already_complete||0)+(s.finished_this_run||0), pct=Math.min(100,finished/total*100);
+        $("progressBar").style.width=`${pct}%`;
+        $("progressText").textContent=s.status==="complete"?`Complete • ${finished.toLocaleString()} rows`:`${finished.toLocaleString()} / ${total.toLocaleString()} • ${pct.toFixed(2)}% • ${s.requests_per_second||0}/sec`;
+      }catch{$("progressText").textContent="Status unavailable"}
+    }
+    function ruleMatches(rule){return Object.entries(rule).every(([attr,value])=>state.selection[`attr${attr}`]===String(value))}
+    function isExcluded(rules){return (rules||[]).some(ruleMatches)}
+    function refreshFields(changedAttr=""){
+      // UPrinting exception rules hide fields/options when their condition matches.
+      // Repeat because correcting one dependent value can affect the next field.
+      for(let pass=0;pass<4;pass++){
+        let corrected=false;
+        for(const attr of state.data.attributes){
+          const row=document.querySelector(`[data-attribute="${attr.attribute_id}"]`), select=row.querySelector("select");
+          const hidden=isExcluded(attr.exceptions?.["-1"]); row.style.display=hidden?"none":"grid"; select.disabled=hidden;
+          if(hidden)continue;
+          const available=attr.options.filter(o=>!isExcluded(attr.exceptions?.[o.option_id]));
+          let selected=state.selection[`attr${attr.attribute_id}`];
+          if(!available.some(o=>o.option_id===selected)){
+            const fallback=available.find(o=>o.option_id===attr.default_option_id)||available[0];
+            if(fallback){selected=fallback.option_id;state.selection[`attr${attr.attribute_id}`]=selected;corrected=true}
+          }
+          select.innerHTML=available.map(o=>`<option value="${esc(o.option_id)}" ${selected===o.option_id?"selected":""}>${esc(o.label)}</option>`).join("");
+        }
+        if(!corrected)break;
+      }
+    }
+    async function updatePrice(){
+      const current=++state.request; $("price").innerHTML='<span class="loading">Calculating…</span>'; $("unitPrice").textContent=""; $("error").textContent="";
+      try{
+        const r=await fetch("/api/price",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({selection:state.selection,changed_attribute_id:state.changed})}); const d=await r.json();
+        if(current!==state.request)return; if(!r.ok||!d.ok)throw Error(d.error||`HTTP ${r.status}`);
+        $("price").textContent=money(d.price); $("unitPrice").textContent=`(${money(d.unit_price)} for each)`;
+        state.selection={...state.selection,...d.normalized_selection};
+        for(const [key,value] of Object.entries(d.price_data||{}))if(/^attr\d+$/.test(key))state.selection[key]=String(value);
+        state.changed="";
+        refreshFields();
+      }catch(e){if(current===state.request){$("price").textContent="Unavailable";$("error").textContent=e.message}}
+    }
+    init().catch(e=>{$("error").textContent=`Data load failed: ${e.message}`});
+  </script>
+</body>
+</html>
