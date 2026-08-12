@@ -57,13 +57,14 @@
             <div class="each" id="unitPrice"></div>
             <div class="error" id="error"></div>
           </div>
-          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button><a id="downloadJson" class="download" href="/api/export?format=json" download>DOWNLOAD JSON</a><a id="downloadExcel" class="download" href="/api/export?format=xlsx" download>DOWNLOAD EXCEL</a></div>
+          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button><button type="button" id="downloadJson" class="download">DOWNLOAD JSON</button><button type="button" id="downloadExcel" class="download">DOWNLOAD EXCEL</button></div>
+          <div class="error" id="downloadStatus"></div>
         </div>
       </section>
     </div>
   </main>
   <script>
-    const state={data:null,selection:{},timer:null,request:0,changed:"",productId:""};
+    const state={data:null,selection:{},timer:null,request:0,changed:"",productId:"",capturedPrices:new Map()};
     const $=id=>document.getElementById(id);
     const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     const money=v=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(Number(v));
@@ -78,12 +79,47 @@
       const exportCode=String(state.data.product_code||"product").replace(/[^a-zA-Z0-9_-]+/g,"-").replace(/^-|-$/g,"").toLowerCase();
       // A completed product-specific export is served directly; new products use
       // the export endpoint, which creates their separate files on first click.
-      $("downloadJson").download=`${exportCode}-${state.data.product_id}.printoe.json`;
-      $("downloadExcel").download=`${exportCode}-${state.data.product_id}.xlsx`;
+      $("downloadJson").dataset.filename=`${exportCode}-${state.data.product_id}.printoe.json`;
+      $("downloadExcel").dataset.filename=`${exportCode}-${state.data.product_id}.xlsx`;
+      $("downloadJson").onclick=()=>downloadFile("json",$("downloadJson"));
+      $("downloadExcel").onclick=()=>downloadFile("xlsx",$("downloadExcel"));
       const image=state.data.product_image||""; $("productImage").src=image; $("productThumb").src=image;
       renderLinkedSwitch(); renderAttributeFields();
       updatePrice();
       if(state.data.product_id==="4"){$("scrapeStatus").style.display="flex";updateScrapeStatus();setInterval(updateScrapeStatus,5000)}
+    }
+    async function downloadFile(format,button){
+      const status=$("downloadStatus"), original=button.textContent;
+      if(format==="json"){
+        const currentSelection=Object.fromEntries(Object.entries(state.selection).filter(([key])=>/^attr\d+$/.test(key)));
+        const attributes=state.data.attributes.map(attribute=>({
+          ...attribute,
+          default_option_id:currentSelection[`attr${attribute.attribute_id}`]??attribute.default_option_id,
+          options:attribute.options.map(option=>({...option,default:option.option_id===currentSelection[`attr${attribute.attribute_id}`]}))
+        })), prices=[...state.capturedPrices.values()];
+        const payload={
+          metadata:{source_url:state.data.source_url,exported_at_utc:new Date().toISOString(),product_id:state.productId,product_code:state.data.product_code,product_name:state.data.product_name,mode:"interactive_loaded_data",currency:"USD",valid_price_rows:prices.length,invalid_rows:0},
+          default_selection:currentSelection,
+          attributes,
+          prices,
+          errors:[]
+        };
+        const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),link=document.createElement("a");
+        link.href=url;link.download=button.dataset.filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+        status.style.color="#08722f";status.textContent=`Downloaded instantly: ${button.dataset.filename} (${prices.length} loaded price combination${prices.length===1?"":"s"})`;
+        return;
+      }
+      button.disabled=true;button.textContent="PREPARING…";status.textContent="Scraping all valid variations. File download will start automatically when ready.";
+      try{
+        const response=await fetch(`/api/export?format=${encodeURIComponent(format)}&product=${encodeURIComponent(state.productId)}`,{cache:"no-store"});
+        if(!response.ok){let message=`Export failed (HTTP ${response.status})`;try{const data=await response.json();message=data.error||message}catch{}throw Error(message)}
+        const blob=await response.blob(), disposition=response.headers.get("Content-Disposition")||"";
+        const match=disposition.match(/filename="?([^";]+)"?/i), filename=match?.[1]||button.dataset.filename;
+        const url=URL.createObjectURL(blob), link=document.createElement("a");
+        link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+        status.style.color="#08722f";status.textContent=`Downloaded: ${filename}`;
+      }catch(error){status.style.color="#c00";status.textContent=error.message}
+      finally{button.disabled=false;button.textContent=original}
     }
     function renderAttributeFields(){
       $("regularFields").innerHTML=""; $("priceFields").innerHTML="";
@@ -146,6 +182,11 @@
         $("price").textContent=money(d.price); $("unitPrice").textContent=`(${money(d.unit_price)} for each)`;
         state.selection={...state.selection,...d.normalized_selection};
         for(const [key,value] of Object.entries(d.price_data||{}))if(/^attr\d+$/.test(key))state.selection[key]=String(value);
+        const selection=Object.fromEntries(Object.entries(state.selection).filter(([key])=>/^attr\d+$/.test(key)));
+        const display={};
+        for(const attr of state.data.attributes){const option=attr.options.find(item=>item.option_id===selection[`attr${attr.attribute_id}`]);if(option)display[attr.attribute_id]={name:attr.name,label:option.label,option_id:option.option_id}}
+        const captured={selection,display,price:d.price,original_price:d.price,total_price:d.price,unit_price:d.unit_price,currency:"USD",quantity:d.quantity,turnaround_days:d.turnaround_days,in_stock:true};
+        state.capturedPrices.set(JSON.stringify(Object.entries(selection).sort()),captured);
         state.changed="";
         refreshFields();
       }catch(e){if(current===state.request){$("price").textContent="Unavailable";$("error").textContent=e.message}}

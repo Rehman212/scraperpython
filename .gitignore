@@ -6,3 +6,4 @@ pytest-cache-files-*/
 *.sqlite-wal
 .env
 .env.*
+chrome-discount-debug/

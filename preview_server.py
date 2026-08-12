@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import socket
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -22,20 +23,55 @@ EXPORT_DIR = ROOT / "exports"
 EXPORT_LOCK = threading.Lock()
 
 
+class PreviewHTTPServer(ThreadingHTTPServer):
+    """Prevent two preview instances from silently sharing port 8877 on Windows."""
+    daemon_threads = True
+    allow_reuse_address = False
+
+    def server_bind(self) -> None:
+        if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
+
+
 def scraper_cache(scraper: UPrintingScraper) -> dict:
     return {
         "product_id": scraper.product_id, "defaults": scraper.defaults,
         "visible_attr_ids": scraper.visible_attr_ids, "catalog": scraper.catalog,
         "product_image": scraper.product_image,
+        "price_options": scraper.price_options,
     }
 
 
 def scraper_from_cache(parent: UPrintingScraper, data: dict) -> UPrintingScraper:
     item = UPrintingScraper(parent.url, parent.timeout)
     item.api_url, item.auth = parent.api_url, parent.auth
-    for key in ("product_id", "defaults", "visible_attr_ids", "catalog", "product_image"):
-        setattr(item, key, data[key])
+    for key in ("product_id", "defaults", "visible_attr_ids", "catalog", "product_image", "price_options"):
+        if key in data:
+            setattr(item, key, data[key])
     return item
+
+
+def migrate_cached_pricing(scraper: UPrintingScraper) -> None:
+    """Bring legacy preview caches in line with the current storefront calculator."""
+    if "calculator.uprinting.com" in scraper.api_url:
+        scraper.api_url = scraper.api_url.replace(
+            "calculator.uprinting.com", "calculator.digitalroom.com", 1
+        )
+    if not scraper.price_options:
+        visible = set(map(str, scraper.visible_attr_ids))
+        calc_attrs = [
+            str(attr_id) for attr_id in scraper.catalog.get("prod_attrs", {})
+            if str(attr_id) not in visible and f"attr{attr_id}" in scraper.defaults
+        ]
+        if calc_attrs:
+            scraper.price_options = {
+                "calc_attrs_option": 1,
+                "calc_attrs": calc_attrs,
+                "use_default": "y",
+                "override_invalid_spec": True,
+                "get_shipping_base_price": True,
+            }
 
 
 def _rule_matches(rule: dict, selection: dict[str, str]) -> bool:
@@ -215,6 +251,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                         "defaults": candidate.defaults, "visible_attr_ids": candidate.visible_attr_ids,
                         "catalog": candidate.catalog, "product_image": candidate.product_image,
                         "linked_calculators": candidate.linked_calculators,
+                        "price_options": candidate.price_options,
                         "variants": {key: scraper_cache(value) for key, value in VARIANT_SCRAPERS.items()},
                     }), encoding="utf-8")
                 self._json(200, {
@@ -258,14 +295,26 @@ class PreviewHandler(SimpleHTTPRequestHandler):
             else:
                 normalized = dict(price_scraper.defaults); normalized.update(safe_selection); safe_selection = normalized
             result = price_scraper.price(safe_selection)
+            effective_price = result.get("discounted_price")
+            if effective_price is None:
+                effective_price = result.get("price")
+            quantity = result.get("qty")
+            try:
+                effective_unit_price = float(effective_price) / float(quantity) if float(quantity) else result.get("unit_price")
+            except (TypeError, ValueError, ZeroDivisionError):
+                effective_unit_price = result.get("discounted_unit_price", result.get("unit_price"))
             payload = {
                 "ok": True,
-                "price": result.get("price"),
-                "unit_price": result.get("unit_price"),
-                "quantity": result.get("qty"),
+                "price": effective_price,
+                "unit_price": effective_unit_price,
+                "quantity": quantity,
                 "turnaround_days": result.get("turnaround"),
                 "display_specs": result.get("display_specs", []),
                 "price_data": result.get("price_data", {}),
+                "pricing_debug": {
+                    key: value for key, value in result.items()
+                    if "price" in str(key).lower() or "discount" in str(key).lower()
+                },
                 "normalized_selection": safe_selection,
             }
             self._json(200, payload)
@@ -296,15 +345,17 @@ def main() -> None:
         try:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             if cached.get("url") == SCRAPER.url:
-                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators"):
-                    setattr(SCRAPER, key, cached[key])
+                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options"):
+                    if key in cached:
+                        setattr(SCRAPER, key, cached[key])
+                migrate_cached_pricing(SCRAPER)
                 cached_variants = cached.get("variants", {})
                 VARIANT_SCRAPERS = {
                     str(key): scraper_from_cache(SCRAPER, value)
                     for key, value in cached_variants.items()
                 } or {SCRAPER.product_id: SCRAPER}
                 VARIANT_SCRAPERS[SCRAPER.product_id] = SCRAPER
-                server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
+                server = PreviewHTTPServer(("127.0.0.1", 8877), PreviewHandler)
                 print(f"Cached active product loaded: {SCRAPER.catalog.get('product_name')}")
                 print("Preview ready: http://127.0.0.1:8877/index.html")
                 server.serve_forever(); return
@@ -318,6 +369,7 @@ def main() -> None:
             "defaults": SCRAPER.defaults, "visible_attr_ids": SCRAPER.visible_attr_ids,
             "catalog": SCRAPER.catalog, "product_image": SCRAPER.product_image,
             "linked_calculators": SCRAPER.linked_calculators,
+            "price_options": SCRAPER.price_options,
         }), encoding="utf-8")
     except Exception as exc:
         export_path = EXPORT_DIR / "bic3x3stickynotes-2539.printoe.json"
@@ -328,17 +380,19 @@ def main() -> None:
                 print(f"Live reload failed ({exc}); offline exact-price export loaded.")
         if not CONFIG_CACHE_FILE.exists():
             if OFFLINE_EXPORT is None: raise
-            server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
+            server = PreviewHTTPServer(("127.0.0.1", 8877), PreviewHandler)
             print("Preview ready: http://127.0.0.1:8877/index.html")
             server.serve_forever(); return
         if OFFLINE_EXPORT is None:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             SCRAPER = UPrintingScraper(cached["url"])
-            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators"):
-                setattr(SCRAPER, key, cached[key])
+            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options"):
+                if key in cached:
+                    setattr(SCRAPER, key, cached[key])
+            migrate_cached_pricing(SCRAPER)
             print(f"Live reload failed ({exc}); cached product configuration loaded.")
     VARIANT_SCRAPERS = load_variants(SCRAPER)
-    server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
+    server = PreviewHTTPServer(("127.0.0.1", 8877), PreviewHandler)
     print("Preview ready: http://127.0.0.1:8877/index.html")
     server.serve_forever()
 

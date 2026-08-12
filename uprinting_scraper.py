@@ -71,6 +71,7 @@ class UPrintingScraper:
         self.product_image = ""
         self.page_html = ""
         self.linked_calculators: list[dict[str, Any]] = []
+        self.price_options: dict[str, Any] = {}
 
     def load(self) -> None:
         LOG.info("Product page download ho raha hai: %s", self.url)
@@ -93,6 +94,16 @@ class UPrintingScraper:
             html,
             "calculator API URL",
         ).replace("\\/", "/")
+        # The page's legacy inline config can still name calculator.uprinting.com,
+        # while the live calculator bundle routes requests to the current pricing
+        # service.  The legacy host can return an older grid (e.g. $46.76 instead
+        # of the storefront's $40.86 for Foam Boards).
+        if self.api_url.startswith("https://calculator.uprinting.com/"):
+            self.api_url = self.api_url.replace(
+                "https://calculator.uprinting.com/",
+                "https://calculator.digitalroom.com/",
+                1,
+            )
         key = _first(r"clients\s*:\s*\{\s*key\s*:\s*[\"']([^\"']+)", html, "API client key")
         secret = _first(r"secret\s*:\s*[\"']([^\"']+)", html, "API client secret")
         self.auth = "Basic " + base64.b64encode(f"{key}:{secret}".encode()).decode()
@@ -102,6 +113,16 @@ class UPrintingScraper:
             pricing = json.loads(pricing_match.group(1))
             initial = pricing.get("request", {}).get("initial_price_data", {})
             normalized = pricing.get("response", {}).get("price", {}).get("price_data", {})
+            # These calculator switches are not regular attributes, but some
+            # products require them to reproduce the storefront price.
+            self.price_options = {
+                key: normalized[key]
+                for key in (
+                    "calc_attrs_option", "calc_attrs", "use_default",
+                    "override_invalid_spec", "get_shipping_base_price",
+                )
+                if key in normalized
+            }
             if normalized:
                 initial = {**initial, **{k: v for k, v in normalized.items() if str(k).startswith("attr")}}
         else:
@@ -240,11 +261,20 @@ class UPrintingScraper:
 
     def price(self, selection: dict[str, str]) -> dict[str, Any]:
         payload = self._base_payload()
+        payload.update(self.price_options)
         payload.update(selection)
         return self._post("computePrice", payload)
 
     def _priced_row(self, selection: dict[str, str], changed: str = "") -> dict[str, Any]:
         response = self.price(selection)
+        effective_price = response.get("discounted_price")
+        if effective_price is None:
+            effective_price = response.get("price")
+        quantity = response.get("qty")
+        try:
+            effective_unit_price = float(effective_price) / float(quantity) if float(quantity) else response.get("unit_price")
+        except (TypeError, ValueError, ZeroDivisionError):
+            effective_unit_price = response.get("discounted_unit_price", response.get("unit_price"))
         display = {
             str(item["attribute_id"]): {
                 "name": item.get("attribute_name", ""),
@@ -257,11 +287,11 @@ class UPrintingScraper:
             "changed_attribute_id": changed,
             "selection": dict(selection),
             "display": display,
-            "price": response.get("price"),
+            "price": effective_price,
             "original_price": response.get("orig_price"),
             "total_price": response.get("total_price"),
-            "unit_price": response.get("unit_price"),
-            "quantity": response.get("qty"),
+            "unit_price": effective_unit_price,
+            "quantity": quantity,
             "turnaround_days": response.get("turnaround"),
             "in_stock": response.get("in_stock_flag"),
             "currency": "USD",
