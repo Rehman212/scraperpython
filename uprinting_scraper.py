@@ -69,12 +69,15 @@ class UPrintingScraper:
         self.visible_attr_ids: list[str] = []
         self.catalog: dict[str, Any] = {}
         self.product_image = ""
+        self.page_html = ""
+        self.linked_calculators: list[dict[str, Any]] = []
 
     def load(self) -> None:
         LOG.info("Product page download ho raha hai: %s", self.url)
         response = self.session.get(self.url, timeout=self.timeout)
         response.raise_for_status()
         html = response.text
+        self.page_html = html
         self.product_id = _first(r"var\s+page_product_id\s*=\s*[\"']?(\d+)", html, "product ID")
         if self.product_id == "0":
             raise ScraperError("Yeh category/landing page hai, configurable product page nahi. Specific product URL dein.")
@@ -121,6 +124,50 @@ class UPrintingScraper:
             if candidate and candidate in values:
                 clean_defaults[key] = candidate
         self.defaults = clean_defaults
+        self.linked_calculators = self._parse_linked_calculators(html)
+
+    def _parse_linked_calculators(self, html: str) -> list[dict[str, Any]]:
+        """Return page-level calculator switches such as 25/50 Sheets."""
+        widget_match = re.search(r"var\s+calculator_widget\s*=\s*JSON\.parse\('((?:\\.|[^'])*)'\)", html, re.S)
+        config_match = re.search(r"var\s+multiCalcConfig\s*=\s*(\{.*?\});\s*multiCalcConfig\.display_type", html, re.S)
+        if not widget_match or not config_match:
+            return []
+        try:
+            encoded = json.loads('"' + widget_match.group(1).replace('"', '\\"').replace('\\"', '\\"') + '"')
+            widgets = json.loads(encoded)
+            config = json.loads(config_match.group(1))
+        except (ValueError, json.JSONDecodeError):
+            # JSON.parse uses a JavaScript string. unicode_escape handles its
+            # escaped quotes on pages where JSON's string decoder is stricter.
+            try:
+                widgets = json.loads(bytes(widget_match.group(1), "utf-8").decode("unicode_escape"))
+                config = json.loads(config_match.group(1))
+            except Exception:
+                return []
+        result = []
+        for option in config.get("calc_switch", []):
+            calc_id = str(option.get("calc_id", ""))
+            widget = widgets.get(calc_id, {})
+            product_id = str(widget.get("product_id", ""))
+            if product_id:
+                result.append({
+                    "calc_id": calc_id,
+                    "product_id": product_id,
+                    "label": str(option.get("label", "")).strip(),
+                    "switch_label": str(config.get("switch_label", "Option")).strip(),
+                    "defaults": {f"attr{x['attribute_id']}": str(x["default_prod_attr_val_id"])
+                                 for x in widget.get("prod_attrs", []) if x.get("default_prod_attr_val_id")},
+                    "visible_attr_ids": [str(x["attribute_id"]) for x in widget.get("prod_attrs", []) if x.get("hide_flag") != "y"],
+                })
+        return result
+
+    def linked_scraper(self, linked: dict[str, Any]) -> "UPrintingScraper":
+        child = UPrintingScraper(self.url, self.timeout)
+        child.api_url, child.auth, child.product_id = self.api_url, self.auth, linked["product_id"]
+        child.product_image, child.page_html = self.product_image, self.page_html
+        child.defaults, child.visible_attr_ids = dict(linked["defaults"]), list(linked["visible_attr_ids"])
+        child.catalog = child._post(f"getData/{child.product_id}", child._base_payload(include_product=False))
+        return child
 
     def _base_payload(self, include_product: bool = True) -> dict[str, Any]:
         payload: dict[str, Any] = {
@@ -150,12 +197,15 @@ class UPrintingScraper:
             if attr.get("hide_attribute_flag") == "y":
                 continue
             values = []
-            for value_id, value in attr.get("prod_attr_vals", {}).items():
+            raw_values = attr.get("prod_attr_vals", {})
+            value_items = raw_values.items() if isinstance(raw_values, dict) else []
+            for value_id, value in value_items:
                 if value.get("hide_attribute_value_flag") == "y" or value.get("custom_flag") == "y":
                     continue
                 # Dynamic-size products expose an internal max-dimension sentinel
                 # alongside the customer-facing "Custom" option. The website hides it.
-                factors = value.get("factors", {})
+                raw_factors = value.get("factors", {})
+                factors = raw_factors if isinstance(raw_factors, dict) else {}
                 if (
                     str(attr_id) == "3"
                     and self.catalog.get("dynamic_size") == "c"
@@ -170,7 +220,7 @@ class UPrintingScraper:
                         "label": value.get("attr_value", ""),
                         "default": self.defaults.get(f"attr{attr_id}") == str(value_id),
                         "sort_order": value.get("sort_order"),
-                        "factors": value.get("factors", {}),
+                        "factors": factors,
                     }
                 )
             values.sort(key=lambda v: (v["sort_order"] is None, v["sort_order"] or 0, v["label"]))
@@ -250,10 +300,27 @@ class UPrintingScraper:
                 f"{count:,} combinations banti hain, limit {max_combinations:,} hai. "
                 "--vary mein kam attribute IDs dein ya --max-combinations barhayein (0 = unlimited)."
             )
-        for values in itertools.product(*option_lists):
-            selection = dict(self.defaults)
-            selection.update({f"attr{attr_id}": option_id for attr_id, option_id in zip(chosen, values)})
-            yield selection, ",".join(chosen)
+        def rule_matches(rule: dict[str, Any], selection: dict[str, str]) -> bool:
+            return all(selection.get(f"attr{k}") == str(v) for k, v in rule.items())
+
+        def walk(index: int, selection: dict[str, str]) -> Iterable[tuple[dict[str, str], str]]:
+            if index == len(chosen):
+                yield dict(selection), ",".join(chosen)
+                return
+            attr_id = chosen[index]
+            raw_attr = self.catalog.get("prod_attrs", {}).get(attr_id, {})
+            exceptions = raw_attr.get("exceptions", {})
+            if any(rule_matches(rule, selection) for rule in exceptions.get("-1", [])):
+                yield from walk(index + 1, selection)
+                return
+            for option_id in option_lists[index]:
+                if any(rule_matches(rule, selection) for rule in exceptions.get(option_id, [])):
+                    continue
+                selection[f"attr{attr_id}"] = option_id
+                yield from walk(index + 1, selection)
+            selection.pop(f"attr{attr_id}", None)
+
+        yield from walk(0, dict(self.defaults))
 
     def scrape_prices(
         self,
@@ -300,7 +367,9 @@ def build_export(scraper: UPrintingScraper, mode: str, prices: list[dict[str, An
             "valid_price_rows": len(prices),
             "invalid_rows": len(errors),
         },
-        "default_selection": scraper.defaults,
+        # Export callers may add synthetic fields (for example a linked
+        # calculator selector). Never let that mutate the live scraper state.
+        "default_selection": dict(scraper.defaults),
         "attributes": scraper.attributes(),
         "prices": prices,
         "errors": errors,

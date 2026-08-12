@@ -1,10 +1,11 @@
 {
   "status": "running",
-  "already_complete": 0,
-  "submitted_this_run": 33415,
-  "finished_this_run": 33400,
-  "valid_this_run": 3497,
-  "invalid_this_run": 29903,
-  "requests_per_second": 16.19,
-  "updated_at": 1786516711
+  "already_complete": 3497,
+  "submitted_this_run": 588,
+  "finished_this_run": 584,
+  "valid_this_run": 584,
+  "invalid_this_run": 0,
+  "transient_retries": 16,
+  "requests_per_second": 0.06,
+  "updated_at": 1786527864
 }

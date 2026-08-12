@@ -58,3 +58,18 @@ python preview_server.py
 ```
 
 Open `http://127.0.0.1:8877/index.html`. Exact configuration IDs query string mein bhi di ja sakti hain, for example `?attr1=69028&attr3=14731&attr4=164`.
+
+## Printoe exact-pricing import
+
+Complete crawler run karein:
+
+```powershell
+python full_scrape.py "UPRINTING_PRODUCT_URL" --database product_prices.sqlite
+```
+
+Crawler resumable SQLite checkpoint rakhta hai. Complete hone par:
+
+- `product_prices.printoe.json` — Printoe admin ke Customer Fields step mein upload karein.
+- `product_prices.xlsx` — review/reporting ke liye.
+
+Printoe mein product Edit → Customer Fields → **Import pricing JSON** → file select → **Update**. Import fields ko populate karta hai aur exact combination prices 500-row chunks mein backend database mein store karta hai. Simple Extra-$ formula imported products ke liye use nahi hota.

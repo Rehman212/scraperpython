@@ -1,0 +1,3930 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/sticky-notepad-3x3.html",
+    "scraped_at_utc": "2026-08-12T08:17:12.911364+00:00",
+    "product_id": "2539",
+    "product_code": "BIC3x3StickyNotes",
+    "product_name": "Sticky Notepad, 3x3, 25 sheets",
+    "mode": "linked_dependency_pruned_exhaustive",
+    "currency": "USD",
+    "valid_price_rows": 22,
+    "invalid_rows": 0
+  },
+  "default_selection": {
+    "attr951": "145684",
+    "attr3": "145685",
+    "attr973": "145666",
+    "attr980": "145667",
+    "attr975": "145669",
+    "attr5": "145670",
+    "attr6": "1092136",
+    "attr0": "2539"
+  },
+  "attributes": [
+    {
+      "attribute_id": "0",
+      "name": "Sheets per Pad",
+      "code": "LINKED_CALCULATOR",
+      "field_type": "buttons",
+      "default_option_id": "2539",
+      "sort_order": 0,
+      "options": [
+        {
+          "option_id": "2539",
+          "source_attr_value_id": "13012",
+          "label": "25 Sheets",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "product_id": "2539",
+            "calc_id": "13012"
+          }
+        },
+        {
+          "option_id": "3164",
+          "source_attr_value_id": "13013",
+          "label": "50 Sheets",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "product_id": "3164",
+            "calc_id": "13013"
+          }
+        }
+      ]
+    },
+    {
+      "attribute_id": "5",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "145670",
+      "sort_order": 6,
+      "options": [
+        {
+          "option_id": "145670",
+          "source_attr_value_id": "93",
+          "label": "250",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "250"
+          }
+        },
+        {
+          "option_id": "145671",
+          "source_attr_value_id": "94",
+          "label": "500",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "500"
+          }
+        },
+        {
+          "option_id": "145672",
+          "source_attr_value_id": "95",
+          "label": "1,000",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "1000"
+          }
+        },
+        {
+          "option_id": "145673",
+          "source_attr_value_id": "274",
+          "label": "1,500",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "1500"
+          }
+        },
+        {
+          "option_id": "145674",
+          "source_attr_value_id": "96",
+          "label": "2,000",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "qty": "2000"
+          }
+        },
+        {
+          "option_id": "145675",
+          "source_attr_value_id": "275",
+          "label": "2,500",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "2500"
+          }
+        },
+        {
+          "option_id": "145676",
+          "source_attr_value_id": "97",
+          "label": "3,000",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "3000"
+          }
+        },
+        {
+          "option_id": "145677",
+          "source_attr_value_id": "276",
+          "label": "3,500",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "3500"
+          }
+        },
+        {
+          "option_id": "145678",
+          "source_attr_value_id": "98",
+          "label": "4,000",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "4000"
+          }
+        },
+        {
+          "option_id": "145679",
+          "source_attr_value_id": "277",
+          "label": "4,500",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "qty": "4500"
+          }
+        },
+        {
+          "option_id": "145680",
+          "source_attr_value_id": "99",
+          "label": "5,000",
+          "default": false,
+          "sort_order": 11,
+          "factors": {
+            "qty": "5000"
+          }
+        },
+        {
+          "option_id": "179051",
+          "source_attr_value_id": "93",
+          "label": "250",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "250"
+          }
+        },
+        {
+          "option_id": "179052",
+          "source_attr_value_id": "94",
+          "label": "500",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "500"
+          }
+        },
+        {
+          "option_id": "179053",
+          "source_attr_value_id": "95",
+          "label": "1,000",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "1000"
+          }
+        },
+        {
+          "option_id": "179054",
+          "source_attr_value_id": "274",
+          "label": "1,500",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "1500"
+          }
+        },
+        {
+          "option_id": "179055",
+          "source_attr_value_id": "96",
+          "label": "2,000",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "qty": "2000"
+          }
+        },
+        {
+          "option_id": "179056",
+          "source_attr_value_id": "275",
+          "label": "2,500",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "2500"
+          }
+        },
+        {
+          "option_id": "179057",
+          "source_attr_value_id": "97",
+          "label": "3,000",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "3000"
+          }
+        },
+        {
+          "option_id": "179058",
+          "source_attr_value_id": "276",
+          "label": "3,500",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "3500"
+          }
+        },
+        {
+          "option_id": "179059",
+          "source_attr_value_id": "98",
+          "label": "4,000",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "4000"
+          }
+        },
+        {
+          "option_id": "179060",
+          "source_attr_value_id": "277",
+          "label": "4,500",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "qty": "4500"
+          }
+        },
+        {
+          "option_id": "179061",
+          "source_attr_value_id": "99",
+          "label": "5,000",
+          "default": false,
+          "sort_order": 11,
+          "factors": {
+            "qty": "5000"
+          }
+        }
+      ]
+    },
+    {
+      "attribute_id": "6",
+      "name": "Turnaround",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "1076179",
+      "sort_order": 7,
+      "options": [
+        {
+          "option_id": "1092136",
+          "source_attr_value_id": "47221",
+          "label": "11 Business Days",
+          "default": true,
+          "sort_order": 5,
+          "factors": {
+            "max_to": "11",
+            "min_to": "11"
+          }
+        },
+        {
+          "option_id": "179062",
+          "source_attr_value_id": "129",
+          "label": "6 Business Days",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "max_to": "6",
+            "min_to": "6"
+          }
+        }
+      ]
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145670",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "145670"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "198.84",
+      "original_price": 198.84,
+      "total_price": "198.84",
+      "unit_price": "0.79536",
+      "quantity": 250,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145671",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "500",
+          "option_id": "145671"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "329.99",
+      "original_price": 329.99,
+      "total_price": "329.99",
+      "unit_price": "0.65998",
+      "quantity": 500,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "92",
+          "attr_val_id": "94",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145672",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1,000",
+          "option_id": "145672"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "567.68",
+      "original_price": 567.68,
+      "total_price": "567.68",
+      "unit_price": "0.56768",
+      "quantity": 1000,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "93",
+          "attr_val_id": "95",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145673",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1,500",
+          "option_id": "145673"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "815.62",
+      "original_price": 815.62,
+      "total_price": "815.62",
+      "unit_price": "0.54375",
+      "quantity": 1500,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "274",
+          "attr_val_id": "274",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145674",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2,000",
+          "option_id": "145674"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "1063.57",
+      "original_price": 1063.57,
+      "total_price": "1063.57",
+      "unit_price": "0.53179",
+      "quantity": 2000,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "94",
+          "attr_val_id": "96",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145675",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2,500",
+          "option_id": "145675"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "1311.51",
+      "original_price": 1311.51,
+      "total_price": "1311.51",
+      "unit_price": "0.52460",
+      "quantity": 2500,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "275",
+          "attr_val_id": "275",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145676",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3,000",
+          "option_id": "145676"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "1529.20",
+      "original_price": 1529.2,
+      "total_price": "1529.20",
+      "unit_price": "0.50973",
+      "quantity": 3000,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "95",
+          "attr_val_id": "97",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145677",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3,500",
+          "option_id": "145677"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "1746.88",
+      "original_price": 1746.88,
+      "total_price": "1746.88",
+      "unit_price": "0.49911",
+      "quantity": 3500,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "276",
+          "attr_val_id": "276",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145678",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4,000",
+          "option_id": "145678"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "1964.58",
+      "original_price": 1964.58,
+      "total_price": "1964.58",
+      "unit_price": "0.49115",
+      "quantity": 4000,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "96",
+          "attr_val_id": "98",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145679",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4,500",
+          "option_id": "145679"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "2182.26",
+      "original_price": 2182.26,
+      "total_price": "2182.26",
+      "unit_price": "0.48495",
+      "quantity": 4500,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "277",
+          "attr_val_id": "277",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "145680",
+        "attr6": "1092136",
+        "attr0": "2539"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "Souvenir 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "option_id": "145684"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "145685"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "145666"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "145667"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "Full Color Process",
+          "option_id": "145669"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "5,000",
+          "option_id": "145680"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "11 Business Days",
+          "option_id": "1092136"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "25 Sheets",
+          "option_id": "2539"
+        }
+      },
+      "price": "2399.95",
+      "original_price": 2399.95,
+      "total_price": "2399.95",
+      "unit_price": "0.47999",
+      "quantity": 5000,
+      "turnaround_days": 11,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "97",
+          "attr_val_id": "99",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "24471",
+          "attr_val_id": "47221",
+          "attribute_id": "6",
+          "order_spec_option_id": "3019",
+          "order_spec_code": "TA",
+          "order_spec_value": "11 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "14317",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "1908",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A25",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "14323",
+          "attr_val_id": "12723",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BIC® 3\" x 3\" Adhesive Notepad, 25 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179051",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "179051"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "317.30",
+      "original_price": 317.3,
+      "total_price": "317.30",
+      "unit_price": "1.26920",
+      "quantity": 250,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179052",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "500",
+          "option_id": "179052"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "529.22",
+      "original_price": 529.22,
+      "total_price": "529.22",
+      "unit_price": "1.05844",
+      "quantity": 500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "92",
+          "attr_val_id": "94",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179053",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1,000",
+          "option_id": "179053"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "956.90",
+      "original_price": 956.9,
+      "total_price": "956.90",
+      "unit_price": "0.95690",
+      "quantity": 1000,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "93",
+          "attr_val_id": "95",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179054",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1,500",
+          "option_id": "179054"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "1393.05",
+      "original_price": 1393.05,
+      "total_price": "1393.05",
+      "unit_price": "0.92870",
+      "quantity": 1500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "274",
+          "attr_val_id": "274",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179055",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2,000",
+          "option_id": "179055"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "1829.19",
+      "original_price": 1829.19,
+      "total_price": "1829.19",
+      "unit_price": "0.91460",
+      "quantity": 2000,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "94",
+          "attr_val_id": "96",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179056",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2,500",
+          "option_id": "179056"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "2265.33",
+      "original_price": 2265.33,
+      "total_price": "2265.33",
+      "unit_price": "0.90613",
+      "quantity": 2500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "275",
+          "attr_val_id": "275",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179057",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3,000",
+          "option_id": "179057"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "2633.79",
+      "original_price": 2633.79,
+      "total_price": "2633.79",
+      "unit_price": "0.87793",
+      "quantity": 3000,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "95",
+          "attr_val_id": "97",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179058",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3,500",
+          "option_id": "179058"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "3002.25",
+      "original_price": 3002.25,
+      "total_price": "3002.25",
+      "unit_price": "0.85779",
+      "quantity": 3500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "276",
+          "attr_val_id": "276",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179059",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4,000",
+          "option_id": "179059"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "3370.70",
+      "original_price": 3370.7,
+      "total_price": "3370.70",
+      "unit_price": "0.84268",
+      "quantity": 4000,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "96",
+          "attr_val_id": "98",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179060",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4,500",
+          "option_id": "179060"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "3739.16",
+      "original_price": 3739.16,
+      "total_price": "3739.16",
+      "unit_price": "0.83092",
+      "quantity": 4500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "277",
+          "attr_val_id": "277",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4,500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5,6",
+      "selection": {
+        "attr5": "179061",
+        "attr6": "179062",
+        "attr0": "3164"
+      },
+      "display": {
+        "951": {
+          "name": "Style",
+          "label": "BIC 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "option_id": "179065"
+        },
+        "3": {
+          "name": "Size",
+          "label": "3\" x 3\"",
+          "option_id": "179047"
+        },
+        "973": {
+          "name": "Material",
+          "label": "60 lb. Paper Uncoated",
+          "option_id": "179048"
+        },
+        "980": {
+          "name": "Product Color",
+          "label": "White",
+          "option_id": "179049"
+        },
+        "975": {
+          "name": "Print Color",
+          "label": "4 Color Process",
+          "option_id": "179050"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "5,000",
+          "option_id": "179061"
+        },
+        "6": {
+          "name": "Turnaround",
+          "label": "6 Business Days",
+          "option_id": "179062"
+        },
+        "0": {
+          "name": "Sheets per Pad",
+          "label": "50 Sheets",
+          "option_id": "3164"
+        }
+      },
+      "price": "4107.61",
+      "original_price": 4107.61,
+      "total_price": "4107.61",
+      "unit_price": "0.82152",
+      "quantity": 5000,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "35",
+          "attr_val_id": "35",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "3\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "36416",
+          "attr_val_id": "12784",
+          "attribute_id": "973",
+          "order_spec_option_id": "7967",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "60# Offset Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "97",
+          "attr_val_id": "99",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "14386",
+          "attr_val_id": "12785",
+          "attribute_id": "975",
+          "order_spec_option_id": "2677",
+          "order_spec_code": "IMPRNT_CLR",
+          "order_spec_value": "Full Color",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Color",
+          "sort": "1131",
+          "attribute_name": "Print Color"
+        },
+        {
+          "attr_val_order_spec_id": "13272",
+          "attr_val_id": "11304",
+          "attribute_id": "980",
+          "order_spec_option_id": "1717",
+          "order_spec_code": "PROD_CLR",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product Color",
+          "sort": "1142",
+          "attribute_name": "Product Color"
+        },
+        {
+          "attr_val_order_spec_id": "17093",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "3047",
+          "order_spec_code": "BICSKU",
+          "order_spec_value": "P3A3A50",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "SKU Codes for BIC",
+          "sort": "1147",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "17092",
+          "attr_val_id": "14671",
+          "attribute_id": "951",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BICSTYL",
+          "order_spec_value": "BICÂ® 3\" x 3\" Adhesive Notepad, 50 Sheet Pad",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "BIC Style",
+          "sort": "1150",
+          "attribute_name": "Style"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

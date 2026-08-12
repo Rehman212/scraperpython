@@ -3,17 +3,39 @@
 from __future__ import annotations
 
 import json
+import re
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
-from uprinting_scraper import DEFAULT_URL, ScraperError, UPrintingScraper
+from uprinting_scraper import DEFAULT_URL, ScraperError, UPrintingScraper, build_export, save_json, save_xlsx
 
 ROOT = Path(__file__).resolve().parent
 SCRAPER = UPrintingScraper(DEFAULT_URL)
+VARIANT_SCRAPERS: dict[str, UPrintingScraper] = {}
+OFFLINE_EXPORT: dict | None = None
 STATE_LOCK = threading.RLock()
 STATE_FILE = ROOT / "active_product.json"
+CONFIG_CACHE_FILE = ROOT / "active_product_cache.json"
+EXPORT_DIR = ROOT / "exports"
+EXPORT_LOCK = threading.Lock()
+
+
+def scraper_cache(scraper: UPrintingScraper) -> dict:
+    return {
+        "product_id": scraper.product_id, "defaults": scraper.defaults,
+        "visible_attr_ids": scraper.visible_attr_ids, "catalog": scraper.catalog,
+        "product_image": scraper.product_image,
+    }
+
+
+def scraper_from_cache(parent: UPrintingScraper, data: dict) -> UPrintingScraper:
+    item = UPrintingScraper(parent.url, parent.timeout)
+    item.api_url, item.auth = parent.api_url, parent.auth
+    for key in ("product_id", "defaults", "visible_attr_ids", "catalog", "product_image"):
+        setattr(item, key, data[key])
+    return item
 
 
 def _rule_matches(rule: dict, selection: dict[str, str]) -> bool:
@@ -46,6 +68,14 @@ def normalize_selection(selection: dict[str, str], protected_attr: str = "") -> 
     return normalized
 
 
+def load_variants(scraper: UPrintingScraper) -> dict[str, UPrintingScraper]:
+    variants = {scraper.product_id: scraper}
+    for linked in scraper.linked_calculators:
+        if linked["product_id"] != scraper.product_id:
+            variants[linked["product_id"]] = scraper.linked_scraper(linked)
+    return variants
+
+
 class PreviewHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
@@ -55,13 +85,100 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def do_GET(self) -> None:
-        if urlparse(self.path).path == "/api/config":
+        parsed = urlparse(self.path)
+        if parsed.path == "/api/export":
+            try:
+                from urllib.parse import parse_qs
+                requested = parse_qs(parsed.query).get("format", ["json"])[0]
+                if requested not in ("json", "xlsx"):
+                    raise ValueError("format must be json or xlsx")
+                safe_code = re.sub(r"[^a-zA-Z0-9_-]+", "-", SCRAPER.catalog.get("product_code") or "product").strip("-").lower()
+                base = EXPORT_DIR / f"{safe_code}-{SCRAPER.product_id}"
+                json_path = Path(str(base) + ".printoe.json")
+                xlsx_path = base.with_suffix(".xlsx")
+                with EXPORT_LOCK:
+                    # The first download scrapes every finite variation combination;
+                    # the second format reuses the same product-specific export.
+                    if not json_path.exists() or not xlsx_path.exists():
+                        prices, errors = [], []
+                        variant_attributes = []
+                        linked_by_product = {x["product_id"]: x for x in SCRAPER.linked_calculators}
+                        for product_id, variant in VARIANT_SCRAPERS.items():
+                            attr_ids = [a["attribute_id"] for a in variant.attributes()]
+                            variant_prices, variant_errors = variant.scrape_prices("exhaustive", attr_ids, 50_000, 1, 0.75)
+                            linked = linked_by_product.get(product_id, {"label": product_id})
+                            for row in variant_prices:
+                                row["selection"]["attr0"] = product_id
+                                row["display"]["0"] = {"name": SCRAPER.linked_calculators[0]["switch_label"], "label": linked["label"], "option_id": product_id}
+                            prices.extend(variant_prices); errors.extend(variant_errors)
+                            for attr in variant.attributes():
+                                existing = next((x for x in variant_attributes if x["attribute_id"] == attr["attribute_id"]), None)
+                                if existing is None:
+                                    variant_attributes.append(attr)
+                                else:
+                                    known = {x["option_id"] for x in existing["options"]}
+                                    existing["options"].extend(x for x in attr["options"] if x["option_id"] not in known)
+                        data = build_export(SCRAPER, "linked_dependency_pruned_exhaustive", prices, errors)
+                        if len(VARIANT_SCRAPERS) > 1:
+                            switch = SCRAPER.linked_calculators[0]
+                            data["attributes"] = [{
+                                "attribute_id": "0", "name": switch["switch_label"], "code": "LINKED_CALCULATOR",
+                                "field_type": "buttons", "default_option_id": SCRAPER.product_id, "sort_order": 0,
+                                "options": [{"option_id": x["product_id"], "source_attr_value_id": x["calc_id"], "label": x["label"], "default": x["product_id"] == SCRAPER.product_id, "sort_order": i + 1, "factors": {"product_id": x["product_id"], "calc_id": x["calc_id"]}} for i, x in enumerate(SCRAPER.linked_calculators)],
+                            }] + variant_attributes
+                            data["default_selection"]["attr0"] = SCRAPER.product_id
+                            visible_keys = {f"attr{x['attribute_id']}" for x in data["attributes"]}
+                            for row in data["prices"]:
+                                row["selection"] = {k: v for k, v in row["selection"].items() if k in visible_keys}
+                            for attribute in data["attributes"]:
+                                key = f"attr{attribute['attribute_id']}"
+                                used = {row["selection"].get(key) for row in data["prices"]}
+                                attribute["options"] = [option for option in attribute["options"] if option["option_id"] in used]
+                        save_json(data, json_path)
+                        save_xlsx(data, xlsx_path)
+                target = json_path if requested == "json" else xlsx_path
+                payload = target.read_bytes()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json" if requested == "json" else "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+                self.send_header("Content-Disposition", f'attachment; filename="{target.name}"')
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+            except Exception as exc:
+                self._json(500, {"ok": False, "error": f"Export failed: {exc}"})
+            return
+        if parsed.path == "/api/config":
+            if OFFLINE_EXPORT is not None:
+                metadata = OFFLINE_EXPORT["metadata"]
+                visible_keys = {f"attr{item['attribute_id']}" for item in OFFLINE_EXPORT["attributes"]}
+                offline_defaults = {
+                    key: value for key, value in OFFLINE_EXPORT["default_selection"].items()
+                    if key in visible_keys
+                }
+                self._json(200, {
+                    "product_id": metadata["product_id"], "product_name": metadata["product_name"],
+                    "product_code": metadata.get("product_code"), "source_url": metadata["source_url"],
+                    "product_image": "https://staticecp.uprinting.com/7319/600x600/BIC_Sticky_Note_3x3_25_Sheets_Marketing_Materials_A.jpg",
+                    "default_selection": offline_defaults, "attributes": OFFLINE_EXPORT["attributes"],
+                    "linked_switch": None, "variants": {},
+                }); return
             attrs = []
             for attr in SCRAPER.attributes():
                 raw = SCRAPER.catalog.get("prod_attrs", {}).get(attr["attribute_id"], {})
                 item = dict(attr)
                 item["exceptions"] = raw.get("exceptions", {})
                 attrs.append(item)
+            linked = SCRAPER.linked_calculators
+            variants = {}
+            for item in linked:
+                variant = VARIANT_SCRAPERS.get(item["product_id"])
+                if variant:
+                    variants[item["product_id"]] = {
+                        "product_id": variant.product_id,
+                        "product_name": variant.catalog.get("product_name"),
+                        "default_selection": variant.defaults,
+                        "attributes": [dict(a, exceptions=variant.catalog.get("prod_attrs", {}).get(a["attribute_id"], {}).get("exceptions", {})) for a in variant.attributes()],
+                    }
             self._json(200, {
                 "product_id": SCRAPER.product_id,
                 "product_name": SCRAPER.catalog.get("product_name"),
@@ -70,12 +187,14 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 "product_image": SCRAPER.product_image,
                 "default_selection": SCRAPER.defaults,
                 "attributes": attrs,
+                "linked_switch": ({"name": linked[0]["switch_label"], "options": [{"label": x["label"], "product_id": x["product_id"]} for x in linked]} if len(linked) > 1 else None),
+                "variants": variants,
             })
             return
         super().do_GET()
 
     def do_POST(self) -> None:
-        global SCRAPER
+        global SCRAPER, VARIANT_SCRAPERS, OFFLINE_EXPORT
         if urlparse(self.path).path == "/api/load-product":
             try:
                 length = int(self.headers.get("Content-Length", "0"))
@@ -87,7 +206,17 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                     raise ValueError("Is product par calculator attributes nahi mile.")
                 with STATE_LOCK:
                     SCRAPER = candidate
+                    VARIANT_SCRAPERS = load_variants(candidate)
+                    OFFLINE_EXPORT = None
                     STATE_FILE.write_text(json.dumps({"url": url}, indent=2), encoding="utf-8")
+                    CONFIG_CACHE_FILE.write_text(json.dumps({
+                        "url": candidate.url, "product_id": candidate.product_id,
+                        "api_url": candidate.api_url, "auth": candidate.auth,
+                        "defaults": candidate.defaults, "visible_attr_ids": candidate.visible_attr_ids,
+                        "catalog": candidate.catalog, "product_image": candidate.product_image,
+                        "linked_calculators": candidate.linked_calculators,
+                        "variants": {key: scraper_cache(value) for key, value in VARIANT_SCRAPERS.items()},
+                    }), encoding="utf-8")
                 self._json(200, {
                     "ok": True, "product_id": candidate.product_id,
                     "product_name": candidate.catalog.get("product_name"),
@@ -106,14 +235,29 @@ class PreviewHandler(SimpleHTTPRequestHandler):
             selection = body.get("selection", {})
             if not isinstance(selection, dict):
                 raise ValueError("selection must be an object")
-            safe_selection = {
+            raw_selection = {
                 str(key): str(value)
                 for key, value in selection.items()
                 if str(key).startswith("attr") and str(key)[4:].isdigit()
             }
+            if OFFLINE_EXPORT is not None:
+                visible_keys = {f"attr{item['attribute_id']}" for item in OFFLINE_EXPORT["attributes"]}
+                offline_selection = {key: value for key, value in raw_selection.items() if key in visible_keys}
+                row = next((item for item in OFFLINE_EXPORT["prices"] if item["selection"] == offline_selection), None)
+                if row is None:
+                    raise ValueError("This option combination is unavailable")
+                self._json(200, {"ok": True, "price": row["price"], "unit_price": row["unit_price"],
+                    "quantity": row["quantity"], "turnaround_days": row.get("turnaround_days"),
+                    "display_specs": [], "price_data": {}, "normalized_selection": offline_selection}); return
+            safe_selection = {key: value for key, value in raw_selection.items() if key != "attr0"}
             protected = str(body.get("changed_attribute_id", ""))
-            safe_selection = normalize_selection(safe_selection, protected)
-            result = SCRAPER.price(safe_selection)
+            requested_product = str(body.get("product_id", SCRAPER.product_id))
+            price_scraper = VARIANT_SCRAPERS.get(requested_product, SCRAPER)
+            if price_scraper is SCRAPER:
+                safe_selection = normalize_selection(safe_selection, protected)
+            else:
+                normalized = dict(price_scraper.defaults); normalized.update(safe_selection); safe_selection = normalized
+            result = price_scraper.price(safe_selection)
             payload = {
                 "ok": True,
                 "price": result.get("price"),
@@ -140,7 +284,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
 
 
 def main() -> None:
-    global SCRAPER
+    global SCRAPER, VARIANT_SCRAPERS, OFFLINE_EXPORT
     print("Loading UPrinting product configuration...")
     if STATE_FILE.exists():
         try:
@@ -148,7 +292,52 @@ def main() -> None:
             SCRAPER = UPrintingScraper(saved_url)
         except Exception:
             pass
-    SCRAPER.load()
+    if CONFIG_CACHE_FILE.exists():
+        try:
+            cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
+            if cached.get("url") == SCRAPER.url:
+                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators"):
+                    setattr(SCRAPER, key, cached[key])
+                cached_variants = cached.get("variants", {})
+                VARIANT_SCRAPERS = {
+                    str(key): scraper_from_cache(SCRAPER, value)
+                    for key, value in cached_variants.items()
+                } or {SCRAPER.product_id: SCRAPER}
+                VARIANT_SCRAPERS[SCRAPER.product_id] = SCRAPER
+                server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
+                print(f"Cached active product loaded: {SCRAPER.catalog.get('product_name')}")
+                print("Preview ready: http://127.0.0.1:8877/index.html")
+                server.serve_forever(); return
+        except Exception as exc:
+            print(f"Active cache could not be used ({exc}); reloading live configuration.")
+    try:
+        SCRAPER.load()
+        CONFIG_CACHE_FILE.write_text(json.dumps({
+            "url": SCRAPER.url, "product_id": SCRAPER.product_id,
+            "api_url": SCRAPER.api_url, "auth": SCRAPER.auth,
+            "defaults": SCRAPER.defaults, "visible_attr_ids": SCRAPER.visible_attr_ids,
+            "catalog": SCRAPER.catalog, "product_image": SCRAPER.product_image,
+            "linked_calculators": SCRAPER.linked_calculators,
+        }), encoding="utf-8")
+    except Exception as exc:
+        export_path = EXPORT_DIR / "bic3x3stickynotes-2539.printoe.json"
+        if export_path.exists():
+            candidate = json.loads(export_path.read_text(encoding="utf-8"))
+            if "sticky-notepad-3x3" in SCRAPER.url:
+                OFFLINE_EXPORT = candidate
+                print(f"Live reload failed ({exc}); offline exact-price export loaded.")
+        if not CONFIG_CACHE_FILE.exists():
+            if OFFLINE_EXPORT is None: raise
+            server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
+            print("Preview ready: http://127.0.0.1:8877/index.html")
+            server.serve_forever(); return
+        if OFFLINE_EXPORT is None:
+            cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
+            SCRAPER = UPrintingScraper(cached["url"])
+            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators"):
+                setattr(SCRAPER, key, cached[key])
+            print(f"Live reload failed ({exc}); cached product configuration loaded.")
+    VARIANT_SCRAPERS = load_variants(SCRAPER)
     server = ThreadingHTTPServer(("127.0.0.1", 8877), PreviewHandler)
     print("Preview ready: http://127.0.0.1:8877/index.html")
     server.serve_forever()

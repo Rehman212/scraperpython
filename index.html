@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Brochures | Product Preview</title>
+  <title>Product Preview</title>
   <style>
     :root{--blue:#075b91;--navy:#073d59;--green:#08722f;--line:#dedede;--ink:#111;--muted:#666;--soft:#f8f8f8}
     *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white}
@@ -22,7 +22,8 @@
     h1{font-size:34px;margin:0 0 2px}.rating{margin-bottom:18px}.stars{color:#ff8500;font-size:20px;letter-spacing:-3px}.share{float:right;color:#76604b;text-decoration:underline;font:italic 15px Georgia;margin-top:-20px}
     .calculator{border:1px solid var(--line);padding:32px 36px 26px}.field{display:grid;grid-template-columns:190px 1fr;align-items:center;margin-bottom:16px}.field label{font-size:16px;font-weight:700}.field select{width:100%;height:43px;border:1px solid var(--line);background:#fff;padding:0 15px;font-size:16px;color:#181818}
     .price-box{background:var(--soft);padding:22px 32px;margin-top:12px}.price-box .field{grid-template-columns:180px 1fr}.total{text-align:right;margin-top:14px;font-size:17px;font-weight:700}.total strong{color:var(--green);font-size:28px;margin-left:25px}.each{text-align:right;font-size:14px;margin-top:-4px}.loading{color:#777}.error{color:#b22525;text-align:right;margin-top:8px;font-size:13px}
-    .ids{margin-top:14px;padding-top:13px;border-top:1px dashed #ddd;color:#777;font:12px Consolas,monospace;word-break:break-all}.actions{display:flex;gap:12px;margin-top:20px}.actions button{height:45px;border:0;padding:0 24px;font-weight:bold;cursor:pointer}.primary{background:#08722f;color:#fff}.secondary{background:#eee;color:#222}
+    .switch-field{display:grid;grid-template-columns:190px 1fr;align-items:center;margin-bottom:16px}.switch-field label{font-weight:700}.switch-options{display:flex;gap:8px}.switch-options button{height:54px;flex:1;background:#fff;border:1px solid var(--line);font-size:16px}.switch-options button.active{border:2px solid var(--green);color:#111}
+    .ids{margin-top:14px;padding-top:13px;border-top:1px dashed #ddd;color:#777;font:12px Consolas,monospace;word-break:break-all}.actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.actions button,.actions a{height:45px;border:0;padding:0 24px;font-weight:bold;cursor:pointer;display:inline-flex;align-items:center;text-decoration:none;font-size:13px}.primary{background:#08722f;color:#fff}.secondary{background:#eee;color:#222}.download{background:#075b91;color:#fff}
     @media(max-width:900px){.head{padding:0 16px}.phone,.account,.search,nav{display:none}main{padding:18px}.product{grid-template-columns:1fr}.gallery-main{height:auto;aspect-ratio:1}.field{grid-template-columns:1fr;gap:7px}.calculator{padding:22px}.share{display:none}}
   </style>
 </head>
@@ -44,10 +45,11 @@
         <div class="thumbs"><span style="font-size:38px;color:#aaa">‹</span><img id="productThumb" class="thumb active"><div class="thumb" style="display:grid;place-items:center;font-size:32px;background:#eee">▶</div><div class="thumb" id="productCode" style="display:grid;place-items:center;background:#f3ddd4">Product</div><span style="font-size:38px">›</span></div>
       </section>
       <section>
-        <h1 id="productName">Brochures</h1>
+        <h1 id="productName">Loading product…</h1>
         <div class="rating"><span class="stars">★★★★★</span> &nbsp;4.5 (1,122 Reviews)</div>
         <a class="share">♧ &nbsp; Share Product</a>
         <div class="calculator">
+          <div id="linkedSwitch"></div>
           <div id="regularFields"></div>
           <div class="price-box">
             <div id="priceFields"></div>
@@ -55,26 +57,37 @@
             <div class="each" id="unitPrice"></div>
             <div class="error" id="error"></div>
           </div>
-          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button></div>
+          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button><a id="downloadJson" class="download" href="/api/export?format=json" download>DOWNLOAD JSON</a><a id="downloadExcel" class="download" href="/api/export?format=xlsx" download>DOWNLOAD EXCEL</a></div>
         </div>
       </section>
     </div>
   </main>
   <script>
-    const state={data:null,selection:{},timer:null,request:0,changed:""};
+    const state={data:null,selection:{},timer:null,request:0,changed:"",productId:""};
     const $=id=>document.getElementById(id);
     const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     const money=v=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(Number(v));
     async function init(){
-      const r=await fetch("/api/config",{cache:"no-store"}); state.data=await r.json(); state.selection={...state.data.default_selection};
+      const r=await fetch("/api/config",{cache:"no-store"}); state.data=await r.json(); state.selection={...state.data.default_selection}; state.productId=state.data.product_id;
       // A shared configuration can be reproduced exactly with ?attr1=...&attr3=...
       for(const [key,value] of new URLSearchParams(location.search))if(/^attr\d+$/.test(key))state.selection[key]=value;
       $("productName").textContent=state.data.product_name;
       document.title=`${state.data.product_name} | Product Preview`;
       $("crumbName").textContent=state.data.product_name; $("sourceCrumb").href=state.data.source_url;
       $("productCode").textContent=state.data.product_code||"Product";
+      const exportCode=String(state.data.product_code||"product").replace(/[^a-zA-Z0-9_-]+/g,"-").replace(/^-|-$/g,"").toLowerCase();
+      // A completed product-specific export is served directly; new products use
+      // the export endpoint, which creates their separate files on first click.
+      $("downloadJson").download=`${exportCode}-${state.data.product_id}.printoe.json`;
+      $("downloadExcel").download=`${exportCode}-${state.data.product_id}.xlsx`;
       const image=state.data.product_image||""; $("productImage").src=image; $("productThumb").src=image;
-      const lower=["Quantity","Printing Time"];
+      renderLinkedSwitch(); renderAttributeFields();
+      updatePrice();
+      if(state.data.product_id==="4"){$("scrapeStatus").style.display="flex";updateScrapeStatus();setInterval(updateScrapeStatus,5000)}
+    }
+    function renderAttributeFields(){
+      $("regularFields").innerHTML=""; $("priceFields").innerHTML="";
+      const lower=["Quantity","Printing Time","Turnaround"];
       for(const attr of state.data.attributes){
         const holder=lower.includes(attr.name)?$("priceFields"):$("regularFields");
         const el=document.createElement("div"); el.className="field";
@@ -84,8 +97,16 @@
       }
       refreshFields();
       document.querySelectorAll("select[data-attr]").forEach(s=>s.addEventListener("change",()=>{state.changed=s.dataset.attr;state.selection[`attr${s.dataset.attr}`]=s.value; refreshFields(s.dataset.attr); clearTimeout(state.timer); state.timer=setTimeout(updatePrice,250)}));
-      updatePrice();
-      if(state.data.product_id==="4"){$("scrapeStatus").style.display="flex";updateScrapeStatus();setInterval(updateScrapeStatus,5000)}
+    }
+    function renderLinkedSwitch(){
+      const sw=state.data.linked_switch;if(!sw)return;
+      $("linkedSwitch").innerHTML=`<div class="switch-field"><label>${esc(sw.name)}:</label><div class="switch-options">${sw.options.map(o=>`<button type="button" data-product="${esc(o.product_id)}" class="${o.product_id===state.productId?'active':''}">${esc(o.label)}</button>`).join('')}</div></div>`;
+      $("linkedSwitch").querySelectorAll('button').forEach(b=>b.onclick=()=>switchVariant(b.dataset.product));
+    }
+    function switchVariant(productId){
+      const variant=state.data.variants?.[productId];if(!variant)return;
+      state.productId=productId;state.selection={...variant.default_selection};state.data.attributes=variant.attributes;state.changed="";
+      renderLinkedSwitch();renderAttributeFields();refreshFields();updatePrice();
     }
     async function updateScrapeStatus(){
       try{
@@ -120,7 +141,7 @@
     async function updatePrice(){
       const current=++state.request; $("price").innerHTML='<span class="loading">Calculating…</span>'; $("unitPrice").textContent=""; $("error").textContent="";
       try{
-        const r=await fetch("/api/price",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({selection:state.selection,changed_attribute_id:state.changed})}); const d=await r.json();
+        const r=await fetch("/api/price",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({product_id:state.productId,selection:state.selection,changed_attribute_id:state.changed})}); const d=await r.json();
         if(current!==state.request)return; if(!r.ok||!d.ok)throw Error(d.error||`HTTP ${r.status}`);
         $("price").textContent=money(d.price); $("unitPrice").textContent=`(${money(d.unit_price)} for each)`;
         state.selection={...state.selection,...d.normalized_selection};

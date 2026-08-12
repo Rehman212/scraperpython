@@ -22,6 +22,10 @@ LOG = logging.getLogger("full-scrape")
 THREAD = threading.local()
 
 
+class TransientScrapeError(RuntimeError):
+    pass
+
+
 def key_for(selection: dict[str, str]) -> str:
     raw = "&".join(f"{k}={selection[k]}" for k in sorted(selection))
     return hashlib.sha1(raw.encode()).hexdigest()
@@ -113,9 +117,21 @@ class MatrixCrawler:
             worker.api_url = self.scraper.api_url
             worker.auth = self.scraper.auth
             THREAD.scraper = worker
-        if self.delay:
-            time.sleep(self.delay)
-        response = THREAD.scraper.price(selection)
+        last_error: Exception | None = None
+        for attempt in range(8):
+            if self.delay:
+                time.sleep(self.delay)
+            try:
+                response = THREAD.scraper.price(selection)
+                break
+            except Exception as exc:
+                last_error = exc
+                message = str(exc)
+                if not any(code in message for code in ("API 403", "API 429", "API 500", "API 502", "API 503", "API 504")):
+                    raise
+                time.sleep(min(120, 5 * (2**attempt)))
+        else:
+            raise TransientScrapeError(str(last_error))
         labels = {str(x["attribute_id"]): x.get("attr_value", "") for x in response.get("display_specs", [])}
         return {
             "labels": labels, "price": response.get("price"), "unit_price": response.get("unit_price"),
@@ -127,7 +143,7 @@ class MatrixCrawler:
         with self._connect() as db:
             completed = {row[0] for row in db.execute("SELECT config_key FROM prices UNION SELECT config_key FROM errors")}
         LOG.info("Resume checkpoint: %s completed configurations", f"{len(completed):,}")
-        submitted = done = valid = invalid = 0
+        submitted = done = valid = invalid = transient_retries = 0
         started = time.time()
         iterator = ((key_for(s), s) for s in self.selections())
         pending: dict[Any, tuple[str, dict[str, str]]] = {}
@@ -138,6 +154,7 @@ class MatrixCrawler:
             status_path.write_text(json.dumps({
                 "status": "running", "already_complete": len(completed), "submitted_this_run": submitted,
                 "finished_this_run": done, "valid_this_run": valid, "invalid_this_run": invalid,
+                "transient_retries": transient_retries,
                 "requests_per_second": round(done / elapsed, 2), "updated_at": int(time.time()),
             }, indent=2), encoding="utf-8")
 
@@ -169,6 +186,16 @@ class MatrixCrawler:
                              row["price"], row["unit_price"], row["quantity"], row["turnaround_days"], row["in_stock"], now),
                         )
                         valid += 1
+                    except TransientScrapeError:
+                        # WAF/rate-limit failures are never permanent invalid rows.
+                        # Put the configuration back into the queue after cooldown.
+                        transient_retries += 1
+                        update_status()
+                        LOG.warning("Temporary UPrinting block; cooling down before retry %s", config_key)
+                        time.sleep(30)
+                        retry = pool.submit(self._fetch, selection)
+                        pending[retry] = (config_key, selection)
+                        continue
                     except Exception as exc:
                         db.execute("INSERT OR REPLACE INTO errors VALUES(?,?,?,?)", (config_key, json.dumps(selection), str(exc), now))
                         invalid += 1
@@ -248,15 +275,31 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("url", nargs="?", default=DEFAULT_URL)
     parser.add_argument("--database", default="full_prices.sqlite")
     parser.add_argument("--status", default="full_scrape_status.json")
-    parser.add_argument("--workers", type=int, default=4)
-    parser.add_argument("--delay", type=float, default=0.08)
+    parser.add_argument("--workers", type=int, default=1)
+    parser.add_argument("--delay", type=float, default=1.5)
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    crawler = MatrixCrawler(args.url, Path(args.database), max(1, args.workers), max(0, args.delay))
-    crawler.run(Path(args.status))
+    status_path = Path(args.status)
+    while True:
+        try:
+            crawler = MatrixCrawler(args.url, Path(args.database), max(1, args.workers), max(0, args.delay))
+            break
+        except requests.HTTPError as exc:
+            status = exc.response.status_code if exc.response is not None else None
+            if status not in (403, 429):
+                raise
+            status_path.write_text(json.dumps({
+                "status": "waiting_for_uprinting",
+                "reason": f"HTTP {status} temporary access block",
+                "retry_after_seconds": 300,
+                "updated_at": int(time.time()),
+            }, indent=2), encoding="utf-8")
+            LOG.warning("UPrinting returned HTTP %s; retrying product page in 5 minutes", status)
+            time.sleep(300)
+    crawler.run(status_path)
     base = Path(args.database).with_suffix("")
-    crawler.export(base.with_suffix(".json"), base.with_suffix(".xlsx"))
+    crawler.export(Path(str(base) + ".printoe.json"), base.with_suffix(".xlsx"))
