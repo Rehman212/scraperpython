@@ -67,6 +67,8 @@ class UPrintingScraper:
         self.auth = ""
         self.defaults: dict[str, str] = {}
         self.visible_attr_ids: list[str] = []
+        self.hidden_attr_ids: set[str] = set()
+        self.hidden_value_ids: dict[str, set[str]] = {}
         self.catalog: dict[str, Any] = {}
         self.product_image = ""
         self.page_html = ""
@@ -75,6 +77,7 @@ class UPrintingScraper:
         self.description = ""
         self.images: list[str] = []
         self.video = ""
+        self.page_title = ""
 
     def load(self) -> None:
         LOG.info("Product page download ho raha hai: %s", self.url)
@@ -85,6 +88,12 @@ class UPrintingScraper:
         self.product_id = _first(r"var\s+page_product_id\s*=\s*[\"']?(\d+)", html, "product ID")
         if self.product_id == "0":
             raise ScraperError("Yeh category/landing page hai, configurable product page nahi. Specific product URL dein.")
+        # A landing page's <h1> (e.g. "Square Rounded Corner Business Cards")
+        # names this specific product, while the shared calculator's catalog
+        # name (e.g. "Die-Cut Business Cards") only names the generic parent
+        # it was configured from.
+        title_match = re.search(r"<h1[^>]*>\s*([^<]+?)\s*</h1>", html)
+        self.page_title = title_match.group(1).strip() if title_match else ""
         image_match = re.search(r"var\s+thumbnail_image\s*=\s*image_domain\s*\+\s*['\"]\/['\"]\s*\+\s*['\"]([^'\"]+)", html)
         image_domain_match = re.search(r"var\s+image_domain\s*=\s*['\"]([^'\"]+)", html)
         if image_match and image_domain_match:
@@ -128,6 +137,19 @@ class UPrintingScraper:
             }
             if normalized:
                 initial = {**initial, **{k: v for k, v in normalized.items() if str(k).startswith("attr")}}
+            # Landing pages for a single shape/size (e.g. Square Rounded Corner
+            # Business Cards) share their calculator with a generic parent
+            # product (Die-Cut Business Cards), which lists every attribute
+            # (Shape, Width, Height, ...) as visible. The pricing engine's own
+            # value_exceptions for the page's default selection is what the
+            # storefront actually uses to hide those fields, so mirror it here
+            # instead of trusting the generic attribute list alone.
+            value_exceptions = pricing.get("response", {}).get("value_exceptions", {})
+            self.hidden_attr_ids = {str(x) for x in value_exceptions.get("hidden_attributes", [])}
+            self.hidden_value_ids = {
+                str(attr_id): {str(v) for v in values}
+                for attr_id, values in value_exceptions.get("hidden_values", {}).items()
+            }
         else:
             override_match = re.search(r'"price_data_override"\s*:\s*(\{[^}]*\})', html)
             initial = json.loads(override_match.group(1)) if override_match else {}
@@ -224,7 +246,8 @@ class UPrintingScraper:
                     "label": str(option.get("label", "")).strip(),
                     "switch_label": str(config.get("switch_label", "Option")).strip(),
                     "defaults": {f"attr{x['attribute_id']}": str(x["default_prod_attr_val_id"])
-                                 for x in widget.get("prod_attrs", []) if x.get("default_prod_attr_val_id")},
+                                 for x in widget.get("prod_attrs", [])
+                                 if str(x.get("default_prod_attr_val_id", "0")) not in ("0", "")},
                     "visible_attr_ids": [str(x["attribute_id"]) for x in widget.get("prod_attrs", []) if x.get("hide_flag") != "y"],
                 })
         return result
@@ -233,8 +256,28 @@ class UPrintingScraper:
         child = UPrintingScraper(self.url, self.timeout)
         child.api_url, child.auth, child.product_id = self.api_url, self.auth, linked["product_id"]
         child.product_image, child.page_html = self.product_image, self.page_html
-        child.defaults, child.visible_attr_ids = dict(linked["defaults"]), list(linked["visible_attr_ids"])
+        child.visible_attr_ids = list(linked["visible_attr_ids"])
         child.catalog = child._post(f"getData/{child.product_id}", child._base_payload(include_product=False))
+        # linked["defaults"] comes from the PARENT page's embedded switcher
+        # config, not from this child product's own catalog - load() already
+        # re-validates every default against prod_attr_vals for the top-level
+        # product (a few lines up); a linked variant needs the exact same
+        # treatment or a single stale/renumbered default (e.g. "0", or an ID
+        # that existed when the switcher config was authored but has since
+        # been retired) poisons every selection in a sweep, since sweep mode
+        # always starts from these defaults unmodified and only varies one
+        # other attribute at a time - one bad key means the whole variant
+        # 412s on every request and silently produces zero price rows.
+        clean_defaults: dict[str, str] = {}
+        for attr_id, attr in child.catalog.get("prod_attrs", {}).items():
+            key = f"attr{attr_id}"
+            candidate = linked["defaults"].get(key)
+            values = attr.get("prod_attr_vals", {})
+            if candidate not in values:
+                candidate = str(attr.get("default_value", ""))
+            if candidate and candidate in values:
+                clean_defaults[key] = candidate
+        child.defaults = clean_defaults
         return child
 
     def _base_payload(self, include_product: bool = True) -> dict[str, Any]:
@@ -262,13 +305,46 @@ class UPrintingScraper:
         for attr_id, attr in self.catalog.get("prod_attrs", {}).items():
             if visible_only and visible and str(attr_id) not in visible:
                 continue
+            if visible_only and str(attr_id) in self.hidden_attr_ids:
+                continue
             if attr.get("hide_attribute_flag") == "y":
                 continue
             values = []
             raw_values = attr.get("prod_attr_vals", {})
             value_items = raw_values.items() if isinstance(raw_values, dict) else []
+            hidden_values = self.hidden_value_ids.get(str(attr_id), set()) if visible_only else set()
+            default_value_id = self.defaults.get(f"attr{attr_id}")
+            exceptions = attr.get("exceptions", {}) if isinstance(attr.get("exceptions"), dict) else {}
             for value_id, value in value_items:
                 if value.get("hide_attribute_value_flag") == "y" or value.get("custom_flag") == "y":
+                    continue
+                # The pricing engine's hidden_values also lists the attribute's
+                # own current default (e.g. Printing Time's "6 Business Days"
+                # alongside the faster options it hides) - it only means those
+                # OTHER values aren't switchable-to, not that the default itself
+                # should disappear from the dropdown.
+                if str(value_id) != default_value_id and (
+                    str(value_id) in hidden_values or str(value.get("attr_val_id", "")) in hidden_values
+                ):
+                    continue
+                # A value's "exceptions" rules mark it invalid whenever some
+                # other attribute holds a given value. When every attribute
+                # named in a rule is itself hidden (fixed for this landing
+                # page, e.g. Shape stuck at "Square Rounded Corner"), that
+                # rule can never NOT hold, so the value is permanently invalid
+                # here - not just conditionally, the way a rule tied to a
+                # user-changeable visible attribute would be. Exported/imported
+                # snapshots have no way to re-evaluate rules live, so anything
+                # permanently excluded must be dropped now rather than shipped
+                # as if it were a normal, always-selectable option.
+                if visible_only and any(
+                    all(
+                        str(rule_attr_id) in self.hidden_attr_ids
+                        and self.defaults.get(f"attr{rule_attr_id}") == str(rule_value)
+                        for rule_attr_id, rule_value in rule.items()
+                    )
+                    for rule in exceptions.get(str(value_id), [])
+                ):
                     continue
                 # Dynamic-size products expose an internal max-dimension sentinel
                 # alongside the customer-facing "Custom" option. The website hides it.
@@ -330,9 +406,22 @@ class UPrintingScraper:
             }
             for item in response.get("display_specs", [])
         }
+        # UPrinting's calculator can silently substitute an incompatible
+        # request with the nearest valid combination (e.g. a Spot UV finish
+        # that only exists on a heavier paper at a higher quantity) and price
+        # THAT instead. display_specs reports what was actually priced; the
+        # requested `selection` is not necessarily what the price/turnaround
+        # below describe, so resolve it against display_specs wherever the
+        # API confirmed a (possibly different) value, rather than exporting
+        # the row under a selection key nothing was truly priced at.
+        resolved_selection = dict(selection)
+        for attr_id, info in display.items():
+            option_id = info.get("option_id")
+            if option_id and f"attr{attr_id}" in resolved_selection:
+                resolved_selection[f"attr{attr_id}"] = option_id
         return {
             "changed_attribute_id": changed,
-            "selection": dict(selection),
+            "selection": resolved_selection,
             "display": display,
             "price": effective_price,
             "original_price": response.get("orig_price"),
@@ -344,6 +433,21 @@ class UPrintingScraper:
             "currency": "USD",
             "order_specs": response.get("order_specs", []),
         }
+
+    def selection_is_valid(self, selection: dict[str, str]) -> bool:
+        """Return whether every selected visible value satisfies catalog rules."""
+        for attr_id, attr in self.catalog.get("prod_attrs", {}).items():
+            key = f"attr{attr_id}"
+            selected = selection.get(key)
+            if selected is None:
+                continue
+            rules = attr.get("exceptions", {}).get(str(selected), [])
+            if any(
+                all(selection.get(f"attr{rule_attr}") == str(value) for rule_attr, value in rule.items())
+                for rule in rules
+            ):
+                return False
+        return True
 
     def selections(self, mode: str, vary: list[str] | None, max_combinations: int) -> Iterable[tuple[dict[str, str], str]]:
         attrs = self.attributes()
@@ -358,6 +462,8 @@ class UPrintingScraper:
                 for option in attr["options"]:
                     selection = dict(self.defaults)
                     selection[f"attr{attr['attribute_id']}"] = option["option_id"]
+                    if not self.selection_is_valid(selection):
+                        continue
                     key = tuple(sorted(selection.items()))
                     if key not in seen:
                         seen.add(key)
@@ -438,7 +544,7 @@ def build_export(scraper: UPrintingScraper, mode: str, prices: list[dict[str, An
             "scraped_at_utc": datetime.now(timezone.utc).isoformat(),
             "product_id": scraper.product_id,
             "product_code": scraper.catalog.get("product_code"),
-            "product_name": scraper.catalog.get("product_name"),
+            "product_name": scraper.page_title or scraper.catalog.get("product_name"),
             "mode": mode,
             "currency": "USD",
             "valid_price_rows": len(prices),

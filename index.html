@@ -58,8 +58,9 @@
             <div class="each" id="unitPrice"></div>
             <div class="error" id="error"></div>
           </div>
-          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button><button type="button" id="downloadJson" class="download">DOWNLOAD JSON</button><button type="button" id="downloadExcel" class="download">DOWNLOAD EXCEL</button></div>
+          <div class="actions"><button class="primary">UPLOAD DESIGN</button><button class="secondary">DESIGN ONLINE</button><button type="button" id="downloadJson" class="download">DOWNLOAD JSON</button><button type="button" id="downloadExcel" class="download">DOWNLOAD EXCEL</button><button type="button" id="uploadToPrintoe" class="download" style="background:#08722f">UPLOAD TO PRINTOE</button></div>
           <div class="error" id="downloadStatus"></div>
+          <div class="error" id="uploadStatus"></div>
         </div>
       </section>
     </div>
@@ -87,6 +88,7 @@
       $("downloadExcel").dataset.filename=`${exportCode}-${state.data.product_id}.xlsx`;
       $("downloadJson").onclick=()=>downloadFile("json",$("downloadJson"));
       $("downloadExcel").onclick=()=>downloadFile("xlsx",$("downloadExcel"));
+      $("uploadToPrintoe").onclick=()=>uploadToPrintoe($("uploadToPrintoe"));
       renderGallery();
       if(state.data.description){$("descriptionBody").innerHTML=state.data.description; $("descriptionSection").style.display="block"}
       renderLinkedSwitch(); renderAttributeFields();
@@ -95,29 +97,12 @@
     }
     async function downloadFile(format,button){
       const status=$("downloadStatus"), original=button.textContent;
-      if(format==="json"){
-        const currentSelection=Object.fromEntries(Object.entries(state.selection).filter(([key])=>/^attr\d+$/.test(key)));
-        const attributes=state.data.attributes.map(attribute=>({
-          ...attribute,
-          default_option_id:currentSelection[`attr${attribute.attribute_id}`]??attribute.default_option_id,
-          options:attribute.options.map(option=>({...option,default:option.option_id===currentSelection[`attr${attribute.attribute_id}`]}))
-        })), prices=[...state.capturedPrices.values()];
-        const payload={
-          metadata:{source_url:state.data.source_url,exported_at_utc:new Date().toISOString(),product_id:state.productId,product_code:state.data.product_code,product_name:state.data.product_name,mode:"interactive_loaded_data",currency:"USD",valid_price_rows:prices.length,invalid_rows:0},
-          default_selection:currentSelection,
-          description:state.data.description||"",
-          product_image:state.data.product_image||"",
-          images:state.data.images||[],
-          video:state.data.video||"",
-          attributes,
-          prices,
-          errors:[]
-        };
-        const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),link=document.createElement("a");
-        link.href=url;link.download=button.dataset.filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
-        status.style.color="#08722f";status.textContent=`Downloaded instantly: ${button.dataset.filename} (${prices.length} loaded price combination${prices.length===1?"":"s"})`;
-        return;
-      }
+      // Both formats hit /api/export, which scrapes every valid combination
+      // server-side. A prior "instant" client-side JSON path only exported
+      // whatever few combos the admin had happened to view this session
+      // (state.capturedPrices) - fine for a quick look, but silently missing
+      // almost every combination when the file is then imported into Printoe
+      // as the product's full pricing matrix.
       button.disabled=true;button.textContent="PREPARING…";status.textContent="Scraping all valid variations. File download will start automatically when ready.";
       try{
         const response=await fetch(`/api/export?format=${encodeURIComponent(format)}&product=${encodeURIComponent(state.productId)}`,{cache:"no-store"});
@@ -127,6 +112,29 @@
         const url=URL.createObjectURL(blob), link=document.createElement("a");
         link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
         status.style.color="#08722f";status.textContent=`Downloaded: ${filename}`;
+      }catch(error){status.style.color="#c00";status.textContent=error.message}
+      finally{button.disabled=false;button.textContent=original}
+    }
+    async function uploadToPrintoe(button){
+      const status=$("uploadStatus"), original=button.textContent;
+      // Same full sweep as Download JSON (and reuses that export if one was
+      // already scraped this session) - just pushed straight into Printoe as
+      // a draft instead of downloaded, so there's no manual re-upload step.
+      button.disabled=true;button.textContent="SCRAPING & UPLOADING…";status.style.color="#666";status.textContent="Scraping all valid variations, then pushing to Printoe as a draft…";
+      try{
+        const response=await fetch("/api/upload-to-printoe",{method:"POST"});
+        const result=await response.json();
+        if(!response.ok||!result.ok)throw Error(result.error||`Upload failed (HTTP ${response.status})`);
+        status.style.color="#08722f";status.textContent=result.message||"Uploaded to Printoe as a draft.";
+        const product=result.data?.product;
+        if(product?.slug){
+          const review=document.createElement("a");
+          review.href="http://localhost:3000/admin/products";
+          review.target="_blank";review.rel="noopener noreferrer";
+          review.textContent=" Review draft in Printoe Admin →";
+          review.style.cssText="display:inline-block;margin-left:6px;color:#08722f;font-weight:700";
+          status.appendChild(review);
+        }
       }catch(error){status.style.color="#c00";status.textContent=error.message}
       finally{button.disabled=false;button.textContent=original}
     }

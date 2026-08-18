@@ -3,10 +3,153 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 from uprinting_scraper import UPrintingScraper, build_export, save_json, save_xlsx
-from preview_server import SCRAPER as PREVIEW_SCRAPER, normalize_selection
+import json
+
+import pytest
+
+import preview_server
+from preview_server import (
+    SCRAPER as PREVIEW_SCRAPER,
+    calculator_export_attributes,
+    deduplicate_prices,
+    export_fingerprint,
+    export_is_current,
+    normalize_selection,
+    validate_printoe_export,
+)
 
 
 URL = "https://www.uprinting.com/brochure-printing.html"
+
+
+class FakeScraper:
+    def __init__(self, option_id: str = "one") -> None:
+        self.url = "https://www.uprinting.com/example.html"
+        self.product_id = "123"
+        self.defaults = {"attr1": option_id}
+        self._option_id = option_id
+        self.catalog = {"prod_attrs": {"1": {"exceptions": {}}}}
+
+    def attributes(self):
+        return [{
+            "attribute_id": "1",
+            "name": "Size",
+            "default_option_id": self._option_id,
+            "sort_order": 1,
+            "options": [{"option_id": self._option_id, "label": self._option_id}],
+        }]
+
+
+def valid_export() -> dict:
+    return {
+        "metadata": {
+            "source_url": "https://www.uprinting.com/example.html",
+            "product_id": "123",
+        },
+        "attributes": [{"attribute_id": "1", "options": [{"option_id": "one"}]}],
+        "prices": [{
+            "selection": {"attr1": "one"},
+            "price": 10,
+            "unit_price": 1,
+            "quantity": 10,
+        }],
+    }
+
+
+def test_export_fingerprint_invalidates_changed_configuration(tmp_path: Path) -> None:
+    first = FakeScraper("one")
+    second = FakeScraper("two")
+    first_fingerprint = export_fingerprint(first, {"123": first})
+    assert first_fingerprint != export_fingerprint(second, {"123": second})
+
+    export_path = tmp_path / "example.printoe.json"
+    export_path.write_text(json.dumps({
+        "metadata": {"export_fingerprint": first_fingerprint},
+    }), encoding="utf-8")
+    assert export_is_current(export_path, first_fingerprint)
+    assert not export_is_current(export_path, "stale")
+
+
+def test_export_validation_and_price_deduplication() -> None:
+    data = valid_export()
+    validate_printoe_export(data)
+    duplicate = dict(data["prices"][0])
+    duplicate["price"] = 999
+    rows = deduplicate_prices([data["prices"][0], duplicate])
+    assert len(rows) == 1
+    assert rows[0]["price"] == 10
+
+    data["prices"][0]["unit_price"] = None
+    with pytest.raises(ValueError, match="unit_price"):
+        validate_printoe_export(data)
+
+
+def test_dynamic_rules_and_variant_defaults_are_exported() -> None:
+    variant = FakeScraper("no")
+    variant.product_id = "standard"
+    variant.defaults = {"attr1": "no", "attr2": "square"}
+    variant.catalog = {
+        "prod_attrs": {
+            "1": {"exceptions": {"yes": [{"2": "square"}]}},
+            "2": {"exceptions": {}},
+        },
+    }
+    variant.attributes = lambda: [
+        {
+            "attribute_id": "1",
+            "name": "Rounded Corners",
+            "default_option_id": "no",
+            "sort_order": 1,
+            "options": [
+                {"option_id": "no", "label": "No", "sort_order": 1},
+                {"option_id": "yes", "label": "Yes", "sort_order": 2},
+            ],
+        },
+        {
+            "attribute_id": "2",
+            "name": "Shape",
+            "default_option_id": "square",
+            "sort_order": 2,
+            "options": [{"option_id": "square", "label": "Square", "sort_order": 1}],
+        },
+    ]
+
+    attributes = calculator_export_attributes({"standard": variant})
+    rounded = next(item for item in attributes if item["attribute_id"] == "1")
+    yes = next(item for item in rounded["options"] if item["option_id"] == "yes")
+    assert rounded["defaults_by_product"] == {"standard": "no"}
+    assert yes["available_product_ids"] == ["standard"]
+    assert yes["exclusion_rules_by_product"]["standard"] == [{"2": "square"}]
+
+
+def test_invalid_sweep_selection_is_rejected_before_pricing() -> None:
+    scraper = UPrintingScraper("https://www.uprinting.com/example.html")
+    scraper.catalog = {
+        "prod_attrs": {
+            "1": {"exceptions": {"yes": [{"2": "square"}]}},
+        },
+    }
+    assert not scraper.selection_is_valid({"attr1": "yes", "attr2": "square"})
+    assert scraper.selection_is_valid({"attr1": "no", "attr2": "square"})
+
+
+def test_admin_login_requires_environment_password(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(preview_server, "_printoe_token", None)
+    monkeypatch.setattr(preview_server, "PRINTOE_ADMIN_PASSWORD", "")
+    with pytest.raises(RuntimeError, match="PRINTOE_ADMIN_PASSWORD"):
+        preview_server.printoe_admin_token()
+
+
+def test_admin_login_propagates_api_failure(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(preview_server, "_printoe_token", None)
+    monkeypatch.setattr(preview_server, "PRINTOE_ADMIN_PASSWORD", "configured")
+
+    def fail(*_args, **_kwargs):
+        raise RuntimeError("Printoe API error (401): invalid credentials")
+
+    monkeypatch.setattr(preview_server, "_printoe_request", fail)
+    with pytest.raises(RuntimeError, match="401"):
+        preview_server.printoe_admin_token()
 
 
 def test_live_page_catalog_and_default_price(tmp_path: Path) -> None:

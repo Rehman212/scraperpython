@@ -1,0 +1,11 @@
+.git
+.env*
+__pycache__
+.pytest_cache
+exports
+*.json
+*.xlsx
+*.log
+test*
+index.html
+homepage.html
