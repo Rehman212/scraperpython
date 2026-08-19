@@ -1,0 +1,6351 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/dvd-cover-printing.html",
+    "scraped_at_utc": "2026-08-19T06:43:41.825142+00:00",
+    "product_id": "416",
+    "product_code": "dvdCover",
+    "product_name": "DVD Covers",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 40,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "8e3b72515ce989aca20aae860f9c9fb88c2107abac274c480c8b9cce38fc2046"
+  },
+  "default_selection": {
+    "attr3": "19549",
+    "attr1": "19552",
+    "attr4": "19554",
+    "attr5": "19559",
+    "attr6": "19590"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy wgt-txt-styles-main_heading\">\n                            <div class=\"wgt-text-title\">\n                <h2>Boost Interest on Your Disc Products With Custom DVD Cover Printing</h2>            </div>\n                            <div class=\"wgt-text-content\">\n                Do you have your own video product in DVD? Do you wish to give video copies of your wedding or anniversary to friends and families?<br /> <br />Promote and protect your discs with premium customized DVD covers.<br /> <br />Covers are great promotional materials for album launches and product presentations. If you're a business who specializes in doing training and tutorial discs these tools are a necessity. Designing good DVD covers could not only increase brand awareness for your products. It can also create an image of professionalism and authority.  These covers can be used in any type of business industry that deals with disc. They are ideal as corporate gifts, souvenirs or presentations.<br /> <br />Disc covers are also applicable for personal use. It has been common practice to give out disc copies of images and videos during parties like weddings and birthdays. <br /> <br />Our covers are wrap around case inserts. You can easily apply them to your containers. They are printed on premium glossy and matte papers. Available in standard and slim profile. <br /> <br />Standard turnaround time is 3 business days excluding shipping times. <br /> <br />For more information on these product feel free to contact us at 1-888-888-4211. We're open to talk or chat 24/7 during weekdays and 8 am to 5 pm PT during weekends. <br />            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/249/600x600/DVD_Covers_Marketing_Materials_A.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/249/700x700/DVD_Covers_Marketing_Materials_A.jpg",
+    "https://staticecp.uprinting.com/250/700x700/DVD-Covers_1400x1400.jpg",
+    "https://staticecp.uprinting.com/15912/700x700/UP_DVD_Cover_10.5x7.25_Size_Spec_Image.jpg"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "3",
+      "name": "Size",
+      "code": "size",
+      "field_type": "s",
+      "default_option_id": "19549",
+      "sort_order": 1,
+      "options": [
+        {
+          "option_id": "19549",
+          "source_attr_value_id": "4167",
+          "label": "10.75\" x 7.1875\" Standard",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "height": "7.1875",
+            "width": "10.75"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19550",
+          "source_attr_value_id": "4168",
+          "label": "10.5\" x 7.25\" Slim",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "height": "7.25",
+            "width": "10.5"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "416": "19549"
+      },
+      "hide_rules_by_product": {
+        "416": []
+      }
+    },
+    {
+      "attribute_id": "1",
+      "name": "Paper Type",
+      "code": "paper",
+      "field_type": "s",
+      "default_option_id": "19552",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "19551",
+          "source_attr_value_id": "3774",
+          "label": "80 lb. Paper Gloss",
+          "default": false,
+          "sort_order": 1,
+          "factors": {
+            "qpi": "272",
+            "wtpi": "0.000176"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19552",
+          "source_attr_value_id": "1",
+          "label": "100 lb. Paper Gloss",
+          "default": true,
+          "sort_order": 2,
+          "factors": {
+            "qpi": "251",
+            "wtpi": "0.00022"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19553",
+          "source_attr_value_id": "2",
+          "label": "100 lb. Paper Matte",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qpi": "251",
+            "wtpi": "0.00022"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "416": "19552"
+      },
+      "hide_rules_by_product": {
+        "416": []
+      }
+    },
+    {
+      "attribute_id": "4",
+      "name": "Printed Side",
+      "code": "color",
+      "field_type": "s",
+      "default_option_id": "19554",
+      "sort_order": 3,
+      "options": [
+        {
+          "option_id": "19554",
+          "source_attr_value_id": "87",
+          "label": "Front Only",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "416": "19554"
+      },
+      "hide_rules_by_product": {
+        "416": []
+      }
+    },
+    {
+      "attribute_id": "5",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "19559",
+      "sort_order": 4,
+      "options": [
+        {
+          "option_id": "19555",
+          "source_attr_value_id": "89",
+          "label": "50",
+          "default": false,
+          "sort_order": 1,
+          "factors": {
+            "qty": "50",
+            "is_digital": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19556",
+          "source_attr_value_id": "90",
+          "label": "100",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "100",
+            "is_digital": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19557",
+          "source_attr_value_id": "91",
+          "label": "150",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "150",
+            "is_digital": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19558",
+          "source_attr_value_id": "92",
+          "label": "200",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "200",
+            "is_digital": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19559",
+          "source_attr_value_id": "93",
+          "label": "250",
+          "default": true,
+          "sort_order": 5,
+          "factors": {
+            "qty": "250"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19560",
+          "source_attr_value_id": "94",
+          "label": "500",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "500"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19561",
+          "source_attr_value_id": "95",
+          "label": "1,000",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "1000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19562",
+          "source_attr_value_id": "96",
+          "label": "2,000",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "2000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19563",
+          "source_attr_value_id": "97",
+          "label": "3,000",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "3000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19564",
+          "source_attr_value_id": "98",
+          "label": "4,000",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "qty": "4000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19565",
+          "source_attr_value_id": "99",
+          "label": "5,000",
+          "default": false,
+          "sort_order": 11,
+          "factors": {
+            "qty": "5000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19566",
+          "source_attr_value_id": "100",
+          "label": "6,000",
+          "default": false,
+          "sort_order": 12,
+          "factors": {
+            "qty": "6000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19567",
+          "source_attr_value_id": "101",
+          "label": "7,000",
+          "default": false,
+          "sort_order": 13,
+          "factors": {
+            "qty": "7000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19568",
+          "source_attr_value_id": "102",
+          "label": "8,000",
+          "default": false,
+          "sort_order": 14,
+          "factors": {
+            "qty": "8000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19569",
+          "source_attr_value_id": "103",
+          "label": "9,000",
+          "default": false,
+          "sort_order": 15,
+          "factors": {
+            "qty": "9000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19570",
+          "source_attr_value_id": "104",
+          "label": "10,000",
+          "default": false,
+          "sort_order": 16,
+          "factors": {
+            "qty": "10000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19571",
+          "source_attr_value_id": "105",
+          "label": "15,000",
+          "default": false,
+          "sort_order": 17,
+          "factors": {
+            "qty": "15000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19572",
+          "source_attr_value_id": "106",
+          "label": "20,000",
+          "default": false,
+          "sort_order": 18,
+          "factors": {
+            "qty": "20000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19573",
+          "source_attr_value_id": "107",
+          "label": "25,000",
+          "default": false,
+          "sort_order": 19,
+          "factors": {
+            "qty": "25000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19574",
+          "source_attr_value_id": "108",
+          "label": "30,000",
+          "default": false,
+          "sort_order": 20,
+          "factors": {
+            "qty": "30000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19575",
+          "source_attr_value_id": "109",
+          "label": "35,000",
+          "default": false,
+          "sort_order": 21,
+          "factors": {
+            "qty": "35000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19576",
+          "source_attr_value_id": "110",
+          "label": "40,000",
+          "default": false,
+          "sort_order": 22,
+          "factors": {
+            "qty": "40000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19577",
+          "source_attr_value_id": "111",
+          "label": "45,000",
+          "default": false,
+          "sort_order": 23,
+          "factors": {
+            "qty": "45000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19578",
+          "source_attr_value_id": "112",
+          "label": "50,000",
+          "default": false,
+          "sort_order": 24,
+          "factors": {
+            "qty": "50000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19579",
+          "source_attr_value_id": "113",
+          "label": "55,000",
+          "default": false,
+          "sort_order": 25,
+          "factors": {
+            "qty": "55000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19580",
+          "source_attr_value_id": "114",
+          "label": "60,000",
+          "default": false,
+          "sort_order": 26,
+          "factors": {
+            "qty": "60000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19581",
+          "source_attr_value_id": "115",
+          "label": "65,000",
+          "default": false,
+          "sort_order": 27,
+          "factors": {
+            "qty": "65000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19582",
+          "source_attr_value_id": "116",
+          "label": "70,000",
+          "default": false,
+          "sort_order": 28,
+          "factors": {
+            "qty": "70000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19583",
+          "source_attr_value_id": "117",
+          "label": "75,000",
+          "default": false,
+          "sort_order": 29,
+          "factors": {
+            "qty": "75000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19584",
+          "source_attr_value_id": "118",
+          "label": "80,000",
+          "default": false,
+          "sort_order": 30,
+          "factors": {
+            "qty": "80000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19585",
+          "source_attr_value_id": "119",
+          "label": "85,000",
+          "default": false,
+          "sort_order": 31,
+          "factors": {
+            "qty": "85000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19586",
+          "source_attr_value_id": "119",
+          "label": "85,000",
+          "default": false,
+          "sort_order": 32,
+          "factors": {
+            "qty": "85000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19587",
+          "source_attr_value_id": "120",
+          "label": "90,000",
+          "default": false,
+          "sort_order": 33,
+          "factors": {
+            "qty": "90000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19588",
+          "source_attr_value_id": "121",
+          "label": "95,000",
+          "default": false,
+          "sort_order": 34,
+          "factors": {
+            "qty": "95000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19589",
+          "source_attr_value_id": "122",
+          "label": "100,000",
+          "default": false,
+          "sort_order": 35,
+          "factors": {
+            "qty": "100000"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "416": "19559"
+      },
+      "hide_rules_by_product": {
+        "416": []
+      }
+    },
+    {
+      "attribute_id": "6",
+      "name": "Printing Time",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "19590",
+      "sort_order": 5,
+      "options": [
+        {
+          "option_id": "19590",
+          "source_attr_value_id": "127",
+          "label": "3 Business Days",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "max_to": "3",
+            "min_to": "3"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19591",
+          "source_attr_value_id": "126",
+          "label": "2 Business Days",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "max_to": "2",
+            "min_to": "2"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        },
+        {
+          "option_id": "19592",
+          "source_attr_value_id": "125",
+          "label": "1 Business Day",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "max_to": "1",
+            "min_to": "1"
+          },
+          "available_product_ids": [
+            "416"
+          ],
+          "exclusion_rules_by_product": {
+            "416": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "416": "19590"
+      },
+      "hide_rules_by_product": {
+        "416": []
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "1",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19551",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "80 lb. Paper Gloss",
+          "option_id": "19551"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "133.09",
+      "original_price": 133.09,
+      "total_price": "133.09",
+      "unit_price": 0.53236,
+      "quantity": 250,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36830",
+          "attr_val_id": "3774",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36831",
+          "attr_val_id": "3774",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36829",
+          "attr_val_id": "3774",
+          "attribute_id": "1",
+          "order_spec_option_id": "7455",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "80 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19555",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "50",
+          "option_id": "19555"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "43.89",
+      "original_price": 43.89,
+      "total_price": "43.89",
+      "unit_price": 0.8778,
+      "quantity": 50,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "87",
+          "attr_val_id": "89",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "50",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19556",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "19556"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "71.52",
+      "original_price": 71.52,
+      "total_price": "71.52",
+      "unit_price": 0.7152,
+      "quantity": 100,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19557",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "150",
+          "option_id": "19557"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "94.18",
+      "original_price": 94.18,
+      "total_price": "94.18",
+      "unit_price": 0.6278666666666667,
+      "quantity": 150,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "89",
+          "attr_val_id": "91",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "150",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19558",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "200",
+          "option_id": "19558"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "116.94",
+      "original_price": 116.94,
+      "total_price": "116.94",
+      "unit_price": 0.5847,
+      "quantity": 200,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "90",
+          "attr_val_id": "92",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "200",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "139.96",
+      "original_price": 139.96,
+      "total_price": "139.96",
+      "unit_price": 0.55984,
+      "quantity": 250,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "6",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19591"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "19591"
+        }
+      },
+      "price": "173.28",
+      "original_price": 173.28,
+      "total_price": "173.28",
+      "unit_price": 0.69312,
+      "quantity": 250,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "6",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19592"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "1 Business Day",
+          "option_id": "19592"
+        }
+      },
+      "price": "199.94",
+      "original_price": 199.94,
+      "total_price": "199.94",
+      "unit_price": 0.79976,
+      "quantity": 250,
+      "turnaround_days": 1,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "130",
+          "attr_val_id": "125",
+          "attribute_id": "6",
+          "order_spec_option_id": "36",
+          "order_spec_code": "TA",
+          "order_spec_value": "1 Business Day",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19560",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "500",
+          "option_id": "19560"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "146.10",
+      "original_price": 146.1,
+      "total_price": "146.10",
+      "unit_price": 0.2922,
+      "quantity": 500,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "92",
+          "attr_val_id": "94",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19561",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1,000",
+          "option_id": "19561"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "158.39",
+      "original_price": 158.39,
+      "total_price": "158.39",
+      "unit_price": 0.15838999999999998,
+      "quantity": 1000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "93",
+          "attr_val_id": "95",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19562",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2,000",
+          "option_id": "19562"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "222.56",
+      "original_price": 222.56,
+      "total_price": "222.56",
+      "unit_price": 0.11128,
+      "quantity": 2000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "94",
+          "attr_val_id": "96",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19563",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3,000",
+          "option_id": "19563"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "281.28",
+      "original_price": 281.28,
+      "total_price": "281.28",
+      "unit_price": 0.09376,
+      "quantity": 3000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "95",
+          "attr_val_id": "97",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19564",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4,000",
+          "option_id": "19564"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "335.89",
+      "original_price": 335.89,
+      "total_price": "335.89",
+      "unit_price": 0.08397249999999999,
+      "quantity": 4000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "96",
+          "attr_val_id": "98",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19565",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "5,000",
+          "option_id": "19565"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "390.51",
+      "original_price": 390.51,
+      "total_price": "390.51",
+      "unit_price": 0.078102,
+      "quantity": 5000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "97",
+          "attr_val_id": "99",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19566",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "6,000",
+          "option_id": "19566"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "445.13",
+      "original_price": 445.13,
+      "total_price": "445.13",
+      "unit_price": 0.07418833333333333,
+      "quantity": 6000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "98",
+          "attr_val_id": "100",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "6000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19567",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "7,000",
+          "option_id": "19567"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "490.19",
+      "original_price": 490.19,
+      "total_price": "490.19",
+      "unit_price": 0.07002714285714286,
+      "quantity": 7000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "99",
+          "attr_val_id": "101",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "7000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19568",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "8,000",
+          "option_id": "19568"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "535.24",
+      "original_price": 535.24,
+      "total_price": "535.24",
+      "unit_price": 0.066905,
+      "quantity": 8000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "100",
+          "attr_val_id": "102",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "8000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19569",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "9,000",
+          "option_id": "19569"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "580.30",
+      "original_price": 580.3,
+      "total_price": "580.30",
+      "unit_price": 0.06447777777777777,
+      "quantity": 9000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "101",
+          "attr_val_id": "103",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "9000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19570",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "10,000",
+          "option_id": "19570"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "625.36",
+      "original_price": 625.36,
+      "total_price": "625.36",
+      "unit_price": 0.06253600000000001,
+      "quantity": 10000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "102",
+          "attr_val_id": "104",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "10,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19571",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "15,000",
+          "option_id": "19571"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "843.83",
+      "original_price": 843.83,
+      "total_price": "843.83",
+      "unit_price": 0.05625533333333334,
+      "quantity": 15000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "103",
+          "attr_val_id": "105",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "15,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19572",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "20,000",
+          "option_id": "19572"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "1058.20",
+      "original_price": 1058.2,
+      "total_price": "1058.20",
+      "unit_price": 0.052910000000000006,
+      "quantity": 20000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "104",
+          "attr_val_id": "106",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "20,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19573",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "25,000",
+          "option_id": "19573"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "1256.19",
+      "original_price": 1256.19,
+      "total_price": "1256.19",
+      "unit_price": 0.0502476,
+      "quantity": 25000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "105",
+          "attr_val_id": "107",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "25,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19574",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "30,000",
+          "option_id": "19574"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "1454.17",
+      "original_price": 1454.17,
+      "total_price": "1454.17",
+      "unit_price": 0.04847233333333333,
+      "quantity": 30000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "106",
+          "attr_val_id": "108",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "30,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19575",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "35,000",
+          "option_id": "19575"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "1652.16",
+      "original_price": 1652.16,
+      "total_price": "1652.16",
+      "unit_price": 0.04720457142857143,
+      "quantity": 35000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "107",
+          "attr_val_id": "109",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "35,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19576",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "40,000",
+          "option_id": "19576"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "1850.14",
+      "original_price": 1850.14,
+      "total_price": "1850.14",
+      "unit_price": 0.0462535,
+      "quantity": 40000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "108",
+          "attr_val_id": "110",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "40,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19577",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "45,000",
+          "option_id": "19577"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "2048.13",
+      "original_price": 2048.13,
+      "total_price": "2048.13",
+      "unit_price": 0.045514000000000006,
+      "quantity": 45000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "109",
+          "attr_val_id": "111",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "45,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19578",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "50,000",
+          "option_id": "19578"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "2246.12",
+      "original_price": 2246.12,
+      "total_price": "2246.12",
+      "unit_price": 0.0449224,
+      "quantity": 50000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "110",
+          "attr_val_id": "112",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "50,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19579",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "55,000",
+          "option_id": "19579"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "2444.10",
+      "original_price": 2444.1,
+      "total_price": "2444.10",
+      "unit_price": 0.044438181818181814,
+      "quantity": 55000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "111",
+          "attr_val_id": "113",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "55,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19580",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "60,000",
+          "option_id": "19580"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "2642.09",
+      "original_price": 2642.09,
+      "total_price": "2642.09",
+      "unit_price": 0.044034833333333336,
+      "quantity": 60000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "112",
+          "attr_val_id": "114",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "60,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19581",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "65,000",
+          "option_id": "19581"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "2840.07",
+      "original_price": 2840.07,
+      "total_price": "2840.07",
+      "unit_price": 0.04369338461538462,
+      "quantity": 65000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "113",
+          "attr_val_id": "115",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "65,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19582",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "70,000",
+          "option_id": "19582"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3038.06",
+      "original_price": 3038.06,
+      "total_price": "3038.06",
+      "unit_price": 0.043400857142857144,
+      "quantity": 70000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "114",
+          "attr_val_id": "116",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "70,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19583",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "75,000",
+          "option_id": "19583"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3236.05",
+      "original_price": 3236.05,
+      "total_price": "3236.05",
+      "unit_price": 0.043147333333333336,
+      "quantity": 75000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "115",
+          "attr_val_id": "117",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "75,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19584",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "80,000",
+          "option_id": "19584"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3434.03",
+      "original_price": 3434.03,
+      "total_price": "3434.03",
+      "unit_price": 0.042925375,
+      "quantity": 80000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "116",
+          "attr_val_id": "118",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "80,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19585",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "85,000",
+          "option_id": "19585"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3632.02",
+      "original_price": 3632.02,
+      "total_price": "3632.02",
+      "unit_price": 0.04272964705882353,
+      "quantity": 85000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "117",
+          "attr_val_id": "119",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "85,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19586",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "85,000",
+          "option_id": "19586"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3632.02",
+      "original_price": 3632.02,
+      "total_price": "3632.02",
+      "unit_price": 0.04272964705882353,
+      "quantity": 85000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "117",
+          "attr_val_id": "119",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "85,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19587",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "90,000",
+          "option_id": "19587"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "3830.00",
+      "original_price": 3830,
+      "total_price": "3830.00",
+      "unit_price": 0.042555555555555555,
+      "quantity": 90000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "118",
+          "attr_val_id": "120",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "90,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19588",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "95,000",
+          "option_id": "19588"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "4027.99",
+      "original_price": 4027.99,
+      "total_price": "4027.99",
+      "unit_price": 0.0423998947368421,
+      "quantity": 95000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "119",
+          "attr_val_id": "121",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "95,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19589",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100,000",
+          "option_id": "19589"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "4225.97",
+      "original_price": 4225.97,
+      "total_price": "4225.97",
+      "unit_price": 0.042259700000000004,
+      "quantity": 100000,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "120",
+          "attr_val_id": "122",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100,000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "19550",
+        "attr1": "19552",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.5\" x 7.25\" Slim",
+          "option_id": "19550"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Gloss",
+          "option_id": "19552"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "139.96",
+      "original_price": 139.96,
+      "total_price": "139.96",
+      "unit_price": 0.55984,
+      "quantity": 250,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3864",
+          "attr_val_id": "4168",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.5\" x 7.25\" Slim",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36454",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1018",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36455",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "1021",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Gloss",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36453",
+          "attr_val_id": "1",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1",
+      "selection": {
+        "attr3": "19549",
+        "attr1": "19553",
+        "attr4": "19554",
+        "attr5": "19559",
+        "attr6": "19590"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "10.75\" x 7.1875\" Standard",
+          "option_id": "19549"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "100 lb. Paper Matte",
+          "option_id": "19553"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "19554"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "19559"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "3 Business Days",
+          "option_id": "19590"
+        }
+      },
+      "price": "152.24",
+      "original_price": 152.24,
+      "total_price": "152.24",
+      "unit_price": 0.6089600000000001,
+      "quantity": 250,
+      "turnaround_days": 3,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "3863",
+          "attr_val_id": "4167",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "10.75\" x 7.1875\" Standard",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "128",
+          "attr_val_id": "127",
+          "attribute_id": "6",
+          "order_spec_option_id": "34",
+          "order_spec_code": "TA",
+          "order_spec_value": "3 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "36821",
+          "attr_val_id": "2",
+          "attribute_id": "1",
+          "order_spec_option_id": "1019",
+          "order_spec_code": "FCOAT",
+          "order_spec_value": "Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Coating",
+          "sort": "1053",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36822",
+          "attr_val_id": "2",
+          "attribute_id": "1",
+          "order_spec_option_id": "1022",
+          "order_spec_code": "BCOAT",
+          "order_spec_value": "Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Coating",
+          "sort": "1055",
+          "attribute_name": "Paper"
+        },
+        {
+          "attr_val_order_spec_id": "36820",
+          "attr_val_id": "2",
+          "attribute_id": "1",
+          "order_spec_option_id": "7456",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "100 lb Paper",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1529 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/raised-spot-uv-postcards.html",
+    "scraped_at_utc": "2026-08-19T06:33:05.019692+00:00",
+    "product_id": "2275",
+    "product_code": "",
+    "product_name": "Raised Spot UV Postcards",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 6,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "24e274e42e7622b3f8645475100476c58fb1276de70657225dfd00dac4f984ad"
+  },
+  "default_selection": {
+    "attr3": "131201",
+    "attr1": "1764933",
+    "attr17": "1784595",
+    "attr4": "130987",
+    "attr856": "130990",
+    "attr857": "1610843",
+    "attr5": "130993",
+    "attr6": "130996"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy wgt-txt-styles-main_heading\">\n                            <div class=\"wgt-text-title\">\n                <h2>Elevate your design with raised spot UV postcard printing.</h2>            </div>\n                            <div class=\"wgt-text-content\">\n                <p>Postcards are an effective and inexpensive direct mail marketing strategy. A design with strong visuals can generate more leads, help in acquiring business, and increase company sales. Raised spot UV postcard printing calls attention to your design by highlighting important details in your design.</p>\n<p>As its name indicates, \"raised spot UV\" lifts designated areas from the postcard surface. Whether you decide to apply this enhancement to your logo, name, or image, this technology’s embossed finish instantly captures the eyes. The raised area is smooth to the touch, providing an experiential texture to your postcard design.</p>\n<p>This elevation elegantly complements the suede paper surface. All raised spot UV postcards are printed on smooth, luxurious velvet soft touch paper. Velvet lamination protects the surface from external elements and increases the paper’s thickness. The combination of both features prints raised spot UV postcards that appeal to one’s sight and touch.</p>\n<p>All personalized postcards comply with the sizes required for First-Class mailing orders. Choose between the standard 4\" x  6\" or the larger 5\" x 7\" postcard sizes.  Upload a ready-made design or use our online tool to create a new one. Find out how our spot UV coating can make a difference today.</p>\n<p>Note: If you are mailing this product, please confirm that your mail addressing machine can print on the laminated surface. If unsure, please call to request for a sample before placing your order.</p>            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/1078/600x600/112560_Raised_Spot_UV_Postcard.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/1078/700x700/112560_Raised_Spot_UV_Postcard.jpg",
+    "https://staticecp.uprinting.com/321/700x700/01_Raised_Spot_UV_Postcard[1]_1400x1400.jpg",
+    "https://staticecp.uprinting.com/17211/700x700/UP_Raised_Spot_UV_Print_File_Guidelines_Full-new.jpg",
+    "https://staticecp.uprinting.com/2596/700x700/Raised_Spot_UV_Postcards_Thickness_A.jpg",
+    "https://staticecp.uprinting.com/2595/700x700/Raised_Spot_UV_Postcards_Size_A.jpg"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "3",
+      "name": "Size",
+      "code": "size",
+      "field_type": "s",
+      "default_option_id": "131201",
+      "sort_order": 1,
+      "options": [
+        {
+          "option_id": "131201",
+          "source_attr_value_id": "47",
+          "label": "4\" x 6\"",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "height": "6",
+            "width": "4"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        },
+        {
+          "option_id": "131202",
+          "source_attr_value_id": "55",
+          "label": "5\" x 7\"",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "height": "7",
+            "width": "5"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "131201"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "1",
+      "name": "Paper Type",
+      "code": "paper",
+      "field_type": "s",
+      "default_option_id": "1764933",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "1764933",
+          "source_attr_value_id": "12838",
+          "label": "16 pt. Cardstock",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qpi": "60",
+            "wtpi": "0.0005128"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "1764933"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "17",
+      "name": "Lamination",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "1784595",
+      "sort_order": 3,
+      "options": [
+        {
+          "option_id": "1784595",
+          "source_attr_value_id": "12597",
+          "label": "Silk",
+          "default": true,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "1784595"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "4",
+      "name": "Printed Side",
+      "code": "color",
+      "field_type": "s",
+      "default_option_id": "130987",
+      "sort_order": 4,
+      "options": [
+        {
+          "option_id": "130987",
+          "source_attr_value_id": "87",
+          "label": "Front Only",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        },
+        {
+          "option_id": "130988",
+          "source_attr_value_id": "88",
+          "label": "Front and Back",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "no_sd": "2"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "130987"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "856",
+      "name": "Spot UV",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "130990",
+      "sort_order": 5,
+      "options": [
+        {
+          "option_id": "130990",
+          "source_attr_value_id": "11853",
+          "label": "Raised",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "130990"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "857",
+      "name": "Spot UV Side",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "1610843",
+      "sort_order": 6,
+      "options": [
+        {
+          "option_id": "1610843",
+          "source_attr_value_id": "43922",
+          "label": "Front Only - Raised",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        },
+        {
+          "option_id": "1610844",
+          "source_attr_value_id": "43924",
+          "label": "Front and Back - Raised",
+          "default": false,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "1610843"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "5",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "130993",
+      "sort_order": 7,
+      "options": [
+        {
+          "option_id": "130993",
+          "source_attr_value_id": "90",
+          "label": "100",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "100"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        },
+        {
+          "option_id": "130994",
+          "source_attr_value_id": "93",
+          "label": "250",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "250"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        },
+        {
+          "option_id": "130995",
+          "source_attr_value_id": "94",
+          "label": "500",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "500"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "130993"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    },
+    {
+      "attribute_id": "6",
+      "name": "Printing Time",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "130996",
+      "sort_order": 8,
+      "options": [
+        {
+          "option_id": "130996",
+          "source_attr_value_id": "129",
+          "label": "6 Business Days",
+          "default": true,
+          "sort_order": 2,
+          "factors": {
+            "max_to": "6",
+            "min_to": "6"
+          },
+          "available_product_ids": [
+            "2275"
+          ],
+          "exclusion_rules_by_product": {
+            "2275": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "2275": "130996"
+      },
+      "hide_rules_by_product": {
+        "2275": []
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr3": "131201",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130987",
+        "attr856": "130990",
+        "attr857": "1610843",
+        "attr5": "130993",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "4\" x 6\"",
+          "option_id": "131201"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "130987"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front Only",
+          "option_id": "1610843"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "130993"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "224.77",
+      "original_price": 224.77,
+      "total_price": "224.77",
+      "unit_price": 2.2477,
+      "quantity": 100,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "47",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "4\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21839",
+          "attr_val_id": "43922",
+          "attribute_id": "857",
+          "order_spec_option_id": "1621",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "27579",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "6677",
+          "order_spec_code": "PRODUUID",
+          "order_spec_value": "1_PCA_4x6",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product UUID",
+          "sort": "1267",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "857",
+      "selection": {
+        "attr3": "131201",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130987",
+        "attr856": "130990",
+        "attr857": "1610844",
+        "attr5": "130993",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "4\" x 6\"",
+          "option_id": "131201"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "130987"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front and Back",
+          "option_id": "1610844"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "130993"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "270.81",
+      "original_price": 270.81,
+      "total_price": "270.81",
+      "unit_price": 2.7081,
+      "quantity": 100,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "47",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "4\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21841",
+          "attr_val_id": "43924",
+          "attribute_id": "857",
+          "order_spec_option_id": "1622",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front and Back",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "27579",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "6677",
+          "order_spec_code": "PRODUUID",
+          "order_spec_value": "1_PCA_4x6",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product UUID",
+          "sort": "1267",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "131201",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130987",
+        "attr856": "130990",
+        "attr857": "1610843",
+        "attr5": "130994",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "4\" x 6\"",
+          "option_id": "131201"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "130987"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front Only",
+          "option_id": "1610843"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "130994"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "255.55",
+      "original_price": 255.55,
+      "total_price": "255.55",
+      "unit_price": 1.0222,
+      "quantity": 250,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "47",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "4\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21839",
+          "attr_val_id": "43922",
+          "attribute_id": "857",
+          "order_spec_option_id": "1621",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "27579",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "6677",
+          "order_spec_code": "PRODUUID",
+          "order_spec_value": "1_PCA_4x6",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product UUID",
+          "sort": "1267",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "131201",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130987",
+        "attr856": "130990",
+        "attr857": "1610843",
+        "attr5": "130995",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "4\" x 6\"",
+          "option_id": "131201"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "130987"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front Only",
+          "option_id": "1610843"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "500",
+          "option_id": "130995"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "344.99",
+      "original_price": 344.99,
+      "total_price": "344.99",
+      "unit_price": 0.68998,
+      "quantity": 500,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "47",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "4\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "92",
+          "attr_val_id": "94",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21839",
+          "attr_val_id": "43922",
+          "attribute_id": "857",
+          "order_spec_option_id": "1621",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "27579",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "6677",
+          "order_spec_code": "PRODUUID",
+          "order_spec_value": "1_PCA_4x6",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product UUID",
+          "sort": "1267",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "4",
+      "selection": {
+        "attr3": "131201",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130988",
+        "attr856": "130990",
+        "attr857": "1610843",
+        "attr5": "130993",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "4\" x 6\"",
+          "option_id": "131201"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front and Back",
+          "option_id": "130988"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front Only",
+          "option_id": "1610843"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "130993"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "224.77",
+      "original_price": 224.77,
+      "total_price": "224.77",
+      "unit_price": 2.2477,
+      "quantity": 100,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "47",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "4\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "124",
+          "attr_val_id": "88",
+          "attribute_id": "4",
+          "order_spec_option_id": "14",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front and Back",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21839",
+          "attr_val_id": "43922",
+          "attribute_id": "857",
+          "order_spec_option_id": "1621",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "27579",
+          "attr_val_id": "47",
+          "attribute_id": "3",
+          "order_spec_option_id": "6677",
+          "order_spec_code": "PRODUUID",
+          "order_spec_value": "1_PCA_4x6",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Product UUID",
+          "sort": "1267",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "131202",
+        "attr1": "1764933",
+        "attr17": "1784595",
+        "attr4": "130987",
+        "attr856": "130990",
+        "attr857": "1610843",
+        "attr5": "130993",
+        "attr6": "130996"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "5\" x 7\"",
+          "option_id": "131202"
+        },
+        "1": {
+          "name": "Paper Type",
+          "label": "16 pt. Cardstock",
+          "option_id": "1764933"
+        },
+        "17": {
+          "name": "Lamination",
+          "label": "Silk",
+          "option_id": "1784595"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "130987"
+        },
+        "856": {
+          "name": "Spot UV",
+          "label": "Raised",
+          "option_id": "130990"
+        },
+        "857": {
+          "name": "Spot UV Side",
+          "label": "Front Only",
+          "option_id": "1610843"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "130993"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "130996"
+        }
+      },
+      "price": "320.41",
+      "original_price": 320.41,
+      "total_price": "320.41",
+      "unit_price": 3.2041000000000004,
+      "quantity": 100,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "55",
+          "attr_val_id": "55",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5\" x 7\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "13301",
+          "attr_val_id": "11853",
+          "attribute_id": "856",
+          "order_spec_option_id": "1740",
+          "order_spec_code": "SPOTUV",
+          "order_spec_value": "Raised",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Spot UV",
+          "sort": "1108",
+          "attribute_name": "Spot UV"
+        },
+        {
+          "attr_val_order_spec_id": "21839",
+          "attr_val_id": "43922",
+          "attribute_id": "857",
+          "order_spec_option_id": "1621",
+          "order_spec_code": "RSDSPOTUVSIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Raised Spot UV Side",
+          "sort": "1139",
+          "attribute_name": "Spot UV Side"
+        },
+        {
+          "attr_val_order_spec_id": "38208",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7463",
+          "order_spec_code": "FLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Front Lamination",
+          "sort": "1405",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38209",
+          "attr_val_id": "12597",
+          "attribute_id": "17",
+          "order_spec_option_id": "7464",
+          "order_spec_code": "BLAM",
+          "order_spec_value": "Silk",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Back Lamination",
+          "sort": "1406",
+          "attribute_name": "Lamination"
+        },
+        {
+          "attr_val_order_spec_id": "38440",
+          "attr_val_id": "12838",
+          "attribute_id": "1",
+          "order_spec_option_id": "7467",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "16 pt C2S",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

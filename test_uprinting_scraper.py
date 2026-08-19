@@ -133,6 +133,38 @@ def test_invalid_sweep_selection_is_rejected_before_pricing() -> None:
     assert scraper.selection_is_valid({"attr1": "no", "attr2": "square"})
 
 
+def test_range_quantity_uses_display_quantity_for_api() -> None:
+    scraper = UPrintingScraper("https://www.uprinting.com/example.html")
+    scraper.catalog = {
+        "prod_attrs": {
+            "1796": {
+                "default_value": "100",
+                "prod_attr_vals": {
+                    "1487661": {
+                        "factors": {
+                            "display_qty": "1",
+                            "min_qty": "1",
+                            "max_qty": "1",
+                        },
+                    },
+                },
+            },
+            "3": {
+                "default_value": "203",
+                "prod_attr_vals": {"203": {"factors": {}}},
+            },
+        },
+    }
+
+    translated = scraper._api_selection({
+        "attr1796": "1487661",
+        "attr3": "203",
+    })
+
+    assert translated["attr1796"] == "1"
+    assert translated["attr3"] == "203"
+
+
 def test_admin_login_requires_environment_password(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(preview_server, "_printoe_token", None)
     monkeypatch.setattr(preview_server, "PRINTOE_ADMIN_PASSWORD", "")

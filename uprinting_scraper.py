@@ -385,8 +385,34 @@ class UPrintingScraper:
     def price(self, selection: dict[str, str]) -> dict[str, Any]:
         payload = self._base_payload()
         payload.update(self.price_options)
-        payload.update(selection)
+        payload.update(self._api_selection(selection))
         return self._post("computePrice", payload)
+
+    def _api_selection(self, selection: dict[str, str]) -> dict[str, str]:
+        """Translate range-quantity option IDs into quantities expected by the API."""
+        translated = dict(selection)
+        for key, option_id in selection.items():
+            if not key.startswith("attr"):
+                continue
+            attr_id = key[4:]
+            attribute = self.catalog.get("prod_attrs", {}).get(attr_id, {})
+            values = attribute.get("prod_attr_vals", {})
+            # Most calculators expect a prod_attr_val option ID. Range-based
+            # quantity calculators are different: their default_value is an
+            # actual quantity (not a key in prod_attr_vals), and sending the
+            # option ID makes the API interpret e.g. 1487661 as 1,487,661.
+            if str(attribute.get("default_value", "")) in values:
+                continue
+            option = values.get(str(option_id), {})
+            factors = option.get("factors", {})
+            display_qty = (
+                factors.get("display_qty")
+                if isinstance(factors, dict)
+                else None
+            )
+            if display_qty not in (None, ""):
+                translated[key] = str(display_qty).replace(",", "")
+        return translated
 
     def _priced_row(self, selection: dict[str, str], changed: str = "") -> dict[str, Any]:
         response = self.price(selection)

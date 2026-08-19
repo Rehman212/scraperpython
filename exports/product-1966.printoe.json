@@ -1,0 +1,5553 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/t-shirts.html",
+    "scraped_at_utc": "2026-08-19T06:47:54.478994+00:00",
+    "product_id": "1966",
+    "product_code": "",
+    "product_name": "T-Shirts",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 27,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "1898e4e651cc4314a4a4642c9878f3ecdb77a1f2ca85a6882d8689cbe8767fce"
+  },
+  "default_selection": {
+    "attr951": "109858",
+    "attr976": "109861",
+    "attr973": "109866",
+    "attr1005": "127829",
+    "attr320": "195571",
+    "attr4": "109872",
+    "attr5": "109875",
+    "attr6": "109892"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy wgt-txt-styles-main_heading\">\n                            <div class=\"wgt-text-title\">\n                <h2>Spread your message in style with t-shirt printing.</h2>            </div>\n                            <div class=\"wgt-text-content\">\n                <p>Custom T-shirt printing is a popular, eye-catching choice for advertising businesses of all sizes. They’re a unique and much appreciated giveaway and are an easy way of getting attention for your brand. Custom shirts allow you to share countless impressions of your brand while the wearers go about their day-to-day routines.</p>\n<p>We offer men’s and women’s short sleeve cotton jersey shirts in premium and basic grades to better suit your promotional t-shirt needs. Shirts come in white, black, blue, gray, and red with sizes ranging from small to 2XL, covering the gamut of popular sizes and colors. Let your creativity run free and print on either or both sides of your personalized shirts.</p>\n<p>Custom t-shirts are popular for promoting new products and as promotional giveaways for special occasions. But shirts aren’t just for promotions and giveaways either. Custom printed shirts are just the thing for company logo shirts, team work shirts, and as a cool way to promote your own business at trade shows and career fairs.</p>\n<p>Contact us to learn more about your custom t-shirt printing options.</p>            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/385/600x600/112509_T-Shirt.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/385/700x700/112509_T-Shirt.jpg",
+    "https://staticecp.uprinting.com/383/700x700/UP_T-Shirt_1400x1400[1]_1400x1400.jpg"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "951",
+      "name": "Style",
+      "code": "3dModel",
+      "field_type": "s",
+      "default_option_id": "109858",
+      "sort_order": 1,
+      "options": [
+        {
+          "option_id": "109858",
+          "source_attr_value_id": "11234",
+          "label": "Mens Basic Short Sleeve",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109859",
+          "source_attr_value_id": "11233",
+          "label": "Mens Premium Short Sleeve",
+          "default": false,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109858"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "976",
+      "name": "Size",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "109862",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "109861",
+          "source_attr_value_id": "11239",
+          "label": "Small",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "height": "8.5",
+            "width": "11"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109862",
+          "source_attr_value_id": "11240",
+          "label": "Medium",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "height": "8.5",
+            "width": "11"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109863",
+          "source_attr_value_id": "11241",
+          "label": "Large",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "height": "8.5",
+            "width": "11"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109864",
+          "source_attr_value_id": "11242",
+          "label": "X-Large",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "height": "8.5",
+            "width": "11"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109865",
+          "source_attr_value_id": "11243",
+          "label": "2X-Large",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "height": "8.5",
+            "width": "11"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109861"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "973",
+      "name": "Material",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "109866",
+      "sort_order": 3,
+      "options": [
+        {
+          "option_id": "109866",
+          "source_attr_value_id": "11197",
+          "label": "Cotton Jersey",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "wtpi": "0.0006",
+            "qpi": "3",
+            "height": "32",
+            "width": "26"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109866"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "1005",
+      "name": "Shirt Colors",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "127833",
+      "sort_order": 4,
+      "options": [
+        {
+          "option_id": "127829",
+          "source_attr_value_id": "11667",
+          "label": "Black",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "127830",
+          "source_attr_value_id": "11668",
+          "label": "Blue",
+          "default": false,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": [
+              {
+                "951": "109860"
+              },
+              {
+                "951": "109859"
+              }
+            ]
+          }
+        },
+        {
+          "option_id": "127831",
+          "source_attr_value_id": "11669",
+          "label": "Gray",
+          "default": false,
+          "sort_order": 3,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": [
+              {
+                "951": "109860"
+              },
+              {
+                "951": "109859"
+              }
+            ]
+          }
+        },
+        {
+          "option_id": "127832",
+          "source_attr_value_id": "11670",
+          "label": "Red",
+          "default": false,
+          "sort_order": 4,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": [
+              {
+                "951": "109860"
+              },
+              {
+                "951": "109859"
+              }
+            ]
+          }
+        },
+        {
+          "option_id": "127833",
+          "source_attr_value_id": "11666",
+          "label": "White",
+          "default": false,
+          "sort_order": 5,
+          "factors": {},
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "127829"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "4",
+      "name": "Printed Side",
+      "code": "color",
+      "field_type": "s",
+      "default_option_id": "109872",
+      "sort_order": 6,
+      "options": [
+        {
+          "option_id": "109872",
+          "source_attr_value_id": "87",
+          "label": "Front Only",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109873",
+          "source_attr_value_id": "186",
+          "label": "Back Only",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109874",
+          "source_attr_value_id": "88",
+          "label": "Front and Back",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "no_sd": "2"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109872"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "5",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "109875",
+      "sort_order": 7,
+      "options": [
+        {
+          "option_id": "109875",
+          "source_attr_value_id": "2636",
+          "label": "1",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "1"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109876",
+          "source_attr_value_id": "2637",
+          "label": "2",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "2"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109877",
+          "source_attr_value_id": "2638",
+          "label": "3",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "3"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109878",
+          "source_attr_value_id": "2639",
+          "label": "4",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "4"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109879",
+          "source_attr_value_id": "2640",
+          "label": "5",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "qty": "5"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109880",
+          "source_attr_value_id": "2641",
+          "label": "6",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "6"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109881",
+          "source_attr_value_id": "2642",
+          "label": "7",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "7"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109882",
+          "source_attr_value_id": "2643",
+          "label": "8",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "8"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109883",
+          "source_attr_value_id": "2644",
+          "label": "9",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "9"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109884",
+          "source_attr_value_id": "2645",
+          "label": "10",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "qty": "10"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109885",
+          "source_attr_value_id": "2648",
+          "label": "15",
+          "default": false,
+          "sort_order": 11,
+          "factors": {
+            "qty": "15"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109886",
+          "source_attr_value_id": "2649",
+          "label": "20",
+          "default": false,
+          "sort_order": 12,
+          "factors": {
+            "qty": "20"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109887",
+          "source_attr_value_id": "231",
+          "label": "25",
+          "default": false,
+          "sort_order": 13,
+          "factors": {
+            "qty": "25"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109888",
+          "source_attr_value_id": "89",
+          "label": "50",
+          "default": false,
+          "sort_order": 14,
+          "factors": {
+            "qty": "50"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109889",
+          "source_attr_value_id": "90",
+          "label": "100",
+          "default": false,
+          "sort_order": 15,
+          "factors": {
+            "qty": "100"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        },
+        {
+          "option_id": "109890",
+          "source_attr_value_id": "93",
+          "label": "250",
+          "default": false,
+          "sort_order": 16,
+          "factors": {
+            "qty": "250"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109875"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    },
+    {
+      "attribute_id": "6",
+      "name": "Printing Time",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "109892",
+      "sort_order": 8,
+      "options": [
+        {
+          "option_id": "109892",
+          "source_attr_value_id": "129",
+          "label": "6 Business Days",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "max_to": "6",
+            "min_to": "6"
+          },
+          "available_product_ids": [
+            "1966"
+          ],
+          "exclusion_rules_by_product": {
+            "1966": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1966": "109892"
+      },
+      "hide_rules_by_product": {
+        "1966": []
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "976",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109862",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Medium",
+          "option_id": "109862"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12525",
+          "attr_val_id": "11240",
+          "attribute_id": "976",
+          "order_spec_option_id": "1507",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "976",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109863",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Large",
+          "option_id": "109863"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12524",
+          "attr_val_id": "11241",
+          "attribute_id": "976",
+          "order_spec_option_id": "1508",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Large",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "976",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109864",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "X-Large",
+          "option_id": "109864"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12523",
+          "attr_val_id": "11242",
+          "attribute_id": "976",
+          "order_spec_option_id": "1509",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "X-Large",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "976",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109865",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "2X-Large",
+          "option_id": "109865"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "17.84",
+      "original_price": 17.84,
+      "total_price": "17.84",
+      "unit_price": 17.84,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12521",
+          "attr_val_id": "11243",
+          "attribute_id": "976",
+          "order_spec_option_id": "1510",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "2X-Large",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "951",
+      "selection": {
+        "attr951": "109859",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Premium Short Sleeve",
+          "option_id": "109859"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "17.21",
+      "original_price": 17.21,
+      "total_price": "17.21",
+      "unit_price": 17.21,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12528",
+          "attr_val_id": "11233",
+          "attribute_id": "951",
+          "order_spec_option_id": "1588",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Premium Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109876",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2",
+          "option_id": "109876"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "30.16",
+      "original_price": 30.16,
+      "total_price": "30.16",
+      "unit_price": 15.08,
+      "quantity": 2,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2375",
+          "attr_val_id": "2637",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109877",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3",
+          "option_id": "109877"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "45.23",
+      "original_price": 45.23,
+      "total_price": "45.23",
+      "unit_price": 15.076666666666666,
+      "quantity": 3,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2376",
+          "attr_val_id": "2638",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109878",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4",
+          "option_id": "109878"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "58.87",
+      "original_price": 58.87,
+      "total_price": "58.87",
+      "unit_price": 14.7175,
+      "quantity": 4,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2377",
+          "attr_val_id": "2639",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109879",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "5",
+          "option_id": "109879"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "71.78",
+      "original_price": 71.78,
+      "total_price": "71.78",
+      "unit_price": 14.356,
+      "quantity": 5,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2378",
+          "attr_val_id": "2640",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109880",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "6",
+          "option_id": "109880"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "85.28",
+      "original_price": 85.28,
+      "total_price": "85.28",
+      "unit_price": 14.213333333333333,
+      "quantity": 6,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2379",
+          "attr_val_id": "2641",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109881",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "7",
+          "option_id": "109881"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "98.49",
+      "original_price": 98.49,
+      "total_price": "98.49",
+      "unit_price": 14.069999999999999,
+      "quantity": 7,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2380",
+          "attr_val_id": "2642",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "7",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109882",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "8",
+          "option_id": "109882"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "111.44",
+      "original_price": 111.44,
+      "total_price": "111.44",
+      "unit_price": 13.93,
+      "quantity": 8,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2381",
+          "attr_val_id": "2643",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "8",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109883",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "9",
+          "option_id": "109883"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "124.10",
+      "original_price": 124.1,
+      "total_price": "124.10",
+      "unit_price": 13.788888888888888,
+      "quantity": 9,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2382",
+          "attr_val_id": "2644",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "9",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109884",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "10",
+          "option_id": "109884"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "134.97",
+      "original_price": 134.97,
+      "total_price": "134.97",
+      "unit_price": 13.497,
+      "quantity": 10,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2383",
+          "attr_val_id": "2645",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "10",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109885",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "15",
+          "option_id": "109885"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "189.54",
+      "original_price": 189.54,
+      "total_price": "189.54",
+      "unit_price": 12.636,
+      "quantity": 15,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2385",
+          "attr_val_id": "2648",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "15",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109886",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "20",
+          "option_id": "109886"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "236.91",
+      "original_price": 236.91,
+      "total_price": "236.91",
+      "unit_price": 11.8455,
+      "quantity": 20,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2398",
+          "attr_val_id": "2649",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "20",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109887",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "25",
+          "option_id": "109887"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "257.01",
+      "original_price": 257.01,
+      "total_price": "257.01",
+      "unit_price": 10.2804,
+      "quantity": 25,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "208",
+          "attr_val_id": "231",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "25",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109888",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "50",
+          "option_id": "109888"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "473.84",
+      "original_price": 473.84,
+      "total_price": "473.84",
+      "unit_price": 9.476799999999999,
+      "quantity": 50,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "87",
+          "attr_val_id": "89",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "50",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109889",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "100",
+          "option_id": "109889"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "867.30",
+      "original_price": 867.3,
+      "total_price": "867.30",
+      "unit_price": 8.673,
+      "quantity": 100,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "88",
+          "attr_val_id": "90",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "100",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109872",
+        "attr5": "109890",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "109890"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "1972.97",
+      "original_price": 1972.97,
+      "total_price": "1972.97",
+      "unit_price": 7.8918800000000005,
+      "quantity": 250,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "91",
+          "attr_val_id": "93",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "4",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109873",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Back Only",
+          "option_id": "109873"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "270",
+          "attr_val_id": "186",
+          "attribute_id": "4",
+          "order_spec_option_id": "47",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Back Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "4",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127829",
+        "attr4": "109874",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Black",
+          "option_id": "127829"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front and Back",
+          "option_id": "109874"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "21.30",
+      "original_price": 21.3,
+      "total_price": "21.30",
+      "unit_price": 21.3,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "124",
+          "attr_val_id": "88",
+          "attribute_id": "4",
+          "order_spec_option_id": "14",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front and Back",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13090",
+          "attr_val_id": "11667",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1634",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Black",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1005",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127830",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Blue",
+          "option_id": "127830"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13091",
+          "attr_val_id": "11668",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1635",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Blue",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1005",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127831",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Gray",
+          "option_id": "127831"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13092",
+          "attr_val_id": "11669",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1636",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Gray",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1005",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127832",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "Red",
+          "option_id": "127832"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13093",
+          "attr_val_id": "11670",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1637",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "Red",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1005",
+      "selection": {
+        "attr951": "109858",
+        "attr976": "109861",
+        "attr973": "109866",
+        "attr1005": "127833",
+        "attr4": "109872",
+        "attr5": "109875",
+        "attr6": "109892"
+      },
+      "display": {
+        "0": {
+          "name": "Size",
+          "label": "11\" x 8.5\"",
+          "option_id": ""
+        },
+        "951": {
+          "name": "Style",
+          "label": "Mens Basic Short Sleeve",
+          "option_id": "109858"
+        },
+        "976": {
+          "name": "Size",
+          "label": "Small",
+          "option_id": "109861"
+        },
+        "973": {
+          "name": "Material",
+          "label": "Cotton Jersey",
+          "option_id": "109866"
+        },
+        "1005": {
+          "name": "Shirt Colors",
+          "label": "White",
+          "option_id": "127833"
+        },
+        "320": {
+          "name": "Print Area",
+          "label": "11\" W x 8.5\" H",
+          "option_id": "195571"
+        },
+        "4": {
+          "name": "Printed Side",
+          "label": "Front Only",
+          "option_id": "109872"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "109875"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "6 Business Days",
+          "option_id": "109892"
+        }
+      },
+      "price": "15.78",
+      "original_price": 15.78,
+      "total_price": "15.78",
+      "unit_price": 15.78,
+      "quantity": 1,
+      "turnaround_days": 6,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "SZ",
+          "order_spec": "Size",
+          "order_spec_value": "11\" x 8.5\"",
+          "sort": "2"
+        },
+        {
+          "attr_val_order_spec_id": "39664",
+          "attr_val_id": "11197",
+          "attribute_id": "973",
+          "order_spec_option_id": "7966",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "Cotton Jersey",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "125",
+          "attr_val_id": "87",
+          "attribute_id": "4",
+          "order_spec_option_id": "13",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Front Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Side"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "126",
+          "attr_val_id": "129",
+          "attribute_id": "6",
+          "order_spec_option_id": "32",
+          "order_spec_code": "TA",
+          "order_spec_value": "6 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "17940",
+          "attr_val_id": "15311",
+          "attribute_id": "320",
+          "order_spec_option_id": "3593",
+          "order_spec_code": "IMPTAREA",
+          "order_spec_value": "11\" W x 8.5\" H",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Imprint Area",
+          "sort": "1023",
+          "attribute_name": "Print Area"
+        },
+        {
+          "attr_val_order_spec_id": "12527",
+          "attr_val_id": "11234",
+          "attribute_id": "951",
+          "order_spec_option_id": "1587",
+          "order_spec_code": "SHRT_STYL",
+          "order_spec_value": "Men's Basic Short Sleeve",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Style",
+          "sort": "1126",
+          "attribute_name": "Style"
+        },
+        {
+          "attr_val_order_spec_id": "12526",
+          "attr_val_id": "11239",
+          "attribute_id": "976",
+          "order_spec_option_id": "1506",
+          "order_spec_code": "SHRTSZ",
+          "order_spec_value": "Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Size",
+          "sort": "1128",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "13089",
+          "attr_val_id": "11666",
+          "attribute_id": "1005",
+          "order_spec_option_id": "1633",
+          "order_spec_code": "SHRTCLRS",
+          "order_spec_value": "White",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Shirt Colors",
+          "sort": "1140",
+          "attribute_name": "Shirt Colors"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

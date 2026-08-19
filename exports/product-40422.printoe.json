@@ -1,0 +1,2116 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/beverage-boxes.html",
+    "scraped_at_utc": "2026-08-19T06:37:44.475696+00:00",
+    "product_id": "40422",
+    "product_code": "",
+    "product_name": "Beverage Boxes",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 9,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "c5788c3e30dc77a2ef3d74ef02efc790e7c3fdd2bbbb56aae4d16e401aef027c"
+  },
+  "default_selection": {
+    "attr1850": "1581864",
+    "attr1851": "1581867",
+    "attr1787": "1581870",
+    "attr1801": "1581872",
+    "attr1791": "1581877",
+    "attr1792": "1581878",
+    "attr1795": "1581824",
+    "attr1796": "1635471",
+    "attr1797": "1581880"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy \">\n                                    <div class=\"wgt-text-content\">\n                <h2>Deliver Drink Delights With Custom Beverage Boxes</h2>\n<p>Make every drink delivery stand out with custom beverage boxes. Our strong, heavy-duty drink boxes are perfect for canned beer, soda, cider, kombucha, and more. Each box panel can be printed in full-color and offer ample space for brand storytelling, detailed descriptions of your beverage, product specifications, pack size, UPC code, and necessary government warnings. This means your product doesn't just get noticed; it’s remembered.</p>\n<p>Our custom beverage boxes are designed for craft breweries, microbreweries, craft distilleries, and small batch non-alcoholic beverage companies. Made from 18 pt. wet strength carton stock, these boxes keep their integrity in refrigerated environments. With handles for easy carrying, they're more than just packaging - they're an extension of your brand.</p>\n<h2>A Box to Complement Every Can</h2>\n<p>Not every drink is made the same. Some come slimmer than others while some are a bit bigger. Our beverage boxes are designed to cater to this diversity, ensuring a perfect fit for various can sizes and pack configurations. Whether it's the standard 12 oz. can, the sleek 12 oz. slim can, or the larger 16 oz. can, we have a box that matches its dimensions flawlessly. Our range includes options for 4-pack, 6-pack, and 12-pack arrangements, allowing your product to fit snugly and present itself attractively on any shelf.</p>            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/11036/600x600/Beverage_Box_Marketing_Material_A.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/11036/700x700/Beverage_Box_Marketing_Material_A.webp",
+    "https://staticecp.uprinting.com/11037/700x700/Beverage_Box_Marketing_Material_B.webp",
+    "https://staticecp.uprinting.com/11039/700x700/UP_Beverage_Box_Box_Style_Spec_Image.jpg",
+    "https://staticecp.uprinting.com/11038/700x700/UP_Can_Size_Spec_Image.webp"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "1850",
+      "name": "Can Size",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "1581864",
+      "sort_order": 1,
+      "options": [
+        {
+          "option_id": "1581864",
+          "source_attr_value_id": "52738",
+          "label": "12 oz. Can",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581865",
+          "source_attr_value_id": "52739",
+          "label": "12 oz. Slim Can",
+          "default": false,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581866",
+          "source_attr_value_id": "52740",
+          "label": "16 oz. Can",
+          "default": false,
+          "sort_order": 3,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581864"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1851",
+      "name": "Pack Size",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "1581867",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "1581867",
+          "source_attr_value_id": "52741",
+          "label": "4 pack",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581868",
+          "source_attr_value_id": "52742",
+          "label": "6 pack",
+          "default": false,
+          "sort_order": 2,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": [
+              {
+                "1850": "1581865"
+              },
+              {
+                "1850": "1581866"
+              }
+            ]
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581867"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1787",
+      "name": "Box Style",
+      "code": "boxModel",
+      "field_type": "s",
+      "default_option_id": "1581870",
+      "sort_order": 3,
+      "options": [
+        {
+          "option_id": "1581870",
+          "source_attr_value_id": "52744",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": [
+              {
+                "1850": "1581865",
+                "1851": "1581869"
+              }
+            ]
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581870"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1792",
+      "name": "Material",
+      "code": "material",
+      "field_type": "s",
+      "default_option_id": "1581878",
+      "sort_order": 6,
+      "options": [
+        {
+          "option_id": "1581878",
+          "source_attr_value_id": "52746",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qpi": "55.55555556",
+            "wtpi": "0.00056842"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581878"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1795",
+      "name": "Printed Sides",
+      "code": "printedSide",
+      "field_type": "s",
+      "default_option_id": "1581824",
+      "sort_order": 7,
+      "options": [
+        {
+          "option_id": "1581824",
+          "source_attr_value_id": "51701",
+          "label": "Outside",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581824"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1796",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "1635471",
+      "sort_order": 8,
+      "options": [
+        {
+          "option_id": "1635471",
+          "source_attr_value_id": "51752",
+          "label": "50",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "50"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581879",
+          "source_attr_value_id": "52747",
+          "label": "125",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "125"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581835",
+          "source_attr_value_id": "51709",
+          "label": "250",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "250"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581838",
+          "source_attr_value_id": "51710",
+          "label": "500",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "500"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581843",
+          "source_attr_value_id": "51712",
+          "label": "1,000",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "qty": "1000"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581844",
+          "source_attr_value_id": "51713",
+          "label": "1,500",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "1500"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581846",
+          "source_attr_value_id": "51715",
+          "label": "2,500",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "2500"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581849",
+          "source_attr_value_id": "51718",
+          "label": "5,000",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "5000"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        },
+        {
+          "option_id": "1581854",
+          "source_attr_value_id": "51723",
+          "label": "10,000",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "10000"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1635471"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    },
+    {
+      "attribute_id": "1797",
+      "name": "Production Time",
+      "code": "",
+      "field_type": "r",
+      "default_option_id": "1581880",
+      "sort_order": 9,
+      "options": [
+        {
+          "option_id": "1581880",
+          "source_attr_value_id": "52756",
+          "label": "Standard (9 Business Days)",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "max_to": "9",
+            "min_to": "9"
+          },
+          "available_product_ids": [
+            "40422"
+          ],
+          "exclusion_rules_by_product": {
+            "40422": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "40422": "1581880"
+      },
+      "hide_rules_by_product": {
+        "40422": []
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581835",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "1581835"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "807.50",
+      "original_price": 807.5,
+      "total_price": "807.50",
+      "unit_price": 3.23,
+      "quantity": 250,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29796",
+          "attr_val_id": "51709",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581838",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "500",
+          "option_id": "1581838"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "1325.00",
+      "original_price": 1325,
+      "total_price": "1325.00",
+      "unit_price": 2.65,
+      "quantity": 500,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29797",
+          "attr_val_id": "51710",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581843",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "1,000",
+          "option_id": "1581843"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "2070.00",
+      "original_price": 2070,
+      "total_price": "2070.00",
+      "unit_price": 2.07,
+      "quantity": 1000,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29799",
+          "attr_val_id": "51712",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581844",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "1,500",
+          "option_id": "1581844"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "2715.00",
+      "original_price": 2715,
+      "total_price": "2715.00",
+      "unit_price": 1.81,
+      "quantity": 1500,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29800",
+          "attr_val_id": "51713",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581846",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "2,500",
+          "option_id": "1581846"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "3925.00",
+      "original_price": 3925,
+      "total_price": "3925.00",
+      "unit_price": 1.57,
+      "quantity": 2500,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29802",
+          "attr_val_id": "51715",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2500",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581849",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "5,000",
+          "option_id": "1581849"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "6950.00",
+      "original_price": 6950,
+      "total_price": "6950.00",
+      "unit_price": 1.39,
+      "quantity": 5000,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29805",
+          "attr_val_id": "51718",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581854",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "10,000",
+          "option_id": "1581854"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "13200.00",
+      "original_price": 13200,
+      "total_price": "13200.00",
+      "unit_price": 1.32,
+      "quantity": 10000,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29810",
+          "attr_val_id": "51723",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "10000",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1796",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1581879",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "125",
+          "option_id": "1581879"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "518.75",
+      "original_price": 518.75,
+      "total_price": "518.75",
+      "unit_price": 4.15,
+      "quantity": 125,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "31111",
+          "attr_val_id": "52747",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "125",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr1850": "1581864",
+        "attr1851": "1581867",
+        "attr1787": "1581870",
+        "attr1792": "1581878",
+        "attr1795": "1581824",
+        "attr1796": "1635471",
+        "attr1797": "1581880"
+      },
+      "display": {
+        "1850": {
+          "name": "Can Size",
+          "label": "12 oz. Can",
+          "option_id": "1581864"
+        },
+        "1851": {
+          "name": "Pack Size",
+          "label": "4 pack",
+          "option_id": "1581867"
+        },
+        "1787": {
+          "name": "Box Style",
+          "label": "Auto-Bottom Locking Tab (AB)",
+          "option_id": "1581870"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "5.1883\" L x 5.1883\" W x 4.845\" H",
+          "option_id": "1581872"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Individual Thru-Cut",
+          "option_id": "1581877"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "18 pt. Wet Strength Carton Stock",
+          "option_id": "1581878"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside Only",
+          "option_id": "1581824"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "50",
+          "option_id": "1635471"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (9 Business Days)",
+          "option_id": "1581880"
+        }
+      },
+      "price": "384.50",
+      "original_price": 384.5,
+      "total_price": "384.50",
+      "unit_price": 7.69,
+      "quantity": 50,
+      "turnaround_days": 9,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "31113",
+          "attr_val_id": "52749",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "5.1883\" x 5.1883\" x 4.845\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "31110",
+          "attr_val_id": "52746",
+          "attribute_id": "1792",
+          "order_spec_option_id": "7056",
+          "order_spec_code": "PPR_OUT",
+          "order_spec_value": "18 pt. Wet Strength Carton Stock",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Paper Stock",
+          "sort": "4",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "attr_val_order_spec_id": "29843",
+          "attr_val_id": "51752",
+          "attribute_id": "1796",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "50",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "31112",
+          "attr_val_id": "52748",
+          "attribute_id": "1791",
+          "order_spec_option_id": "7057",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Individual Thru-Cut",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "31118",
+          "attr_val_id": "52756",
+          "attribute_id": "1797",
+          "order_spec_option_id": "2722",
+          "order_spec_code": "TA",
+          "order_spec_value": "9 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "31108",
+          "attr_val_id": "52744",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7054",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "Auto-Bottom Locking Tab (AB)",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "31102",
+          "attr_val_id": "52738",
+          "attribute_id": "1850",
+          "order_spec_option_id": "5848",
+          "order_spec_code": "CAN_SZ",
+          "order_spec_value": "12 oz.",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Can Size",
+          "sort": "1316",
+          "attribute_name": "Can Size"
+        },
+        {
+          "attr_val_order_spec_id": "31105",
+          "attr_val_id": "52741",
+          "attribute_id": "1851",
+          "order_spec_option_id": "7051",
+          "order_spec_code": "PACK_SZ",
+          "order_spec_value": "4 pack",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Pack Size",
+          "sort": "1378",
+          "attribute_name": "Pack Size"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

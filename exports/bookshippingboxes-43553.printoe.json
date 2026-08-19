@@ -1,0 +1,3590 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/book-shipping-boxes.html",
+    "scraped_at_utc": "2026-08-19T06:39:02.096713+00:00",
+    "product_id": "43553",
+    "product_code": "BookShippingBoxes",
+    "product_name": "Book Shipping Boxes",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 11,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "a4177e0c22821b8ca1926e0adb6223dc38cf99bb60a7141ed4638ebf90cab3fe"
+  },
+  "default_selection": {
+    "attr1787": "1847616",
+    "attr1801": "1847617",
+    "attr1791": "1847624",
+    "attr1792": "1847626",
+    "attr1799": "1847629",
+    "attr1800": "1847630",
+    "attr1795": "1847635",
+    "attr1794": "1847639",
+    "attr1797": "1847658",
+    "attr1796": "1847641"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy \">\n                                    <div class=\"wgt-text-content\">\n                <h2>Durable Book Shipping Boxes Built to Protect</h2>\n<p>Book Shipping Boxes, also known as wrap style shippers, are designed to protect heavy, flat items like books, catalogs, manuals, and other printed materials. The one-piece folder construction wraps tightly around your product for a snug fit, while the reinforced bottom adds extra strength during transit. Made from sturdy corrugated cardboard, these shippers help prevent bending, corner damage, and shifting, so the contents arrive in excellent condition.</p>\n<h2>Make Every Shipment On-Brand </h2>\n<p>Start by choosing the right size. Select from six standard dimensions designed for popular book formats or create a custom size for a precise fit. Because these boxes wrap closely around your product, accurate interior measurements help reduce movement and improve protection during shipping. <br /><br />Next, customize the look and feel of your box. Choose from white, premium white, or kraft corrugated materials, then select the right finish to match your brand aesthetic. You can print on the outside, inside, both sides, or keep it blank, giving you full control over how your books are presented from delivery to unboxing.</p>            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/18156/600x600/Book_Shipping_Boxes_Gallery_UP_Main_D.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/18156/700x700/Book_Shipping_Boxes_Gallery_UP_Main_D.jpg",
+    "https://staticecp.uprinting.com/18158/700x700/Book_Shipping_Box_Dimension_UP_A.jpg",
+    "https://staticecp.uprinting.com/18159/700x700/Book_Shipping_Box_Style_UP_B.jpg"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "1801",
+      "name": "Size",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "1847617",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "1847617",
+          "source_attr_value_id": "56858",
+          "label": "6\" x 6\" x 4\"",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "depth": "4",
+            "height": "6",
+            "width": "6"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847618",
+          "source_attr_value_id": "56859",
+          "label": "11\" x 8.5\" x 2\"",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "depth": "2",
+            "height": "11",
+            "width": "8.5"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847619",
+          "source_attr_value_id": "56860",
+          "label": "11\" x 8.5\" x 3\"",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "depth": "3",
+            "height": "11",
+            "width": "8.5"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847620",
+          "source_attr_value_id": "56861",
+          "label": "12\" x 9\" x 3\"",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "depth": "3",
+            "height": "12",
+            "width": "9"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847621",
+          "source_attr_value_id": "51822",
+          "label": "12\" x 12\" x 6\"",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "depth": "6",
+            "height": "12",
+            "width": "12"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847622",
+          "source_attr_value_id": "56862",
+          "label": "18\" x 12\" x 6\"",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "depth": "6",
+            "height": "18",
+            "width": "12"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "43553": "1847617"
+      },
+      "hide_rules_by_product": {
+        "43553": []
+      }
+    },
+    {
+      "attribute_id": "1792",
+      "name": "Material",
+      "code": "material",
+      "field_type": "s",
+      "default_option_id": "1847626",
+      "sort_order": 7,
+      "options": [
+        {
+          "option_id": "1847626",
+          "source_attr_value_id": "51736",
+          "label": "Standard White with Matte Ink (HD Print) B - Flute",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "wtpi": "0.00085263"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847627",
+          "source_attr_value_id": "51742",
+          "label": "Kraft (Brown) with Matte Ink (HD Print) B - Flute",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "wtpi": "0.00085263"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847628",
+          "source_attr_value_id": "51740",
+          "label": "Premium White with Satin Ink (HD Print) B- Flute",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "wtpi": "0.00085263"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "43553": "1847626"
+      },
+      "hide_rules_by_product": {
+        "43553": []
+      }
+    },
+    {
+      "attribute_id": "1795",
+      "name": "Printed Sides",
+      "code": "printedSide",
+      "field_type": "s",
+      "default_option_id": "1847635",
+      "sort_order": 10,
+      "options": [
+        {
+          "option_id": "1847635",
+          "source_attr_value_id": "51701",
+          "label": "Outside",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847636",
+          "source_attr_value_id": "51702",
+          "label": "Inside",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "no_sd": "1"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847637",
+          "source_attr_value_id": "51703",
+          "label": "Both Sides",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "no_sd": "2"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847638",
+          "source_attr_value_id": "51704",
+          "label": "Blank",
+          "default": false,
+          "sort_order": 4,
+          "factors": {},
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "43553": "1847635"
+      },
+      "hide_rules_by_product": {
+        "43553": []
+      }
+    },
+    {
+      "attribute_id": "1796",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "t",
+      "default_option_id": "1847641",
+      "sort_order": 12,
+      "options": [
+        {
+          "option_id": "1847641",
+          "source_attr_value_id": "51705",
+          "label": "1",
+          "default": false,
+          "sort_order": 1,
+          "factors": {
+            "display_qty": "1",
+            "max_qty": "1",
+            "min_qty": "1"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847643",
+          "source_attr_value_id": "54144",
+          "label": "10",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "display_qty": "10",
+            "max_qty": "24",
+            "min_qty": "10"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847644",
+          "source_attr_value_id": "51751",
+          "label": "25",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "display_qty": "25",
+            "max_qty": "49",
+            "min_qty": "25"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847645",
+          "source_attr_value_id": "51752",
+          "label": "50",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "display_qty": "50",
+            "max_qty": "99",
+            "min_qty": "50"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847646",
+          "source_attr_value_id": "51706",
+          "label": "100",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "display_qty": "100",
+            "max_qty": "100",
+            "min_qty": "100"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847648",
+          "source_attr_value_id": "51709",
+          "label": "250",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "display_qty": "250",
+            "max_qty": "499",
+            "min_qty": "250"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847649",
+          "source_attr_value_id": "51710",
+          "label": "500",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "display_qty": "500",
+            "max_qty": "500",
+            "min_qty": "500"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847651",
+          "source_attr_value_id": "51712",
+          "label": "1,000",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "display_qty": "1000",
+            "max_qty": "2499",
+            "min_qty": "1000"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847653",
+          "source_attr_value_id": "51715",
+          "label": "2,500",
+          "default": false,
+          "sort_order": 11,
+          "factors": {
+            "display_qty": "2500",
+            "max_qty": "2500",
+            "min_qty": "2500"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847654",
+          "source_attr_value_id": "51718",
+          "label": "5,000",
+          "default": false,
+          "sort_order": 13,
+          "factors": {
+            "display_qty": "5000",
+            "max_qty": "9999",
+            "min_qty": "5000"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        },
+        {
+          "option_id": "1847655",
+          "source_attr_value_id": "51723",
+          "label": "10,000",
+          "default": false,
+          "sort_order": 14,
+          "factors": {
+            "display_qty": "10000",
+            "max_qty": "14999",
+            "min_qty": "10000"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "43553": "1847641"
+      },
+      "hide_rules_by_product": {
+        "43553": []
+      }
+    },
+    {
+      "attribute_id": "1797",
+      "name": "Production Time",
+      "code": "",
+      "field_type": "r",
+      "default_option_id": "1847658",
+      "sort_order": 13,
+      "options": [
+        {
+          "option_id": "1847658",
+          "source_attr_value_id": "54191",
+          "label": "Standard (10 Business Days)",
+          "default": true,
+          "sort_order": 4,
+          "factors": {
+            "max_to": "10",
+            "min_to": "10"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": [
+              {
+                "1796": "1847655"
+              },
+              {
+                "1796": "1847654"
+              },
+              {
+                "1796": "1850170"
+              },
+              {
+                "1796": "1847653"
+              },
+              {
+                "1796": "1847651"
+              },
+              {
+                "1796": "1847650"
+              },
+              {
+                "1796": "1847646"
+              },
+              {
+                "1796": "1847645"
+              },
+              {
+                "1796": "1847644"
+              },
+              {
+                "1796": "1847643"
+              },
+              {
+                "1796": "1847641"
+              }
+            ]
+          }
+        },
+        {
+          "option_id": "1847659",
+          "source_attr_value_id": "54190",
+          "label": "Rush (8 Business Days)",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "max_to": "8",
+            "min_to": "8"
+          },
+          "available_product_ids": [
+            "43553"
+          ],
+          "exclusion_rules_by_product": {
+            "43553": [
+              {
+                "1796": "1847655"
+              },
+              {
+                "1796": "1847654"
+              },
+              {
+                "1796": "1850170"
+              },
+              {
+                "1796": "1847653"
+              },
+              {
+                "1796": "1847651"
+              },
+              {
+                "1796": "1847650"
+              },
+              {
+                "1796": "1847646"
+              },
+              {
+                "1796": "1847645"
+              },
+              {
+                "1796": "1847644"
+              },
+              {
+                "1796": "1847643"
+              },
+              {
+                "1796": "1847641"
+              }
+            ]
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "43553": "1847658"
+      },
+      "hide_rules_by_product": {
+        "43553": [
+          {
+            "1796": "1872198"
+          }
+        ]
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "987.50",
+      "original_price": 987.5,
+      "total_price": "987.50",
+      "unit_price": 3.95,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1801",
+      "selection": {
+        "attr1801": "1847618",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "11\" x 8.5\" x 2\"",
+          "option_id": "1847618"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "1000.00",
+      "original_price": 1000,
+      "total_price": "1000.00",
+      "unit_price": 4.0,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38661",
+          "attr_val_id": "56859",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "11\" x 8.5\" x 2\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38662",
+          "attr_val_id": "56859",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "11",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38663",
+          "attr_val_id": "56859",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "8.5",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38664",
+          "attr_val_id": "56859",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "2",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1801",
+      "selection": {
+        "attr1801": "1847619",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "11\" x 8.5\" x 3\"",
+          "option_id": "1847619"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "1102.50",
+      "original_price": 1102.5,
+      "total_price": "1102.50",
+      "unit_price": 4.41,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38665",
+          "attr_val_id": "56860",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "11\" x 8.5\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38666",
+          "attr_val_id": "56860",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "11",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38667",
+          "attr_val_id": "56860",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "8.5",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38668",
+          "attr_val_id": "56860",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "3",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1801",
+      "selection": {
+        "attr1801": "1847620",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "12\" x 9\" x 3\"",
+          "option_id": "1847620"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "1182.50",
+      "original_price": 1182.5,
+      "total_price": "1182.50",
+      "unit_price": 4.73,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38669",
+          "attr_val_id": "56861",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "12\" x 9\" x 3\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38670",
+          "attr_val_id": "56861",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "12",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38671",
+          "attr_val_id": "56861",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "9",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38672",
+          "attr_val_id": "56861",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "3",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1801",
+      "selection": {
+        "attr1801": "1847621",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "12\" x 12\" x 6\"",
+          "option_id": "1847621"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "2572.50",
+      "original_price": 2572.5,
+      "total_price": "2572.50",
+      "unit_price": 10.29,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "29938",
+          "attr_val_id": "51822",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "12\" x 12\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "29941",
+          "attr_val_id": "51822",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "12",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29948",
+          "attr_val_id": "51822",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "12",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29951",
+          "attr_val_id": "51822",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1801",
+      "selection": {
+        "attr1801": "1847622",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "18\" x 12\" x 6\"",
+          "option_id": "1847622"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "2960.00",
+      "original_price": 2960,
+      "total_price": "2960.00",
+      "unit_price": 11.84,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38673",
+          "attr_val_id": "56862",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "18\" x 12\" x 6\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38674",
+          "attr_val_id": "56862",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "18",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38675",
+          "attr_val_id": "56862",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "12",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38676",
+          "attr_val_id": "56862",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1797",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847626",
+        "attr1795": "1847635",
+        "attr1797": "1847659"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Rush (8 Business Days)",
+          "option_id": "1847659"
+        }
+      },
+      "price": "1582.50",
+      "original_price": 1582.5,
+      "total_price": "1582.50",
+      "unit_price": 6.33,
+      "quantity": 250,
+      "turnaround_days": 8,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32629",
+          "attr_val_id": "54190",
+          "attribute_id": "1797",
+          "order_spec_option_id": "406",
+          "order_spec_code": "TA",
+          "order_spec_value": "8 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1795",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847626",
+        "attr1795": "1847636",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Inside",
+          "option_id": "1847636"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "987.50",
+      "original_price": 987.5,
+      "total_price": "987.50",
+      "unit_price": 3.95,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29888",
+          "attr_val_id": "51702",
+          "attribute_id": "1795",
+          "order_spec_option_id": "2935",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Inside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1795",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847626",
+        "attr1795": "1847637",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Standard White with Matte Ink (HD Print)",
+          "option_id": "1847626"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Both Sides",
+          "option_id": "1847637"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "1235.00",
+      "original_price": 1235,
+      "total_price": "1235.00",
+      "unit_price": 4.94,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29889",
+          "attr_val_id": "51703",
+          "attribute_id": "1795",
+          "order_spec_option_id": "16",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside and Inside",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29821",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39627",
+          "attr_val_id": "51736",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8077",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1792",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847627",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Kraft (Brown) with Matte Ink (HD Print)",
+          "option_id": "1847627"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "870.00",
+      "original_price": 870,
+      "total_price": "870.00",
+      "unit_price": 3.48,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29833",
+          "attr_val_id": "51742",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6782",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Matte",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39632",
+          "attr_val_id": "51742",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8786",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Kraft Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "1792",
+      "selection": {
+        "attr1801": "1847617",
+        "attr1792": "1847628",
+        "attr1795": "1847635",
+        "attr1797": "1847658"
+      },
+      "display": {
+        "1787": {
+          "name": "Box Style",
+          "label": "One Piece Folder",
+          "option_id": "1847616"
+        },
+        "1801": {
+          "name": "Size",
+          "label": "6\" x 6\" x 4\"",
+          "option_id": "1847617"
+        },
+        "1791": {
+          "name": "Die Cutting",
+          "label": "Euclid Cut and Crease",
+          "option_id": "1847624"
+        },
+        "1792": {
+          "name": "Material",
+          "label": "Premium White with Satin Ink (HD Print)",
+          "option_id": "1847628"
+        },
+        "1799": {
+          "name": "Material Thickness",
+          "label": "B-Flute (1/8\")",
+          "option_id": "1847629"
+        },
+        "1800": {
+          "name": "Print Method",
+          "label": "C500 Single Pass",
+          "option_id": "1847630"
+        },
+        "1795": {
+          "name": "Printed Sides",
+          "label": "Outside",
+          "option_id": "1847635"
+        },
+        "1796": {
+          "name": "Quantity",
+          "label": "250",
+          "option_id": "0"
+        },
+        "1797": {
+          "name": "Production Time",
+          "label": "Standard (10 Business Days)",
+          "option_id": "1847658"
+        }
+      },
+      "price": "1195.00",
+      "original_price": 1195,
+      "total_price": "1195.00",
+      "unit_price": 4.78,
+      "quantity": 250,
+      "turnaround_days": 10,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "38677",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "6\" x 6\" x 4\"",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29887",
+          "attr_val_id": "51701",
+          "attribute_id": "1795",
+          "order_spec_option_id": "15",
+          "order_spec_code": "SIDE",
+          "order_spec_value": "Outside Only",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Printed Side",
+          "sort": "5",
+          "attribute_name": "Printed Sides"
+        },
+        {
+          "order_spec_option_id": 0,
+          "order_spec_code": "QTY",
+          "order_spec_value": "250",
+          "order_spec": "Quantity",
+          "sort": "7"
+        },
+        {
+          "attr_val_order_spec_id": "31365",
+          "attr_val_id": "51691",
+          "attribute_id": "1791",
+          "order_spec_option_id": "6991",
+          "order_spec_code": "DIECUT",
+          "order_spec_value": "Euclid Cut and Crease",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Die-Cutting",
+          "sort": "17",
+          "attribute_name": "Die Cutting"
+        },
+        {
+          "attr_val_order_spec_id": "32630",
+          "attr_val_id": "54191",
+          "attribute_id": "1797",
+          "order_spec_option_id": "216",
+          "order_spec_code": "TA",
+          "order_spec_value": "10 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Production Time"
+        },
+        {
+          "attr_val_order_spec_id": "38657",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "7064",
+          "order_spec_code": "BOXSTYLE",
+          "order_spec_value": "One Piece Folder",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Box Style",
+          "sort": "1073",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "38678",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXL",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Length",
+          "sort": "1083",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38679",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXW",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Width",
+          "sort": "1084",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "38680",
+          "attr_val_id": "56858",
+          "attribute_id": "1801",
+          "order_spec_option_id": "0",
+          "order_spec_code": "BXD",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Box Depth",
+          "sort": "1085",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "29834",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "2952",
+          "order_spec_code": "MATRLTH",
+          "order_spec_value": "B-Flute (1/8\")",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Material Thickness",
+          "sort": "1198",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29829",
+          "attr_val_id": "51740",
+          "attribute_id": "1792",
+          "order_spec_option_id": "6660",
+          "order_spec_code": "PRINTFIN",
+          "order_spec_value": "HDPrint Satin",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Finish",
+          "sort": "1359",
+          "attribute_name": "Material"
+        },
+        {
+          "attr_val_order_spec_id": "38658",
+          "attr_val_id": "56857",
+          "attribute_id": "1787",
+          "order_spec_option_id": "6727",
+          "order_spec_code": "ARTCDSTD",
+          "order_spec_value": "PLF0415",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "ArtiosCAD Standard",
+          "sort": "1363",
+          "attribute_name": "Box Style"
+        },
+        {
+          "attr_val_order_spec_id": "32055",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6736",
+          "order_spec_code": "BRDCODE",
+          "order_spec_value": "I-125B",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardCode",
+          "sort": "1364",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "32056",
+          "attr_val_id": "51743",
+          "attribute_id": "1799",
+          "order_spec_option_id": "6739",
+          "order_spec_code": "BRDDESC",
+          "order_spec_value": "I-125 B Kraft",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "BoardDescription",
+          "sort": "1365",
+          "attribute_name": "Material Thickness"
+        },
+        {
+          "attr_val_order_spec_id": "29836",
+          "attr_val_id": "51745",
+          "attribute_id": "1800",
+          "order_spec_option_id": "6787",
+          "order_spec_code": "IMPRINTMET1",
+          "order_spec_value": "C500 Single Pass",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Print Method CORR",
+          "sort": "1367",
+          "attribute_name": "Print Method"
+        },
+        {
+          "attr_val_order_spec_id": "39630",
+          "attr_val_id": "51740",
+          "attribute_id": "1792",
+          "order_spec_option_id": "8078",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "White Kemi Corrugated",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Material"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

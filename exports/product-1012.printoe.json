@@ -1,0 +1,1873 @@
+{
+  "metadata": {
+    "source_url": "https://www.uprinting.com/rubber-stamps.html",
+    "scraped_at_utc": "2026-08-18T07:59:52.174623+00:00",
+    "product_id": "1012",
+    "product_code": "",
+    "product_name": "Rubber Stamps",
+    "mode": "linked_dependency_pruned_sweep",
+    "currency": "USD",
+    "valid_price_rows": 15,
+    "invalid_rows": 0,
+    "schema_version": 4,
+    "export_fingerprint": "9d6209b7445d151752035577f6b20a432202dd3d10e9666f0ce2f6cbdea4c263"
+  },
+  "default_selection": {
+    "attr3": "59481",
+    "attr5": "59483",
+    "attr1": "59493",
+    "attr11": "67554",
+    "attr6": "59495"
+  },
+  "description": "<!--exclude widget for duplicate title with tab-->\n\t\t            \t\t<!--exclude widget for duplicate title with tab-->\n\t\t        \t    <div class=\"sms-wgt-text-image scroll-lazy wgt-txt-styles-main_heading\">\n                            <div class=\"wgt-text-title\">\n                <h2>Save Time With Rubber Stamp Printing</h2>            </div>\n                            <div class=\"wgt-text-content\">\n                <p>UPrinting's self-inking rubber stamps are the perfect way to save time when processing documents or mailings. Personalize your own to easily affix names, signatures, certifications, quality assurance stamps, and more. Anyone who handles these tasks on a regular basis knows what a time-saver this creates, especially when working on routine tasks like paying bills or addressing envelopes.</p>\r\n<p>Create your own text:</p>\r\n<ul>\r\n<li>Small stamp: 4 lines of text maximum</li>\r\n<li>Medium stamp: 5 lines of text maximum</li>\r\n<li>Large stamp: 6 lines of text maximum</li>\r\n<li>X-Large: 7 lines of text maximum</li>\r\n<li>Square: 9 lines of text maximum</li>\r\n<li>Round: 9 lines of text maximum</li>\r\n</ul>\r\n<p>Custom rubber stamps are available in three sizes and come with black ink.</p>            </div>\n            </div>",
+  "product_image": "https://staticecp.uprinting.com/1095/600x600/Rubber_Stamps_Marketing_Materials_A.jpg",
+  "images": [
+    "https://staticecp.uprinting.com/1095/700x700/Rubber_Stamps_Marketing_Materials_A.jpg",
+    "https://staticecp.uprinting.com/1094/700x700/Rubber_Stamps_A_1400x1400.jpg"
+  ],
+  "video": "",
+  "attributes": [
+    {
+      "attribute_id": "3",
+      "name": "Size",
+      "code": "size",
+      "field_type": "s",
+      "default_option_id": "59481",
+      "sort_order": 1,
+      "options": [
+        {
+          "option_id": "59482",
+          "source_attr_value_id": "7453",
+          "label": ".54\" x 1.49\" Small",
+          "default": false,
+          "sort_order": 1,
+          "factors": {
+            "height": "0.54",
+            "qpi": "0.333",
+            "width": "1.49",
+            "wtpi": "0.036"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59481",
+          "source_attr_value_id": "7452",
+          "label": ".71\" x 1.97\" Medium",
+          "default": true,
+          "sort_order": 2,
+          "factors": {
+            "height": "0.71",
+            "qpi": "0.296",
+            "width": "1.97",
+            "wtpi": "0.035"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59480",
+          "source_attr_value_id": "7451",
+          "label": ".86\" x 2.35\" Large",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "height": "0.86",
+            "qpi": "0.267",
+            "width": "2.35",
+            "wtpi": "0.035"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "137206",
+          "source_attr_value_id": "12308",
+          "label": "1.04\" x 2.75\"  X-Large",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "height": "1.04",
+            "qpi": "0.267",
+            "width": "2.75",
+            "wtpi": "0.035"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "137207",
+          "source_attr_value_id": "12309",
+          "label": "1.58\" x 1.58\" Square",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "height": "1.58",
+            "qpi": "0.296",
+            "width": "1.58",
+            "wtpi": "0.035"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "137208",
+          "source_attr_value_id": "12310",
+          "label": "1.58\" x 1.58\" Round",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "height": "1.58",
+            "qpi": "0.296",
+            "width": "1.58",
+            "wtpi": "0.035"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1012": "59481"
+      },
+      "hide_rules_by_product": {
+        "1012": []
+      }
+    },
+    {
+      "attribute_id": "5",
+      "name": "Quantity",
+      "code": "",
+      "field_type": "s",
+      "default_option_id": "59483",
+      "sort_order": 2,
+      "options": [
+        {
+          "option_id": "59483",
+          "source_attr_value_id": "2636",
+          "label": "1",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "qty": "1"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59484",
+          "source_attr_value_id": "2637",
+          "label": "2",
+          "default": false,
+          "sort_order": 2,
+          "factors": {
+            "qty": "2"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59485",
+          "source_attr_value_id": "2638",
+          "label": "3",
+          "default": false,
+          "sort_order": 3,
+          "factors": {
+            "qty": "3"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59486",
+          "source_attr_value_id": "2639",
+          "label": "4",
+          "default": false,
+          "sort_order": 4,
+          "factors": {
+            "qty": "4"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59487",
+          "source_attr_value_id": "2640",
+          "label": "5",
+          "default": false,
+          "sort_order": 5,
+          "factors": {
+            "qty": "5"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59488",
+          "source_attr_value_id": "2641",
+          "label": "6",
+          "default": false,
+          "sort_order": 6,
+          "factors": {
+            "qty": "6"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59489",
+          "source_attr_value_id": "2642",
+          "label": "7",
+          "default": false,
+          "sort_order": 7,
+          "factors": {
+            "qty": "7"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59490",
+          "source_attr_value_id": "2643",
+          "label": "8",
+          "default": false,
+          "sort_order": 8,
+          "factors": {
+            "qty": "8"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59491",
+          "source_attr_value_id": "2644",
+          "label": "9",
+          "default": false,
+          "sort_order": 9,
+          "factors": {
+            "qty": "9"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        },
+        {
+          "option_id": "59492",
+          "source_attr_value_id": "2645",
+          "label": "10",
+          "default": false,
+          "sort_order": 10,
+          "factors": {
+            "qty": "10"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1012": "59483"
+      },
+      "hide_rules_by_product": {
+        "1012": []
+      }
+    },
+    {
+      "attribute_id": "11",
+      "name": "Colors",
+      "code": "colorSwatch",
+      "field_type": "s",
+      "default_option_id": "67554",
+      "sort_order": 4,
+      "options": [
+        {
+          "option_id": "67554",
+          "source_attr_value_id": "7884",
+          "label": "Black",
+          "default": true,
+          "sort_order": 1,
+          "factors": {},
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1012": "67554"
+      },
+      "hide_rules_by_product": {
+        "1012": []
+      }
+    },
+    {
+      "attribute_id": "6",
+      "name": "Printing Time",
+      "code": null,
+      "field_type": "s",
+      "default_option_id": "59495",
+      "sort_order": 5,
+      "options": [
+        {
+          "option_id": "59495",
+          "source_attr_value_id": "126",
+          "label": "2 Business Days",
+          "default": true,
+          "sort_order": 1,
+          "factors": {
+            "max_to": "2",
+            "min_to": "2"
+          },
+          "available_product_ids": [
+            "1012"
+          ],
+          "exclusion_rules_by_product": {
+            "1012": []
+          }
+        }
+      ],
+      "defaults_by_product": {
+        "1012": "59495"
+      },
+      "hide_rules_by_product": {
+        "1012": []
+      }
+    }
+  ],
+  "prices": [
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "137206",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "1.04\" x 2.75\"  X-Large",
+          "option_id": "137206"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "34.99",
+      "original_price": 34.54,
+      "total_price": "34.99",
+      "unit_price": 34.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "13852",
+          "attr_val_id": "12308",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "1.04\" x 2.75\"  X-Large",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "137207",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "1.58\" x 1.58\" Square",
+          "option_id": "137207"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "32.99",
+      "original_price": 32.18,
+      "total_price": "32.99",
+      "unit_price": 32.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "13853",
+          "attr_val_id": "12309",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "1.58\" x 1.58\" Square",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "137208",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": "1.58\" x 1.58\" Round",
+          "option_id": "137208"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "32.99",
+      "original_price": 32.18,
+      "total_price": "32.99",
+      "unit_price": 32.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "13854",
+          "attr_val_id": "12310",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": "1.58\" x 1.58\" Round",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "59480",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".86\" x 2.35\" Large",
+          "option_id": "59480"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "28.99",
+      "original_price": 28.3,
+      "total_price": "28.99",
+      "unit_price": 28.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8553",
+          "attr_val_id": "7451",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".86\" x 2.35\" Large",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "25.99",
+      "original_price": 25.6,
+      "total_price": "25.99",
+      "unit_price": 25.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59484",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "2",
+          "option_id": "59484"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "43.99",
+      "original_price": 43.8,
+      "total_price": "43.99",
+      "unit_price": 21.995,
+      "quantity": 2,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2375",
+          "attr_val_id": "2637",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "2",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59485",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "3",
+          "option_id": "59485"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "61.99",
+      "original_price": 61.98,
+      "total_price": "61.99",
+      "unit_price": 20.663333333333334,
+      "quantity": 3,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2376",
+          "attr_val_id": "2638",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "3",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59486",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "4",
+          "option_id": "59486"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "80.99",
+      "original_price": 80.17,
+      "total_price": "80.99",
+      "unit_price": 20.2475,
+      "quantity": 4,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2377",
+          "attr_val_id": "2639",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "4",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59487",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "5",
+          "option_id": "59487"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "105.99",
+      "original_price": 105.02,
+      "total_price": "105.99",
+      "unit_price": 21.198,
+      "quantity": 5,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2378",
+          "attr_val_id": "2640",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "5",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59488",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "6",
+          "option_id": "59488"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "123.99",
+      "original_price": 123.29,
+      "total_price": "123.99",
+      "unit_price": 20.665,
+      "quantity": 6,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2379",
+          "attr_val_id": "2641",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "6",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59489",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "7",
+          "option_id": "59489"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "139.99",
+      "original_price": 139.46,
+      "total_price": "139.99",
+      "unit_price": 19.99857142857143,
+      "quantity": 7,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2380",
+          "attr_val_id": "2642",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "7",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59490",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "8",
+          "option_id": "59490"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "159.99",
+      "original_price": 159.85,
+      "total_price": "159.99",
+      "unit_price": 19.99875,
+      "quantity": 8,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2381",
+          "attr_val_id": "2643",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "8",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59491",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "9",
+          "option_id": "59491"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "174.99",
+      "original_price": 174.77,
+      "total_price": "174.99",
+      "unit_price": 19.443333333333335,
+      "quantity": 9,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2382",
+          "attr_val_id": "2644",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "9",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "5",
+      "selection": {
+        "attr3": "59481",
+        "attr5": "59492",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".71\" x 1.97\" Medium",
+          "option_id": "59481"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "10",
+          "option_id": "59492"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "189.99",
+      "original_price": 189.7,
+      "total_price": "189.99",
+      "unit_price": 18.999000000000002,
+      "quantity": 10,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8554",
+          "attr_val_id": "7452",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".71\" x 1.97\" Medium",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2383",
+          "attr_val_id": "2645",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "10",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    },
+    {
+      "changed_attribute_id": "3",
+      "selection": {
+        "attr3": "59482",
+        "attr5": "59483",
+        "attr11": "67554",
+        "attr6": "59495"
+      },
+      "display": {
+        "3": {
+          "name": "Size",
+          "label": ".54\" x 1.49\" Small",
+          "option_id": "59482"
+        },
+        "5": {
+          "name": "Quantity",
+          "label": "1",
+          "option_id": "59483"
+        },
+        "1": {
+          "name": "Material",
+          "label": "Pre-Inked Stamp",
+          "option_id": "59493"
+        },
+        "11": {
+          "name": "Colors",
+          "label": "Black",
+          "option_id": "67554"
+        },
+        "6": {
+          "name": "Printing Time",
+          "label": "2 Business Days",
+          "option_id": "59495"
+        }
+      },
+      "price": "20.99",
+      "original_price": 20.84,
+      "total_price": "20.99",
+      "unit_price": 20.99,
+      "quantity": 1,
+      "turnaround_days": 2,
+      "in_stock": "y",
+      "currency": "USD",
+      "order_specs": [
+        {
+          "attr_val_order_spec_id": "8555",
+          "attr_val_id": "7453",
+          "attribute_id": "3",
+          "order_spec_option_id": "0",
+          "order_spec_code": "SZ",
+          "order_spec_value": ".54\" x 1.49\" Small",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Size",
+          "sort": "2",
+          "attribute_name": "Size"
+        },
+        {
+          "attr_val_order_spec_id": "2374",
+          "attr_val_id": "2636",
+          "attribute_id": "5",
+          "order_spec_option_id": "0",
+          "order_spec_code": "QTY",
+          "order_spec_value": "1",
+          "custom_flag": "n",
+          "allow_reorder_flag": null,
+          "order_spec": "Quantity",
+          "sort": "7",
+          "attribute_name": "Quantity"
+        },
+        {
+          "attr_val_order_spec_id": "129",
+          "attr_val_id": "126",
+          "attribute_id": "6",
+          "order_spec_option_id": "35",
+          "order_spec_code": "TA",
+          "order_spec_value": "2 Business Days",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Turnaround",
+          "sort": "41",
+          "attribute_name": "Turnaround"
+        },
+        {
+          "attr_val_order_spec_id": "39206",
+          "attr_val_id": "7454",
+          "attribute_id": "1",
+          "order_spec_option_id": "8051",
+          "order_spec_code": "SUBST",
+          "order_spec_value": "Pre-Inked Stamp",
+          "custom_flag": "n",
+          "allow_reorder_flag": "y",
+          "order_spec": "Substrate",
+          "sort": "1431",
+          "attribute_name": "Paper"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
