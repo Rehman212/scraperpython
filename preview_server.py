@@ -323,7 +323,11 @@ def ensure_export_files() -> tuple[Path, Path]:
                 data["attributes"] = [{
                     "attribute_id": "0", "name": switch["switch_label"], "code": "LINKED_CALCULATOR",
                     "field_type": "buttons", "default_option_id": SCRAPER.product_id, "sort_order": 0,
-                    "defaults_by_product": {SCRAPER.product_id: SCRAPER.product_id},
+                    "defaults_by_product": {
+                        x["product_id"]: x["product_id"]
+                        for x in SCRAPER.linked_calculators
+                        if x["product_id"] in priced_product_ids
+                    },
                     "hide_rules_by_product": {},
                     "options": [{
                         "option_id": x["product_id"], "source_attr_value_id": x["calc_id"],
@@ -488,6 +492,8 @@ def normalize_scraper_selection(
                 continue
             raw_attr = raw_attrs.get(attr_id, {})
             exceptions = raw_attr.get("exceptions", {})
+            if not isinstance(exceptions, dict):
+                exceptions = {}
             available = [
                 option for option in attr["options"]
                 if not any(_rule_matches(rule, normalized) for rule in exceptions.get(option["option_id"], []))
@@ -500,17 +506,27 @@ def normalize_scraper_selection(
             # hidden-but-valid catalog value exactly as UPrinting does.
             if not available:
                 raw_values = raw_attr.get("prod_attr_vals", {})
+                value_items = (
+                    raw_values.items()
+                    if isinstance(raw_values, dict)
+                    else []
+                )
                 hidden_fallbacks = [
                     {
                         "option_id": str(option_id),
-                        "sort_order": value.get("sort_order"),
+                        "sort_order": value.get("sort_order") if isinstance(value, dict) else None,
                     }
-                    for option_id, value in raw_values.items()
-                    if value.get("hide_attribute_value_flag") != "y"
+                    for option_id, value in value_items
+                    if isinstance(value, dict)
+                    and value.get("hide_attribute_value_flag") != "y"
                     and value.get("custom_flag") != "y"
                     and not any(
                         _rule_matches(rule, normalized)
-                        for rule in exceptions.get(str(option_id), [])
+                        for rule in (
+                            exceptions.get(str(option_id), [])
+                            if isinstance(exceptions, dict)
+                            else []
+                        )
                     )
                 ]
                 hidden_fallbacks.sort(
@@ -537,7 +553,11 @@ def load_variants(scraper: UPrintingScraper) -> dict[str, UPrintingScraper]:
     variants = {scraper.product_id: scraper}
     for linked in scraper.linked_calculators:
         if linked["product_id"] != scraper.product_id:
-            variants[linked["product_id"]] = scraper.linked_scraper(linked)
+            child = scraper.linked_scraper(linked)
+            # Defense in depth: linked computePrice needs parent pricing flags.
+            if not child.price_options and scraper.price_options:
+                child.price_options = dict(scraper.price_options)
+            variants[linked["product_id"]] = child
     return variants
 
 
@@ -582,6 +602,9 @@ def live_price_payload(
     price_scraper = variants.get(requested_product)
     if price_scraper is None:
         raise ValueError("Requested linked product is unavailable")
+    # Cached / older linked scrapers may lack pricing flags → stub $1.00.
+    if not price_scraper.price_options and scraper.price_options:
+        price_scraper.price_options = dict(scraper.price_options)
     protected = str(body.get("changed_attribute_id", ""))
     safe_selection = {
         key: value for key, value in raw_selection.items() if key != "attr0"

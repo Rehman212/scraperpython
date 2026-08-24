@@ -58,8 +58,13 @@ class UPrintingScraper:
         self.session.mount("https://", HTTPAdapter(max_retries=retry))
         self.session.headers.update(
             {
-                "User-Agent": "Mozilla/5.0 (compatible; UPrintingVariationExporter/1.0)",
-                "Accept": "application/json, text/plain, */*",
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/131.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
             }
         )
         self.product_id = ""
@@ -198,8 +203,13 @@ class UPrintingScraper:
         return html[match.end():content_end].strip()
 
     def _extract_description(self, html: str) -> str:
-        """Return the Overview tab's product description HTML block, if present."""
-        return self._extract_balanced_div(html, r'<div\s+class="overview-product-region">')
+        """Return cleaned Overview copy, without widget CSS dumps."""
+        raw = self._extract_balanced_div(html, r'<div\s+class="overview-product-region">')
+        if not raw:
+            return ""
+        cleaned = re.sub(r"<style[\s\S]*?</style>", "", raw, flags=re.I)
+        cleaned = re.sub(r"<script[\s\S]*?</script>", "", cleaned, flags=re.I)
+        return cleaned.strip()
 
     def _extract_gallery(self, html: str) -> tuple[list[str], str]:
         """Return the product's gallery image URLs (highest-res) and a video URL, if present."""
@@ -256,6 +266,10 @@ class UPrintingScraper:
         child = UPrintingScraper(self.url, self.timeout)
         child.api_url, child.auth, child.product_id = self.api_url, self.auth, linked["product_id"]
         child.product_image, child.page_html = self.product_image, self.page_html
+        # computePrice requires the same pricing flags as a fully load()ed page;
+        # without them linked variants (e.g. Address Labels → Sheet) return a
+        # stub $1.00 instead of the real matrix price.
+        child.price_options = dict(self.price_options)
         child.visible_attr_ids = list(linked["visible_attr_ids"])
         child.catalog = child._post(f"getData/{child.product_id}", child._base_payload(include_product=False))
         # linked["defaults"] comes from the PARENT page's embedded switcher
@@ -269,12 +283,34 @@ class UPrintingScraper:
         # other attribute at a time - one bad key means the whole variant
         # 412s on every request and silently produces zero price rows.
         clean_defaults: dict[str, str] = {}
+        values_by_attr: dict[str, dict[str, Any]] = {}
+        catalog_default: dict[str, str] = {}
         for attr_id, attr in child.catalog.get("prod_attrs", {}).items():
             key = f"attr{attr_id}"
-            candidate = linked["defaults"].get(key)
-            values = attr.get("prod_attr_vals", {})
-            if candidate not in values:
-                candidate = str(attr.get("default_value", ""))
+            raw_values = attr.get("prod_attr_vals", {})
+            values = raw_values if isinstance(raw_values, dict) else {}
+            values_by_attr[key] = values
+            catalog_default[key] = str(attr.get("default_value", ""))
+        # Keep page switcher defaults when valid (landing pages often set qty
+        # differently than the standalone calculator catalog).
+        for key, candidate in linked["defaults"].items():
+            values = values_by_attr.get(key, {})
+            if candidate in values:
+                clean_defaults[key] = candidate
+        # Fill gaps from this calculator's own catalog defaults (linked Sheet
+        # switcher snapshots are often incomplete and omit material/sheets).
+        for key, values in values_by_attr.items():
+            if key in clean_defaults:
+                continue
+            candidate = catalog_default.get(key, "")
+            if candidate and candidate in values:
+                clean_defaults[key] = candidate
+        # Material/finish on linked calculators: prefer this product's catalog
+        # default over a stale parent-page switcher snapshot (Address Labels
+        # Roll was stuck on White BOPP instead of White Paper).
+        for key in ("attr1", "attr25", "attr17"):
+            values = values_by_attr.get(key, {})
+            candidate = catalog_default.get(key, "")
             if candidate and candidate in values:
                 clean_defaults[key] = candidate
         child.defaults = clean_defaults
@@ -292,7 +328,12 @@ class UPrintingScraper:
         return payload
 
     def _post(self, endpoint: str, payload: dict[str, Any]) -> dict[str, Any]:
-        headers = {"Authorization": self.auth, "Origin": "https://www.uprinting.com"}
+        headers = {
+            "Authorization": self.auth,
+            "Origin": "https://www.uprinting.com",
+            "Accept": "application/json, text/plain, */*",
+            "Referer": "https://www.uprinting.com/",
+        }
         response = self.session.post(f"{self.api_url}/{endpoint}", json=payload, headers=headers, timeout=self.timeout)
         if response.status_code >= 400:
             detail = response.text[:500].replace("\n", " ")
@@ -305,7 +346,14 @@ class UPrintingScraper:
         for attr_id, attr in self.catalog.get("prod_attrs", {}).items():
             if visible_only and visible and str(attr_id) not in visible:
                 continue
-            if visible_only and str(attr_id) in self.hidden_attr_ids:
+            # Attributes listed as currently hidden can still belong to the
+            # calculator (White Ink until Clear BOPP, Width/Height until Custom).
+            # Only drop attributes that are not in the page's visible_attr_ids.
+            if (
+                visible_only
+                and str(attr_id) in self.hidden_attr_ids
+                and str(attr_id) not in visible
+            ):
                 continue
             if attr.get("hide_attribute_flag") == "y":
                 continue
