@@ -522,6 +522,7 @@ def ensure_export_files() -> tuple[Path, Path]:
                     data["default_selection"].pop(key, None)
             prune_prices_to_exported_options(data)
             data["prices"] = deduplicate_prices(data["prices"])
+            apply_mailer_boxes_storefront_limits(data)
             data["metadata"]["valid_price_rows"] = len(data["prices"])
             data["metadata"]["schema_version"] = EXPORT_SCHEMA_VERSION
             data["metadata"]["export_fingerprint"] = fingerprint
@@ -529,6 +530,113 @@ def ensure_export_files() -> tuple[Path, Path]:
             save_json(data, json_path)
             save_xlsx(data, xlsx_path)
     return json_path, xlsx_path
+
+
+def apply_mailer_boxes_storefront_limits(data: dict) -> None:
+    """Box-family PDPs on Printoe: no Custom Size and no PDP video embed."""
+    metadata = data.get("metadata") if isinstance(data.get("metadata"), dict) else {}
+    source = str(metadata.get("source_url") or "").lower()
+    product_id = str(metadata.get("product_id") or "")
+    box_family = (
+        "mailer-boxes" in source
+        or "shipping-boxes" in source
+        or "product-boxes" in source
+        or product_id in {"37224", "37226", "37217"}
+    )
+    if not box_family:
+        return
+    data["video"] = ""
+    # Capture Custom Size L/W/D before those free-text attrs are dropped.
+    selection = data.get("default_selection") if isinstance(data.get("default_selection"), dict) else {}
+    custom_dims = [
+        str(selection.get(key) or "").strip()
+        for key in ("attr1788", "attr1789", "attr1790")
+    ]
+    drop_option_ids: set[str] = set()
+    kept_attrs: list[dict] = []
+    for attribute in data.get("attributes") or []:
+        name = str(attribute.get("name") or "")
+        # Length/Width/Depth only exist for Custom Size on these PDPs.
+        if re.search(r"^(length|width|depth)\b", name, re.I):
+            key = f"attr{attribute.get('attribute_id')}"
+            data.get("default_selection", {}).pop(key, None)
+            continue
+        options = []
+        for option in attribute.get("options") or []:
+            label = str(option.get("label") or "").strip().lower()
+            option_id = str(option.get("option_id") or "")
+            if "custom" in label and "size" in label:
+                if option_id:
+                    drop_option_ids.add(option_id)
+                continue
+            options.append(option)
+        attribute["options"] = options
+        # If Custom Size was the default, prefer the preset that matches the
+        # storefront custom L×W×D defaults (Product Boxes → 4" x 4" x 4").
+        if options and str(attribute.get("default_option_id") or "") in drop_option_ids:
+            primary = str(metadata.get("product_id") or "")
+            fallback = _preferred_size_fallback(custom_dims, options, primary)
+            attribute["default_option_id"] = fallback or str(
+                options[0].get("option_id") or ""
+            )
+        for product_key, current in list(
+            (attribute.get("defaults_by_product") or {}).items()
+        ):
+            if str(current) in drop_option_ids:
+                fallback = _preferred_size_fallback(
+                    custom_dims, options, str(product_key)
+                )
+                attribute["defaults_by_product"][product_key] = (
+                    fallback
+                    or (str(options[0].get("option_id") or "") if options else "")
+                )
+        kept_attrs.append(attribute)
+    data["attributes"] = kept_attrs
+    if drop_option_ids:
+        data["prices"] = [
+            row
+            for row in data.get("prices") or []
+            if not any(
+                str(value) in drop_option_ids
+                for value in (row.get("selection") or {}).values()
+            )
+        ]
+        for attribute in data["attributes"]:
+            key = f"attr{attribute.get('attribute_id')}"
+            selected = str((data.get("default_selection") or {}).get(key) or "")
+            if selected in drop_option_ids:
+                fallback = str(attribute.get("default_option_id") or "")
+                if fallback:
+                    data["default_selection"][key] = fallback
+                else:
+                    data["default_selection"].pop(key, None)
+    data["prices"] = deduplicate_prices(data.get("prices") or [])
+    prune_prices_to_exported_options(data)
+
+
+def _preferred_size_fallback(
+    dims: list[str],
+    options: list[dict],
+    product_id: str = "",
+) -> str:
+    """Match Custom Size L/W/D defaults to a preset label like 4\" x 4\" x 4\"."""
+    cleaned = [d.rstrip("0").rstrip(".") if "." in d else d for d in dims if d]
+    if len(cleaned) != 3:
+        return ""
+    needle = f'{cleaned[0]}" x {cleaned[1]}" x {cleaned[2]}"'.lower()
+    matches = [
+        option
+        for option in options
+        if str(option.get("label") or "").strip().lower() == needle
+    ]
+    if not matches:
+        return ""
+    if product_id:
+        for option in matches:
+            available = option.get("available_product_ids") or []
+            if not available or str(product_id) in {str(x) for x in available}:
+                return str(option.get("option_id") or "")
+    return str(matches[0].get("option_id") or "")
 
 
 def _printoe_request(path: str, payload: dict, token: str | None = None) -> dict:
