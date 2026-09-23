@@ -66,6 +66,30 @@ def _dynamic_rules(
     return normalized
 
 
+def _resolve_default_option_id(attr: dict, preferred: object) -> str:
+    """Map storefront defaults (e.g. qty \"100\") onto real option_ids."""
+    options = attr.get("options") or []
+    option_ids = {str(option.get("option_id", "")) for option in options}
+    candidates = [preferred, attr.get("default_option_id")]
+    for candidate in candidates:
+        text = str(candidate or "").strip()
+        if not text:
+            continue
+        if text in option_ids:
+            return text
+        needle = text.replace(",", "").strip().lower()
+        for option in options:
+            option_id = str(option.get("option_id", ""))
+            label = str(option.get("label") or "").replace(",", "").strip().lower()
+            factors = option.get("factors") if isinstance(option.get("factors"), dict) else {}
+            display_qty = str(factors.get("display_qty") or "").replace(",", "").strip().lower()
+            if needle and needle in {label, display_qty}:
+                return option_id
+    if options:
+        return str(options[0].get("option_id") or "")
+    return ""
+
+
 def calculator_export_attributes(
     variants: dict[str, UPrintingScraper],
 ) -> list[dict]:
@@ -97,10 +121,7 @@ def calculator_export_attributes(
                 if preferred_default not in (None, ""):
                     existing["default_option_id"] = str(preferred_default)
             else:
-                if preferred_default not in option_ids:
-                    preferred_default = attr["default_option_id"]
-                if preferred_default not in option_ids and attr["options"]:
-                    preferred_default = attr["options"][0]["option_id"]
+                preferred_default = _resolve_default_option_id(attr, preferred_default)
                 existing["defaults_by_product"][product_id] = preferred_default
             existing["hide_rules_by_product"][product_id] = _dynamic_rules(
                 variant,
@@ -145,11 +166,20 @@ def calculator_export_attributes(
         if str(attribute.get("field_type") or "") == "t" and not global_option_ids:
             # Preserve free-text numeric defaults (e.g. Vinyl 2x2).
             pass
-        elif attribute.get("default_option_id") not in global_option_ids:
-            attribute["default_option_id"] = (
-                attribute["options"][0]["option_id"]
-                if attribute["options"]
-                else ""
+        else:
+            # Prefer the primary linked calculator's resolved default (first key)
+            # so qty "100" stays on Full Color's option id, not Black's twin.
+            primary_default = next(
+                (
+                    str(value)
+                    for value in attribute.get("defaults_by_product", {}).values()
+                    if value not in (None, "")
+                ),
+                "",
+            )
+            attribute["default_option_id"] = primary_default or _resolve_default_option_id(
+                attribute,
+                attribute.get("default_option_id"),
             )
         for product_id, current in list(
             attribute["defaults_by_product"].items()
@@ -162,8 +192,11 @@ def calculator_export_attributes(
                 if product_id in option["available_product_ids"]
             ]
             if current not in available:
+                # Prefer resolving the storefront default (qty "100") before
+                # collapsing to the first available option id.
+                resolved = _resolve_default_option_id(attribute, current)
                 attribute["defaults_by_product"][product_id] = (
-                    available[0] if available else ""
+                    resolved if resolved in available else (available[0] if available else "")
                 )
     merged.sort(
         key=lambda attribute: (
@@ -422,13 +455,27 @@ def ensure_export_files() -> tuple[Path, Path]:
                     for row in data["prices"]
                     if row["selection"].get("attr0")
                 }
+                linked_opts = [
+                    x for x in SCRAPER.linked_calculators
+                    if x["product_id"] in priced_product_ids
+                ]
+                has_linked_icons = any(
+                    str((x.get("icon") or {}).get("url") if isinstance(x.get("icon"), dict) else x.get("icon") or "").strip()
+                    for x in linked_opts
+                )
+                # UPrinting uses a dropdown for Printing (Full Color / Black) when
+                # there are no switch icons; icon tiles stay buttons.
+                linked_field_type = (
+                    "buttons"
+                    if SCRAPER.linked_switch_display == "button" and has_linked_icons
+                    else "s"
+                )
                 data["attributes"] = [{
                     "attribute_id": "0", "name": switch["switch_label"], "code": "LINKED_CALCULATOR",
-                    "field_type": "buttons", "default_option_id": SCRAPER.product_id, "sort_order": 0,
+                    "field_type": linked_field_type, "default_option_id": SCRAPER.product_id, "sort_order": 0,
                     "defaults_by_product": {
                         x["product_id"]: x["product_id"]
-                        for x in SCRAPER.linked_calculators
-                        if x["product_id"] in priced_product_ids
+                        for x in linked_opts
                     },
                     "hide_rules_by_product": {},
                     "options": [{
@@ -437,9 +484,24 @@ def ensure_export_files() -> tuple[Path, Path]:
                         "sort_order": i + 1, "factors": {"product_id": x["product_id"], "calc_id": x["calc_id"]},
                         "available_product_ids": [],
                         "exclusion_rules_by_product": {},
-                    } for i, x in enumerate(SCRAPER.linked_calculators) if x["product_id"] in priced_product_ids],
+                        **(
+                            {"icon": (x.get("icon") or {}).get("url") if isinstance(x.get("icon"), dict) else x.get("icon")}
+                            if (
+                                str((x.get("icon") or {}).get("url") if isinstance(x.get("icon"), dict) else x.get("icon") or "").strip()
+                            )
+                            else {}
+                        ),
+                    } for i, x in enumerate(linked_opts)],
                 }] + data["attributes"]
                 data["default_selection"]["attr0"] = SCRAPER.product_id
+            if SCRAPER.product_family_switch:
+                data["metadata"]["product_family_switch"] = SCRAPER.product_family_switch
+                data["metadata"]["product_family_switch_display"] = (
+                    SCRAPER.product_family_switch_display or "cards"
+                )
+                data["metadata"]["product_family_switch_label"] = (
+                    SCRAPER.product_family_switch_label or ""
+                )
             for attribute in data["attributes"]:
                 key = f"attr{attribute['attribute_id']}"
                 default = attribute.get("defaults_by_product", {}).get(

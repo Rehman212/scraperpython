@@ -339,6 +339,16 @@ class UPrintingScraper:
                 labels[str(option_id)] = text
         return labels
 
+    def _storefront_option_label(self, option_id: str, catalog_label: object) -> str:
+        """Prefer page dropdown text; strip catalog flute suffixes for linked calcs."""
+        labeled = self.option_labels.get(str(option_id))
+        if labeled:
+            return labeled
+        text = html_lib.unescape(str(catalog_label or "")).strip()
+        # Linked Black calculator catalog appends "E - Flute" / "B - Flute" to
+        # Material names; the Mailer Boxes storefront never shows that suffix.
+        return re.sub(r"\s+[EB]\s*-\s*Flute\b.*$", "", text, flags=re.I).strip() or text
+
     @staticmethod
     def _parse_attr_display_order(html: str) -> list[str]:
         """Return calculator attribute IDs in the order the storefront renders them."""
@@ -503,7 +513,9 @@ class UPrintingScraper:
                 })
         # Storefront renders icon-less "button" switches as dropdowns (A-Frame
         # Display Options). Only keep button/cards when at least one icon exists.
-        if self.linked_switch_display == "button" and result and not any(x.get("icon") for x in result):
+        if self.linked_switch_display in ("button", "") and result and not any(
+            str(x.get("icon") or "").strip() for x in result
+        ):
             self.linked_switch_display = "dropdown"
         return result
 
@@ -962,7 +974,10 @@ class UPrintingScraper:
                     {
                         "option_id": str(value_id),
                         "source_attr_value_id": str(value.get("attr_val_id", "")),
-                        "label": self.option_labels.get(str(value_id)) or value.get("attr_value", ""),
+                        "label": self._storefront_option_label(
+                            str(value_id),
+                            value.get("attr_value", ""),
+                        ),
                         "default": self.defaults.get(f"attr{attr_id}") == str(value_id),
                         "sort_order": value.get("sort_order"),
                         "factors": factors,
@@ -1414,7 +1429,10 @@ def save_xlsx(data: dict[str, Any], path: Path) -> None:
     summary.title = "Summary"
     summary.append(["Field", "Value"])
     for key, value in data["metadata"].items():
-        summary.append([key, value])
+        if isinstance(value, (dict, list)):
+            summary.append([key, json.dumps(value, ensure_ascii=False)])
+        else:
+            summary.append([key, value])
     summary.append(["default_selection", json.dumps(data["default_selection"], ensure_ascii=False)])
 
     attributes = wb.create_sheet("Attributes")
