@@ -36,6 +36,11 @@ PRINTOE_ADMIN_EMAIL = os.environ.get("PRINTOE_ADMIN_EMAIL", "demouser@gmail.com"
 PRINTOE_ADMIN_PASSWORD = os.environ.get("PRINTOE_ADMIN_PASSWORD", "")
 _printoe_token: str | None = None
 EXPORT_SCHEMA_VERSION = 4
+# Preview upload/download used to run sweeps with workers=1 and delay=0.75s,
+# which made label products (4 linked calculators × ~120 combos) take 6+ minutes.
+# CLI defaults are workers=4 / delay=0.05; keep a small polite pause by default.
+EXPORT_SWEEP_WORKERS = max(1, int(os.environ.get("EXPORT_SWEEP_WORKERS", "4")))
+EXPORT_SWEEP_DELAY = float(os.environ.get("EXPORT_SWEEP_DELAY", "0.08"))
 
 
 def _dynamic_rules(
@@ -83,11 +88,20 @@ def calculator_export_attributes(
                 merged.append(existing)
             option_ids = {option["option_id"] for option in attr["options"]}
             preferred_default = variant.defaults.get(f"attr{attr_id}")
-            if preferred_default not in option_ids:
-                preferred_default = attr["default_option_id"]
-            if preferred_default not in option_ids and attr["options"]:
-                preferred_default = attr["options"][0]["option_id"]
-            existing["defaults_by_product"][product_id] = preferred_default
+            # Free-text attrs (Width/Height) have no option list — keep the
+            # numeric default as-is instead of collapsing to "".
+            if str(attr.get("field_type") or "") == "t" and not option_ids:
+                if preferred_default in (None, ""):
+                    preferred_default = attr.get("default_option_id") or ""
+                existing["defaults_by_product"][product_id] = str(preferred_default or "")
+                if preferred_default not in (None, ""):
+                    existing["default_option_id"] = str(preferred_default)
+            else:
+                if preferred_default not in option_ids:
+                    preferred_default = attr["default_option_id"]
+                if preferred_default not in option_ids and attr["options"]:
+                    preferred_default = attr["options"][0]["option_id"]
+                existing["defaults_by_product"][product_id] = preferred_default
             existing["hide_rules_by_product"][product_id] = _dynamic_rules(
                 variant,
                 raw.get("exceptions", {}).get("-1", []),
@@ -128,7 +142,10 @@ def calculator_export_attributes(
         global_option_ids = {
             option["option_id"] for option in attribute["options"]
         }
-        if attribute.get("default_option_id") not in global_option_ids:
+        if str(attribute.get("field_type") or "") == "t" and not global_option_ids:
+            # Preserve free-text numeric defaults (e.g. Vinyl 2x2).
+            pass
+        elif attribute.get("default_option_id") not in global_option_ids:
             attribute["default_option_id"] = (
                 attribute["options"][0]["option_id"]
                 if attribute["options"]
@@ -137,6 +154,8 @@ def calculator_export_attributes(
         for product_id, current in list(
             attribute["defaults_by_product"].items()
         ):
+            if str(attribute.get("field_type") or "") == "t" and not attribute["options"]:
+                continue
             available = [
                 option["option_id"]
                 for option in attribute["options"]
@@ -153,6 +172,17 @@ def calculator_export_attributes(
         )
     )
     return merged
+
+
+def requires_eddm_route(scraper: UPrintingScraper) -> bool:
+    """Print-and-Mail EDDM needs USPS route + delivery date before a real total.
+
+    Attrs 1923/1924 (Postage Options / Mailing Service) mark Full Service EDDM.
+    Without a chosen route, computePrice only returns a print-side estimate
+    (has_mailing=0), which is not what the storefront shows as the order total.
+    """
+    attr_ids = {item["attribute_id"] for item in scraper.attributes()}
+    return "1923" in attr_ids or "1924" in attr_ids
 
 
 def export_fingerprint(scraper: UPrintingScraper, variants: dict[str, UPrintingScraper]) -> str:
@@ -201,21 +231,46 @@ def deduplicate_prices(prices: list[dict]) -> list[dict]:
     return list(unique.values())
 
 
+def _option_backed_attr(attribute: dict) -> bool:
+    """Dropdown/radio attrs validate against option IDs; free-text (t) do not."""
+    if not isinstance(attribute, dict):
+        return False
+    if str(attribute.get("field_type") or "") == "t" and not attribute.get("options"):
+        return False
+    return attribute.get("attribute_id") is not None
+
+
 def prune_prices_to_exported_options(data: dict) -> None:
     """Keep only visible selections whose values exist in the exported UI."""
     for attribute in data.get("attributes", []):
         if isinstance(attribute, dict):
+            # Keep customer-facing "Custom" size options (option_id is often the
+            # literal "custom"). Drop only blank ids and unlabeled custom sentinels.
             attribute["options"] = [
                 option
                 for option in attribute.get("options", [])
-                if str(option.get("option_id", "")) not in ("", "custom")
+                if str(option.get("option_id", "")).strip()
+                and (
+                    str(option.get("option_id", "")).lower() != "custom"
+                    or "custom" in str(option.get("label", "")).strip().lower()
+                )
             ]
+    # Free-text Width/Height (field_type "t", empty options) stay on the product
+    # for the storefront inputs, but must not gate price-row retention — otherwise
+    # every Vinyl Lettering row is dropped once attr247/attr248 are in selection.
     allowed = {
         f"attr{attribute['attribute_id']}": {
             str(option["option_id"]) for option in attribute.get("options", [])
         }
         for attribute in data.get("attributes", [])
-        if isinstance(attribute, dict) and attribute.get("attribute_id") is not None
+        if _option_backed_attr(attribute)
+    }
+    free_text_keys = {
+        f"attr{attribute['attribute_id']}"
+        for attribute in data.get("attributes", [])
+        if isinstance(attribute, dict)
+        and attribute.get("attribute_id") is not None
+        and not _option_backed_attr(attribute)
     }
     retained = []
     for row in data.get("prices", []):
@@ -232,6 +287,10 @@ def prune_prices_to_exported_options(data: dict) -> None:
             for key, value in visible_selection.items()
         ):
             continue
+        # Keep numeric free-text values on the row for debugging / live price
+        # context, but Printoe matrix keys are only option-backed attrs.
+        for key in free_text_keys:
+            selection.pop(key, None)
         row["selection"] = visible_selection
         retained.append(row)
     data["prices"] = retained
@@ -252,15 +311,29 @@ def validate_printoe_export(data: dict) -> None:
             str(option["option_id"]) for option in attribute.get("options", [])
         }
         for attribute in attributes
-        if isinstance(attribute, dict) and attribute.get("attribute_id") is not None
+        if _option_backed_attr(attribute)
+    }
+    free_text_keys = {
+        f"attr{attribute['attribute_id']}"
+        for attribute in attributes
+        if isinstance(attribute, dict)
+        and attribute.get("attribute_id") is not None
+        and not _option_backed_attr(attribute)
     }
     for index, row in enumerate(prices, 1):
         if not isinstance(row, dict) or not isinstance(row.get("selection"), dict):
             raise ValueError(f"Pricing row {index} has no selection.")
-        if any(
-            key not in allowed or str(value) not in allowed[key]
+        bad = [
+            (key, value)
             for key, value in row["selection"].items()
-        ):
+            if key in allowed and str(value) not in allowed[key]
+        ]
+        unknown = [
+            key
+            for key in row["selection"]
+            if key not in allowed and key not in free_text_keys
+        ]
+        if bad or unknown:
             raise ValueError(
                 f"Pricing row {index} references a non-visible option."
             )
@@ -287,7 +360,12 @@ def ensure_export_files() -> tuple[Path, Path]:
         if not export_is_current(json_path, fingerprint) or not xlsx_path.exists():
             prices, errors = [], []
             linked_by_product = {x["product_id"]: x for x in SCRAPER.linked_calculators}
-            for product_id, variant in VARIANT_SCRAPERS.items():
+            variant_items = list(VARIANT_SCRAPERS.items())
+            print(
+                f"Export sweep starting: {len(variant_items)} calculator(s), "
+                f"workers={EXPORT_SWEEP_WORKERS}, delay={EXPORT_SWEEP_DELAY}s"
+            )
+            for product_id, variant in variant_items:
                 attr_ids = [a["attribute_id"] for a in variant.attributes()]
                 # "exhaustive" multiplies every attribute's option count together
                 # (thousands of live requests for products with many attributes,
@@ -297,8 +375,16 @@ def ensure_export_files() -> tuple[Path, Path]:
                 # fraction of the time - Printoe's import derives each option's
                 # price delta from this, so untested joint combinations still
                 # price sanely instead of falling back to a flat number.
-                variant_prices, variant_errors = variant.scrape_prices("sweep", attr_ids, 50_000, 1, 0.75)
+                print(f"  Sweeping {product_id} ({linked_by_product.get(product_id, {}).get('label', variant.catalog.get('product_name', product_id))})…")
+                variant_prices, variant_errors = variant.scrape_prices(
+                    "sweep",
+                    attr_ids,
+                    50_000,
+                    EXPORT_SWEEP_WORKERS,
+                    EXPORT_SWEEP_DELAY,
+                )
                 linked = linked_by_product.get(product_id, {"label": product_id})
+                print(f"  Done {product_id}: {len(variant_prices)} prices, {len(variant_errors)} errors")
                 if SCRAPER.linked_calculators and not variant_prices:
                     # A variant that prices zero combinations vanishes from the
                     # merged export with no other trace (its label is dropped
@@ -306,10 +392,26 @@ def ensure_export_files() -> tuple[Path, Path]:
                     # broken linked-calculator variant doesn't look identical
                     # to one that simply doesn't exist.
                     print(f"WARNING: linked variant {product_id} ({linked.get('label', product_id)}) produced zero price rows - its type will be missing from the export.")
+                # Keep only storefront-visible keys on each row. Hidden defaults
+                # (Die-Cutting, secondary Quantity, Printed Side on Singles…)
+                # otherwise collide with another linked calculator's option ids
+                # during prune_prices_to_exported_options and wipe the export.
+                visible_keys = {f"attr{a['attribute_id']}" for a in variant.attributes()}
                 if SCRAPER.linked_calculators:
-                    for row in variant_prices:
+                    visible_keys.add("attr0")
+                for row in variant_prices:
+                    row["selection"] = {
+                        key: value
+                        for key, value in row.get("selection", {}).items()
+                        if key in visible_keys
+                    }
+                    if SCRAPER.linked_calculators:
                         row["selection"]["attr0"] = product_id
-                        row["display"]["0"] = {"name": SCRAPER.linked_calculators[0]["switch_label"], "label": linked["label"], "option_id": product_id}
+                        row["display"]["0"] = {
+                            "name": SCRAPER.linked_calculators[0]["switch_label"],
+                            "label": linked["label"],
+                            "option_id": product_id,
+                        }
                 prices.extend(variant_prices); errors.extend(variant_errors)
             data = build_export(SCRAPER, "linked_dependency_pruned_sweep", prices, errors)
             data["attributes"] = calculator_export_attributes(VARIANT_SCRAPERS)
@@ -348,6 +450,10 @@ def ensure_export_files() -> tuple[Path, Path]:
                     str(option["option_id"])
                     for option in attribute.get("options", [])
                 }
+                if str(attribute.get("field_type") or "") == "t" and not option_ids:
+                    if default not in (None, ""):
+                        data["default_selection"][key] = str(default)
+                    continue
                 if str(default) in option_ids:
                     data["default_selection"][key] = str(default)
                 else:
@@ -433,6 +539,10 @@ def scraper_cache(scraper: UPrintingScraper) -> dict:
         "product_image": scraper.product_image,
         "price_options": scraper.price_options,
         "page_title": scraper.page_title,
+        "option_labels": scraper.option_labels,
+        "option_icons": scraper.option_icons,
+        "box_attr_ids": sorted(scraper.box_attr_ids),
+        "attr_display_order": scraper.attr_display_order,
         "hidden_attr_ids": sorted(scraper.hidden_attr_ids),
         "hidden_value_ids": {k: sorted(v) for k, v in scraper.hidden_value_ids.items()},
     }
@@ -441,9 +551,11 @@ def scraper_cache(scraper: UPrintingScraper) -> dict:
 def scraper_from_cache(parent: UPrintingScraper, data: dict) -> UPrintingScraper:
     item = UPrintingScraper(parent.url, parent.timeout)
     item.api_url, item.auth = parent.api_url, parent.auth
-    for key in ("product_id", "defaults", "visible_attr_ids", "catalog", "product_image", "price_options", "page_title"):
+    for key in ("product_id", "defaults", "visible_attr_ids", "catalog", "product_image", "price_options", "page_title", "option_labels", "option_icons", "attr_display_order"):
         if key in data:
             setattr(item, key, data[key])
+    if "box_attr_ids" in data:
+        item.box_attr_ids = {str(x) for x in data["box_attr_ids"]}
     item.hidden_attr_ids = set(data.get("hidden_attr_ids", []))
     item.hidden_value_ids = {k: set(v) for k, v in data.get("hidden_value_ids", {}).items()}
     return item
@@ -490,8 +602,20 @@ def normalize_scraper_selection(
         for attr_id, attr in attributes.items():
             if attr_id == protected_attr:
                 continue
-            raw_attr = raw_attrs.get(attr_id, {})
-            exceptions = raw_attr.get("exceptions", {})
+            # Free-text / numeric inputs (Width/Height) are not option lists —
+            # never coerce them to a dropdown fallback.
+            if str(attr.get("field_type") or "") == "t":
+                key = f"attr{attr_id}"
+                current = normalized.get(key)
+                if current in (None, ""):
+                    fallback = attr.get("default_option_id") or ""
+                    if fallback:
+                        normalized[key] = str(fallback)
+                        changed = True
+                continue
+            # Prefer sanitized exceptions from attributes() so trivial hidden
+            # attrs (Printed Side=Front Only) do not wipe live defaults.
+            exceptions = attr.get("exceptions", {})
             if not isinstance(exceptions, dict):
                 exceptions = {}
             available = [
@@ -505,6 +629,7 @@ def normalize_scraper_selection(
             # printing with "No Folding"), still let normalization choose that
             # hidden-but-valid catalog value exactly as UPrinting does.
             if not available:
+                raw_attr = raw_attrs.get(attr_id, {}) or raw_attrs.get(str(attr_id), {})
                 raw_values = raw_attr.get("prod_attr_vals", {})
                 value_items = (
                     raw_values.items()
@@ -537,7 +662,10 @@ def normalize_scraper_selection(
                 )
                 available = hidden_fallbacks
             if available and not any(option["option_id"] == current for option in available):
-                fallback = next((o for o in available if o["option_id"] == attr["default_option_id"]), available[0])
+                fallback = next(
+                    (o for o in available if o["option_id"] == attr.get("default_option_id")),
+                    available[0],
+                )
                 normalized[f"attr{attr_id}"] = fallback["option_id"]
                 changed = True
         if not changed:
@@ -591,10 +719,12 @@ def live_price_payload(
     selection = body.get("selection", {})
     if not isinstance(selection, dict):
         raise ValueError("selection must be an object")
+    # Attribute ids are usually numeric, but dynamic-size products use bare
+    # names (attrwidth / attrheight on Packaging Sleeves). Don't require digits.
     raw_selection = {
         str(key): str(value)
         for key, value in selection.items()
-        if str(key).startswith("attr") and str(key)[4:].isdigit()
+        if str(key).startswith("attr") and str(key)[4:]
     }
     requested_product = str(
         raw_selection.get("attr0") or body.get("product_id") or scraper.product_id
@@ -640,6 +770,8 @@ def live_price_payload(
         "price_data": result.get("price_data", {}),
         "normalized_selection": safe_selection,
         "product_id": requested_product,
+        "requires_eddm_route": requires_eddm_route(price_scraper),
+        "has_mailing": bool(result.get("has_mailing")),
     }
 
 
@@ -693,10 +825,10 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 }); return
             attrs = []
             for attr in SCRAPER.attributes():
-                raw = SCRAPER.catalog.get("prod_attrs", {}).get(attr["attribute_id"], {})
-                item = dict(attr)
-                item["exceptions"] = raw.get("exceptions", {})
-                attrs.append(item)
+                # Keep exceptions from attributes() — it may add synthetic hide
+                # rules (e.g. Car Magnets Width/Height until Size=Custom) that
+                # are not present on the raw catalog attr.
+                attrs.append(dict(attr))
             linked = SCRAPER.linked_calculators
             variants = {}
             for item in linked:
@@ -706,7 +838,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                         "product_id": variant.product_id,
                         "product_name": variant.catalog.get("product_name"),
                         "default_selection": variant.defaults,
-                        "attributes": [dict(a, exceptions=variant.catalog.get("prod_attrs", {}).get(a["attribute_id"], {}).get("exceptions", {})) for a in variant.attributes()],
+                        "attributes": [dict(a) for a in variant.attributes()],
+                        "requires_eddm_route": requires_eddm_route(variant),
                     }
             self._json(200, {
                 "product_id": SCRAPER.product_id,
@@ -718,7 +851,31 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 "description": SCRAPER.description,
                 "images": SCRAPER.images, "video": SCRAPER.video,
                 "attributes": attrs,
-                "linked_switch": ({"name": linked[0]["switch_label"], "options": [{"label": x["label"], "product_id": x["product_id"]} for x in linked]} if len(linked) > 1 else None),
+                "uses_boxes_price_layout": SCRAPER.uses_boxes_price_layout(),
+                "requires_eddm_route": requires_eddm_route(SCRAPER),
+                "pricing_note": (
+                    "On UPrinting, Full Service EDDM needs Target Delivery Date and "
+                    "CHOOSE ROUTE before a final mailing total. The amount below is only "
+                    "a print-side estimate (no postage/route)."
+                    if requires_eddm_route(SCRAPER)
+                    else ""
+                ),
+                "linked_switch": ({
+                    "name": linked[0]["switch_label"],
+                    "display": (
+                        SCRAPER.linked_switch_display
+                        or ("dropdown" if linked[0]["switch_label"].lower() == "box type" else "button")
+                    ),
+                    "options": [{
+                        "label": x["label"],
+                        "product_id": x["product_id"],
+                        "icon": x.get("icon") or "",
+                    } for x in linked],
+                } if len(linked) > 1 else None),
+                "product_family_switch": SCRAPER.product_family_switch,
+                "product_family_switch_label": SCRAPER.product_family_switch_label,
+                "product_family_switch_display": SCRAPER.product_family_switch_display,
+                "uses_boxes_price_layout": SCRAPER.uses_boxes_price_layout(),
                 "variants": variants,
             })
             return
@@ -755,6 +912,14 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                         "description": candidate.description,
                         "images": candidate.images, "video": candidate.video,
                         "page_title": candidate.page_title,
+                        "option_labels": candidate.option_labels,
+                        "option_icons": candidate.option_icons,
+                        "box_attr_ids": sorted(candidate.box_attr_ids),
+                        "product_family_switch": candidate.product_family_switch,
+                        "product_family_switch_label": candidate.product_family_switch_label,
+                        "product_family_switch_display": candidate.product_family_switch_display,
+                        "attr_display_order": candidate.attr_display_order,
+                        "linked_switch_display": candidate.linked_switch_display,
                         "hidden_attr_ids": sorted(candidate.hidden_attr_ids),
                         "hidden_value_ids": {k: sorted(v) for k, v in candidate.hidden_value_ids.items()},
                         "variants": {key: scraper_cache(value) for key, value in VARIANT_SCRAPERS.items()},
@@ -794,7 +959,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
             raw_selection = {
                 str(key): str(value)
                 for key, value in selection.items()
-                if str(key).startswith("attr") and str(key)[4:].isdigit()
+                if str(key).startswith("attr") and str(key)[4:]
             }
             if OFFLINE_EXPORT is not None:
                 visible_keys = {f"attr{item['attribute_id']}" for item in OFFLINE_EXPORT["attributes"]}
@@ -838,9 +1003,11 @@ def main() -> None:
         try:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             if cached.get("url") == SCRAPER.url:
-                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video", "page_title"):
+                for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video", "page_title", "option_labels", "option_icons", "box_attr_ids", "product_family_switch", "product_family_switch_label", "product_family_switch_display", "attr_display_order", "linked_switch_display"):
                     if key in cached:
                         setattr(SCRAPER, key, cached[key])
+                if isinstance(getattr(SCRAPER, "box_attr_ids", None), list):
+                    SCRAPER.box_attr_ids = {str(x) for x in SCRAPER.box_attr_ids}
                 SCRAPER.hidden_attr_ids = set(cached.get("hidden_attr_ids", []))
                 SCRAPER.hidden_value_ids = {k: set(v) for k, v in cached.get("hidden_value_ids", {}).items()}
                 migrate_cached_pricing(SCRAPER)
@@ -872,6 +1039,14 @@ def main() -> None:
             "description": SCRAPER.description,
             "images": SCRAPER.images, "video": SCRAPER.video,
             "page_title": SCRAPER.page_title,
+            "option_labels": SCRAPER.option_labels,
+            "option_icons": SCRAPER.option_icons,
+            "box_attr_ids": sorted(SCRAPER.box_attr_ids),
+            "product_family_switch": SCRAPER.product_family_switch,
+            "product_family_switch_label": SCRAPER.product_family_switch_label,
+            "product_family_switch_display": SCRAPER.product_family_switch_display,
+            "attr_display_order": SCRAPER.attr_display_order,
+            "linked_switch_display": SCRAPER.linked_switch_display,
             "hidden_attr_ids": sorted(SCRAPER.hidden_attr_ids),
             "hidden_value_ids": {k: sorted(v) for k, v in SCRAPER.hidden_value_ids.items()},
         }), encoding="utf-8")
@@ -890,9 +1065,11 @@ def main() -> None:
         if OFFLINE_EXPORT is None:
             cached = json.loads(CONFIG_CACHE_FILE.read_text(encoding="utf-8"))
             SCRAPER = UPrintingScraper(cached["url"])
-            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video", "page_title"):
+            for key in ("product_id", "api_url", "auth", "defaults", "visible_attr_ids", "catalog", "product_image", "linked_calculators", "price_options", "description", "images", "video", "page_title", "option_labels", "option_icons", "box_attr_ids", "product_family_switch", "product_family_switch_label", "product_family_switch_display", "attr_display_order", "linked_switch_display"):
                 if key in cached:
                     setattr(SCRAPER, key, cached[key])
+            if isinstance(getattr(SCRAPER, "box_attr_ids", None), list):
+                SCRAPER.box_attr_ids = {str(x) for x in SCRAPER.box_attr_ids}
             SCRAPER.hidden_attr_ids = set(cached.get("hidden_attr_ids", []))
             SCRAPER.hidden_value_ids = {k: set(v) for k, v in cached.get("hidden_value_ids", {}).items()}
             migrate_cached_pricing(SCRAPER)
