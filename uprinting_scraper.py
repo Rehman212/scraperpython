@@ -1064,7 +1064,21 @@ class UPrintingScraper:
         payload = self._base_payload()
         payload.update(self.price_options)
         payload.update(self._api_selection(selection))
+        # Sealing Stickers Custom Size: use_default=y zeros Width/Height and
+        # returns a flat price ($318.68) instead of the storefront total.
+        if self._sealing_custom_size(selection):
+            payload["use_default"] = False
+            payload["override_invalid_spec"] = False
         return self._post("computePrice", payload)
+
+    def _sealing_custom_size(self, selection: dict[str, str]) -> bool:
+        if str(self.product_id) != "26192":
+            return False
+        size_id = str(selection.get("attr3") or "")
+        size_attr = self.catalog.get("prod_attrs", {}).get("3", {})
+        option = self._attr_values_map(size_attr.get("prod_attr_vals", {})).get(size_id, {})
+        label = str(option.get("attr_value") or "").strip().lower()
+        return size_id.lower() == "custom" or "custom" in label
 
     def _size_attribute_id(self) -> str | None:
         """Return the Size attribute id used for preset width/height/depth factors."""
