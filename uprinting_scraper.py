@@ -1186,6 +1186,11 @@ class UPrintingScraper:
                 translated[key] = str(display_qty).replace(",", "")
             elif factors.get("qty") not in (None, ""):
                 translated[key] = str(factors.get("qty")).replace(",", "")
+            # Sheet Labels Number of Sheets stores the count in factors.qty,
+            # but computePrice only accepts the option id. Sending 5000 makes
+            # it snap back to 25 sheets.
+            if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
+                translated[key] = str(option_id)
         return translated
 
     def _priced_row(self, selection: dict[str, str], changed: str = "") -> dict[str, Any]:
