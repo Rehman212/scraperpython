@@ -1061,15 +1061,40 @@ class UPrintingScraper:
         return result
 
     def price(self, selection: dict[str, str]) -> dict[str, Any]:
+        pricing_selection = self._sealing_without_hidden_white_ink(dict(selection))
+        # Diameter shares the width/height flags. On Custom Size it overwrites
+        # the entered Width (4" becomes 2") and the total no longer matches.
+        if self._sealing_custom_size(pricing_selection):
+            pricing_selection.pop("attr202", None)
         payload = self._base_payload()
         payload.update(self.price_options)
-        payload.update(self._api_selection(selection))
+        payload.update(self._api_selection(pricing_selection))
         # Sealing Stickers Custom Size: use_default=y zeros Width/Height and
         # returns a flat price ($318.68) instead of the storefront total.
-        if self._sealing_custom_size(selection):
+        if self._sealing_custom_size(pricing_selection):
             payload["use_default"] = False
             payload["override_invalid_spec"] = False
+            payload.pop("attr202", None)
         return self._post("computePrice", payload)
+
+    def _sealing_without_hidden_white_ink(self, selection: dict[str, str]) -> dict[str, str]:
+        """Cream and white papers hide White Ink. The landing default still
+        sends "Make only the background clear", which adds about $40.
+        """
+        if str(self.product_id) != "26192":
+            return selection
+        material = str(selection.get("attr25") or "")
+        raw = self.catalog.get("prod_attrs", {}).get("948", {})
+        rules = (raw.get("exceptions") or {}).get("-1") or []
+        hidden = any(
+            isinstance(rule, dict) and str(rule.get("25") or "") == material
+            for rule in rules
+        )
+        if not hidden or "attr948" not in selection:
+            return selection
+        trimmed = dict(selection)
+        trimmed.pop("attr948", None)
+        return trimmed
 
     def _sealing_custom_size(self, selection: dict[str, str]) -> bool:
         if str(self.product_id) != "26192":
