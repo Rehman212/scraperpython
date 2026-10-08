@@ -724,6 +724,12 @@ class UPrintingScraper:
         """Drop exception clauses that only reference trivial hidden attrs."""
         if not isinstance(exceptions, dict):
             return {}
+        # Newsletter catalog rules hide sizes, covers, page counts, and
+        # quantities for every turnaround or the only binding. The dropdown
+        # still sells them, and computePrice accepts them. Leaving the rules
+        # snaps 8" x 8" back to 5.5" x 8.5" ($268.80 instead of $525.41).
+        if str(self.product_id) == "27":
+            return {}
         trivial = self._trivial_hidden_attr_ids()
         if not trivial:
             return {
