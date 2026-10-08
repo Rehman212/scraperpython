@@ -1062,6 +1062,7 @@ class UPrintingScraper:
 
     def price(self, selection: dict[str, str]) -> dict[str, Any]:
         pricing_selection = self._sealing_without_hidden_white_ink(dict(selection))
+        pricing_selection = self._bumper_without_hidden_sets(pricing_selection)
         # Diameter shares the width/height flags. On Custom Size it overwrites
         # the entered Width (4" becomes 2") and the total no longer matches.
         if self._sealing_custom_size(pricing_selection):
@@ -1094,6 +1095,20 @@ class UPrintingScraper:
             return selection
         trimmed = dict(selection)
         trimmed.pop("attr948", None)
+        return trimmed
+
+    def _bumper_without_hidden_sets(self, selection: dict[str, str]) -> dict[str, str]:
+        """In Sets Of is only for Shrink Wrapping. The landing default still
+        sends 25 and bumps 50 stickers from $30.99 to $32.63.
+        """
+        if str(self.product_id) != "338":
+            return selection
+        if str(selection.get("attr400") or "") == "123196":
+            return selection
+        if "attr635" not in selection:
+            return selection
+        trimmed = dict(selection)
+        trimmed.pop("attr635", None)
         return trimmed
 
     def _sealing_custom_size(self, selection: dict[str, str]) -> bool:
@@ -1229,6 +1244,10 @@ class UPrintingScraper:
             # but computePrice only accepts the option id. Sending 5000 makes
             # it snap back to 25 sheets.
             if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
+                translated[key] = str(option_id)
+            # Bumper Stickers computePrice rejects the bare count (attr5=50)
+            # and use_default then returns $21.80 instead of $30.99.
+            if str(self.product_id) == "338" and str(attr_id) == "5":
                 translated[key] = str(option_id)
         return translated
 
