@@ -1251,9 +1251,9 @@ class UPrintingScraper:
             # it snap back to 25 sheets.
             if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
                 translated[key] = str(option_id)
-            # Bumper Stickers and Blank Tissue reject the bare count.
-            # attr5=100 on Blank prices the 50-sheet total ($18.76) instead of $20.96.
-            if str(self.product_id) in {"338", "42641"} and str(attr_id) == "5":
+            # Bumper Stickers, Blank Tissue, and X Banner Stands reject the bare count.
+            # attr5=2 on X Banners keeps the 1-banner total ($69.97) instead of $135.55.
+            if str(self.product_id) in {"338", "42641", "414"} and str(attr_id) == "5":
                 translated[key] = str(option_id)
         return translated
 
