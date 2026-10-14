@@ -1,5 +1,6 @@
 FROM python:3.13-slim
 
+# Rebuild pricing when Waterproof Menus quantity stays an option id (41858).
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1
