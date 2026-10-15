@@ -138,6 +138,12 @@ class UPrintingScraper:
                 except (TypeError, ValueError, json.JSONDecodeError):
                     calc_product_id = None
         self.product_id = calc_product_id or page_product_id
+        # Tabletop Banners: page_product_id 3087 is the old 11.5" x 16" / 9 mil
+        # grid ($32.98). The live widget is product 26164 (11.5" x 17.5",
+        # 13oz Smooth Matte, aluminum base, $35.52). Nested shared-calc JSON
+        # makes the params regex stop early, so the stub id wins.
+        if "table-top-banners" in self.url and 'product_id":"26164"' in html:
+            self.product_id = "26164"
         if self.product_id == "0":
             raise ScraperError("Yeh category/landing page hai, configurable product page nahi. Specific product URL dein.")
         # A landing page's <h1> (e.g. "Square Rounded Corner Business Cards")
