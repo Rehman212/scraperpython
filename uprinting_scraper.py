@@ -144,6 +144,11 @@ class UPrintingScraper:
         # makes the params regex stop early, so the stub id wins.
         if "table-top-banners" in self.url and 'product_id":"26164"' in html:
             self.product_id = "26164"
+        # Sticker Sheets: page_product_id 26215 is the old 70 lb label grid
+        # ($339.82). The live calculator is product 27374 (White Paper, Gloss
+        # Coating, 250 sheets, $303.00).
+        if "sticker-sheets" in self.url and 'product_id":"27374"' in html:
+            self.product_id = "27374"
         if self.product_id == "0":
             raise ScraperError("Yeh category/landing page hai, configurable product page nahi. Specific product URL dein.")
         # A landing page's <h1> (e.g. "Square Rounded Corner Business Cards")
@@ -1255,7 +1260,7 @@ class UPrintingScraper:
             # Sheet Labels Number of Sheets stores the count in factors.qty,
             # but computePrice only accepts the option id. Sending 5000 makes
             # it snap back to 25 sheets.
-            if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
+            if str(self.product_id) in {"1508", "40913", "27374"} and str(attr_id) == "853":
                 translated[key] = str(option_id)
             # Bumper Stickers, Blank Tissue, X Banner Stands, Waterproof Menus,
             # Tension Fabric Banners (Graphic + Frame), and Straight Tension
