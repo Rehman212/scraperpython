@@ -1080,6 +1080,7 @@ class UPrintingScraper:
     def price(self, selection: dict[str, str]) -> dict[str, Any]:
         pricing_selection = self._sealing_without_hidden_white_ink(dict(selection))
         pricing_selection = self._bumper_without_hidden_sets(pricing_selection)
+        pricing_selection = self._deluxe_retractable_sides(pricing_selection)
         # Diameter shares the width/height flags. On Custom Size it overwrites
         # the entered Width (4" becomes 2") and the total no longer matches.
         if self._sealing_custom_size(pricing_selection):
@@ -1127,6 +1128,27 @@ class UPrintingScraper:
         trimmed = dict(selection)
         trimmed.pop("attr635", None)
         return trimmed
+
+    def _deluxe_retractable_sides(self, selection: dict[str, str]) -> dict[str, str]:
+        """Deluxe double-sided display prints Front and Back on the double stand.
+
+        The catalog default leaves Printed Side on Front Only, so the
+        double-sided stand stays at the single-sided total ($152.39 instead
+        of $300.21).
+        """
+        if str(self.product_id) != "3089":
+            return selection
+        display = str(selection.get("attr324") or self.defaults.get("attr324") or "")
+        updated = dict(selection)
+        if display == "174608":
+            updated["attr4"] = "174609"
+            updated["attr1688"] = "1478495"
+            updated["attr1231"] = "1713291"
+        elif display == "174607":
+            updated["attr4"] = "174553"
+            updated["attr1688"] = "1478494"
+            updated["attr1231"] = "1713290"
+        return updated
 
     def _sealing_custom_size(self, selection: dict[str, str]) -> bool:
         if str(self.product_id) != "26192":
