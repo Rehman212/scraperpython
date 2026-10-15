@@ -1251,10 +1251,10 @@ class UPrintingScraper:
             # it snap back to 25 sheets.
             if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
                 translated[key] = str(option_id)
-            # Bumper Stickers, Blank Tissue, X Banner Stands, and Waterproof Menus
-            # reject the bare count. attr5=500 on Waterproof Menus keeps the
-            # 250-menu total ($459.84) instead of $718.70.
-            if str(self.product_id) in {"338", "42641", "414", "41858"} and str(attr_id) == "5":
+            # Bumper Stickers, Blank Tissue, X Banner Stands, Waterproof Menus,
+            # and Tension Fabric Banners (Graphic + Frame) reject the bare count.
+            # attr5=2 on product 3444 keeps the 1-banner total ($343.51) instead of $687.03.
+            if str(self.product_id) in {"338", "42641", "414", "41858", "3444"} and str(attr_id) == "5":
                 translated[key] = str(option_id)
         return translated
 
