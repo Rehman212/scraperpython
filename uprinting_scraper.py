@@ -1172,6 +1172,16 @@ class UPrintingScraper:
             return {}
         return dims
 
+    def _measured_dimension(self, attribute: dict, option_id: str, axis: str) -> str:
+        """Inches from the option factor. Business card Width ids are not inches."""
+        values = self._attr_values_map(attribute.get("prod_attr_vals", {}))
+        option = values.get(str(option_id), {}) if values else {}
+        factors = option.get("factors") if isinstance(option.get("factors"), dict) else {}
+        measured = factors.get(axis)
+        if measured not in (None, ""):
+            return str(measured)
+        return str(option_id)
+
     def _api_selection(self, selection: dict[str, str]) -> dict[str, str]:
         """Translate selection keys/values into the shape computePrice expects."""
         translated = dict(selection)
@@ -1194,7 +1204,7 @@ class UPrintingScraper:
                 if size_dims:
                     translated.pop(key, None)
                     continue
-                translated["width"] = str(option_id)
+                translated["width"] = self._measured_dimension(attribute, option_id, "width")
                 if str(attr_id) == "width":
                     translated.pop(key, None)
                 continue
@@ -1202,7 +1212,7 @@ class UPrintingScraper:
                 if size_dims:
                     translated.pop(key, None)
                     continue
-                translated["height"] = str(option_id)
+                translated["height"] = self._measured_dimension(attribute, option_id, "height")
                 if str(attr_id) == "height":
                     translated.pop(key, None)
                 continue
