@@ -1258,9 +1258,9 @@ class UPrintingScraper:
             if str(self.product_id) in {"1508", "40913"} and str(attr_id) == "853":
                 translated[key] = str(option_id)
             # Bumper Stickers, Blank Tissue, X Banner Stands, Waterproof Menus,
-            # and Tension Fabric Banners (Graphic + Frame) reject the bare count.
-            # attr5=2 on product 3444 keeps the 1-banner total ($343.51) instead of $687.03.
-            if str(self.product_id) in {"338", "42641", "414", "41858", "3444"} and str(attr_id) == "5":
+            # Tension Fabric Banners (Graphic + Frame), and Straight Tension
+            # Fabric Display reject the bare count. attr5=2 keeps the 1-unit total.
+            if str(self.product_id) in {"338", "42641", "414", "41858", "3444", "3091", "3102"} and str(attr_id) == "5":
                 translated[key] = str(option_id)
         return translated
 
