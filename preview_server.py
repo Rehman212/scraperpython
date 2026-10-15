@@ -930,6 +930,20 @@ def live_price_payload(
             "discounted_unit_price",
             result.get("unit_price"),
         )
+    # Notepads report qty as total sheets (25 sheets x 10 pads = 250).
+    # The storefront each-price is per pad ($42.68 / 10 = $4.27).
+    if str(price_scraper.product_id) == "352":
+        pad_count = ""
+        for item in result.get("display_specs") or []:
+            if str(item.get("attribute_name") or "").strip().lower() == "number of pads":
+                pad_count = str(item.get("attr_value") or "").replace(",", "").strip()
+                break
+        try:
+            if pad_count and float(pad_count) > 0:
+                quantity = pad_count
+                effective_unit_price = float(effective_price) / float(pad_count)
+        except (TypeError, ValueError, ZeroDivisionError):
+            pass
     return {
         "ok": True,
         "price": effective_price,
